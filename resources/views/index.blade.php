@@ -1,6 +1,6 @@
-@extends('parts/base')
+@extends('parts.base')
  
-@section('title', $h1)
+@section('title', "Портфолио разработчика")
  
 @section('main')
 
@@ -127,9 +127,6 @@
                               <header class="MenuHeader">Главная</header>
                               <p>Краткая информация.</p>
                           </div>
-                          <?php if($underline == 1):?>
-                          <hr class="menuHr">
-                          <?php endif ?>
                       </div>
                   </a>
               </li>
@@ -141,9 +138,6 @@
                               <header class="MenuHeader">Обо мне</header>
                               <p>Немного информации обо мне.</p>
                           </div>
-                          <?php if($underline == 2):?>
-                              <hr class="menuHr">
-                          <?php endif ?>
                       </div>
                   </a>
               </li>
@@ -155,9 +149,6 @@
                               <header class="MenuHeader">Портфолио</header>
                               <p>Некоторые проекты, над которыми я работал.</p>
                           </div>
-                          <?php if($underline == 3):?>
-                              <hr class="menuHr">
-                          <?php endif ?>
                       </div>
                   </a>
               </li>
@@ -169,9 +160,6 @@
                               <header class="MenuHeader">Опыт</header>
                               <p>Мои навыки и способности.</p>
                           </div>
-                          <?php if($underline == 4):?>
-                              <hr class="menuHr">
-                          <?php endif ?>
                       </div>
                   </a>
               </li>
@@ -183,9 +171,6 @@
                               <header class="MenuHeader">Блог</p></header>
                               <p>Мои статьи о разработке и дизайне.</p>
                           </div>
-                          <?php if($underline == 5):?>
-                              <hr class="menuHr">
-                          <?php endif ?>
                       </div>
                   </a>
               </li>
@@ -231,7 +216,7 @@
         <div class="page-content">
             <div class="layout">
 
-                <h1 class="introBlockHeading">Привет, меня зовут Виталий</h1>
+                <h2 class="introBlockHeading">Привет, меня зовут Виталий</h2>
                 <div class="briefBackgroundBlock">
                     <div class="MyColSide">
                         <div class="My-block-image"></div>
@@ -253,7 +238,7 @@
                     <hr class="hrHomePage1">
                 </div>
 
-                <h1 class="introBlockHeading">Что я могу Вам предложить</h1>
+                <h2 class="introBlockHeading">Что я могу Вам предложить</h2>
                 <div class="myServices">
 
                     <div class="wrap cf text-c">
@@ -322,7 +307,7 @@
     <div id="content">
         <div class="page-content">
             <div class="layout">
-                <h1 class="introBlockHeading">Мои работы</h1>
+                <h2 class="introBlockHeading">Мои работы</h2>
                 <div class="projectRow">
 
                     <div class="ProjectContentOuter">
@@ -412,7 +397,7 @@
     <hr class="hrHomePage4">
 </div>
 
-<h1 class="introBlockHeading">Уровень моих навыков</h1>
+<h2 class="introBlockHeading">Уровень моих навыков</h2>
 <div id="circleContainer">
 
     <div class="circleRow">
@@ -661,7 +646,7 @@
                 <hr class="hrHomePage5">
             </div>
 
-            <h1 class="introBlockHeading" style="padding-bottom:0;">Последние статьи</h1>
+            <h2 class="introBlockHeading" style="padding-bottom:0;">Последние статьи</h2>
             <div class="blog-posts clearfix">
 
                 <article class="published post home">
