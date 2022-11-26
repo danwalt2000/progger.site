@@ -36,7 +36,7 @@
 </head>
 
 <body>
-    <div id="siteWrapper" class="siteWrap">
+    <main id="siteWrapper" class="siteWrap">
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41622656-4"></script>
@@ -50,6 +50,8 @@
 
         @section('main')
         @show
-    </div>
-</div>
-@include('parts.footer')
+        @include('parts.footer')
+    </main> <!-- end of site wrapper -->
+</body>
+
+</html>

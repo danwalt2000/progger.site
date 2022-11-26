@@ -15,10 +15,10 @@
                 </g>
                 <text id="text1" x="63" y="100" fill="#fff" font-family="Verdana" font-size="28">100</text>
             </svg>
-            <span class="skillSpan">HTML 5</span>
+            <span class="skillSpan">PHP</span>
 
         </div>
-        <div class=" top">
+        <div class="top">
 
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="circleSvg" height="180" width="180">
 
@@ -26,9 +26,9 @@
                 </g>
                 <text id="text2" x="63" y="100" fill="#fff" font-family="Verdana" font-size="28">100</text>
             </svg>
-            <span class="skillSpan">CSS 3</span>
+            <span class="skillSpan">HTML + CSS</span>
         </div>
-        <div class=" top">
+        <div class="top">
 
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="circleSvg" height="180" width="180">
 
@@ -36,10 +36,10 @@
                 </g>
                 <text id="text3" x="70" y="100" fill="#fff" font-family="Verdana" font-size="28">80</text>
             </svg>
-            <span class="skillSpan">PHP</span>
+            <span class="skillSpan">Build tools</span>
         </div>
 
-        <div class=" top">
+        <div class="top">
 
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="circleSvg" height="180" width="180">
 
@@ -73,7 +73,7 @@
                 <text id="text6" x="70" y="100" fill="#fff" font-family="Verdana" font-size="28">80</text>
             </svg>
 
-            <span class="skillSpan">JQUERY</span>
+            <span class="skillSpan">DevOps</span>
 
         </div>
 
@@ -98,7 +98,7 @@
             <span class="skillSpan">HTML 5</span>
 
         </div>
-        <div class=" top">
+        <div class="top">
 
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="circleSvg" height="180" width="180">
 
@@ -108,7 +108,7 @@
             </svg>
             <span class="skillSpan">CSS 3</span>
         </div>
-        <div class=" top">
+        <div class="top">
 
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="circleSvg" height="180" width="180">
 
@@ -119,7 +119,7 @@
             <span class="skillSpan">Javascript</span>
         </div>
 
-        <div class=" top">
+        <div class="top">
 
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="circleSvg" height="180" width="180">
 
@@ -172,10 +172,10 @@
             </g>
             <text id="text7" x="70" y="100" fill="#fff" font-family="Verdana" font-size="28">60</text>
         </svg>
-        <span class="skillSpan">GULP</span>
+        <span class="skillSpan">Docker</span>
 
     </div>
-    <div class=" top">
+    <div class="top">
 
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="circleSvg" height="180" width="180">
 
@@ -183,9 +183,9 @@
             </g>
             <text id="text8" x="70" y="100" fill="#fff" font-family="Verdana" font-size="28">80</text>
         </svg>
-        <span class="skillSpan">VueJS</span>
+        <span class="skillSpan">Git</span>
     </div>
-    <div class=" top">
+    <div class="top">
 
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="circleSvg" height="180" width="180">
 
@@ -193,10 +193,10 @@
             </g>
             <text id="text9" x="70" y="100" fill="#fff" font-family="Verdana" font-size="28">90</text>
         </svg>
-        <span class="skillSpan">Git & Bash</span>
+        <span class="skillSpan">Linux & Bash</span>
     </div>
 
-    <div class=" top">
+    <div class="top">
 
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="circleSvg" height="180" width="180">
 
@@ -205,7 +205,7 @@
             <text id="text10" x="70" y="100" fill="#fff" font-family="Verdana" font-size="28">90</text>
         </svg>
 
-        <span class="skillSpan">Photoshop</span>
+        <span class="skillSpan">PrestaShop</span>
     </div>
 
     <div class="top">
@@ -217,7 +217,7 @@
             <text id="text11" x="63" y="100" fill="#fff" font-family="Verdana" font-size="28">100</text>
         </svg>
 
-        <span class="skillSpan">Bootstrap</span>
+        <span class="skillSpan">Wordpress</span>
 
     </div>
 
@@ -230,7 +230,7 @@
             <text id="text12" x="70" y="100" fill="#fff" font-family="Verdana" font-size="28">70</text>
         </svg>
 
-        <span class="skillSpan">Sass</span>
+        <span class="skillSpan">WSL</span>
 
     </div>
 
