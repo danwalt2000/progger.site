@@ -15,8 +15,8 @@
     <meta property="og:image" content="content/logo.gif" />
     
     <link rel="icon" href="content/logo-sharp.svg" />
-    <link href="style/style.css" rel="stylesheet" type="text/css" />
-    <link href="style/swipebox.css" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('style/style.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('style/swipebox.css') }}" rel="stylesheet" type="text/css" />
     <title>@yield('title')</title>
     
     <meta charset="UTF-8">
@@ -25,11 +25,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="document-state" content="Static" />
 
-    <script src="scripts/jQuery.js" defer></script>
-    <script src="scripts/swipebox.js" defer></script>
-    <script src="scripts/home.js" type="text/javascript" defer></script>
-    <script src="scripts/main.js" type="text/javascript" defer></script>
-    <script src="scripts/notificationsignup.js" type="text/javascript" defer></script>
+    <script src="{{ asset('scripts/jQuery.js') }}" defer></script>
+    <script src="{{ asset('scripts/swipebox.js') }}" defer></script>
+    <script src="{{ asset('scripts/home.js') }}" type="text/javascript" defer></script>
+    <script src="{{ asset('scripts/main.js') }}" type="text/javascript" defer></script>
+    <script src="{{ asset('scripts/notificationsignup.js') }}" type="text/javascript" defer></script>
     <?php if(isset($add)){
         echo $add;
     }?>
@@ -47,3 +47,9 @@
 
             gtag('config', 'UA-41622656-4');
         </script>
+
+        @section('main')
+        @show
+    </div>
+</div>
+@include('parts.footer')
