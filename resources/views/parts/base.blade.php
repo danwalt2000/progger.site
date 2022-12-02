@@ -35,8 +35,8 @@
     }?>
 </head>
 
-<body>
-    <main id="siteWrapper" class="siteWrap">
+<body class="">
+    <section id="siteWrapper" class="siteWrap">
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41622656-4"></script>
@@ -47,11 +47,12 @@
 
             gtag('config', 'UA-41622656-4');
         </script>
-
+        @include('parts.nav')
+        
         @section('main')
         @show
         @include('parts.footer')
-    </main> <!-- end of site wrapper -->
+    </section> <!-- end of site wrapper -->
 </body>
 
 </html>
