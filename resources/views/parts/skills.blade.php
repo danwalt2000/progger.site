@@ -1,5 +1,5 @@
 <div class="hrContainer">
-    <hr class="hrHomePage4">
+    <hr class="hrHomePage2">
 </div>
 
 <h1 class="introBlockHeading">Уровень моих навыков</h1>
@@ -205,7 +205,7 @@
             <text id="text10" x="70" y="100" fill="#fff" font-family="Verdana" font-size="28">90</text>
         </svg>
 
-        <span class="skillSpan">PrestaShop</span>
+        <span class="skillSpan">Laravel</span>
     </div>
 
     <div class="top">
@@ -230,7 +230,7 @@
             <text id="text12" x="70" y="100" fill="#fff" font-family="Verdana" font-size="28">70</text>
         </svg>
 
-        <span class="skillSpan">WSL</span>
+        <span class="skillSpan">NGINX & Apache</span>
 
     </div>
 

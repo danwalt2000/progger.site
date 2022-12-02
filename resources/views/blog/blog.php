@@ -21,7 +21,7 @@ $underline = 5;
 <!-- Раздел постов -->
 
 <div class="hrContainer">
-    <hr class="hrHomePage5">
+    <hr class="hrHomePage4">
 </div>
 <main id="page">
     <div id="content">

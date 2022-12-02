@@ -273,7 +273,7 @@ svg .development3 {
     font-weight: 400;
     letter-spacing: 2px;
     line-height: 1em;
-    margin: 10px 0;
+    margin: 10% 0;
     padding: 1em 1.75em;
     transition: background-color .1s ease-in-out 0s, color .1s ease-in-out 0s
 }
@@ -878,8 +878,7 @@ img {
     top: 14px
 }
 
-@media screen and (max-width:1310px),
-all and (device-width:768px) and (device-height:1024px) and (orientation:landscape) {
+@media screen and (max-width:1200px) {
     .navGrid {
         display: none
     }
@@ -2082,31 +2081,22 @@ input[type=textarea] {
 }
 
 .soc {
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(3,  minmax(120px, max-content));
     font-size: 0;
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center
-}
-
-.soc li {
-    display: inline-block;
-    margin: 1.2rem
-}
-
-.soc a,
-.soc svg {
-    display: block
+    text-align: center;
+    column-gap: 40px;
+    justify-content: center;
 }
 
 .soc a {
-    height: 3.6rem;
-    width: 3.6rem
+    display: block
 }
 
 .soc svg {
-    max-height: 82px;
     height: auto;
     width: 100%
 }
@@ -2235,7 +2225,9 @@ My-row {
     padding-left: 1.875rem;
     padding-right: 1.875rem;
     margin: 0 auto;
-    max-width: 75rem
+    max-width: 75rem;
+    display: flex;
+    align-items: stretch;
 }
 
 .portfolio-nav {
@@ -2661,10 +2653,6 @@ input {
 @media screen and (min-device-width:1200px) and (max-device-width:1600px) {
     .navGrid {
         width: 75%
-    }
-
-    .scollerContainer {
-        display: none
     }
 
     .logoDiv {
@@ -3343,11 +3331,16 @@ li.comment .comment {
     width: auto;
     margin-top: 10px
 }
+.headingIntro{
+    color: #fff;
+    font-family: Montserrat,sans-serif;
+}
 
-.headingIntro,
-.headingIntro p {
-    font-family: garamond;
-    color: #fff
+.headingIntro strong{
+    font-size: 85px;
+    display: block;
+    line-height: 110px;
+    text-transform: uppercase;
 }
 
 .nestedPostReply:hover {
@@ -3958,9 +3951,18 @@ body.mobile .fade-in-selector.fade-in-active {
 }
 
 .preFooterBlocks div.columnPrefooterMy {
-    padding: 0 2.2%
+    padding: 0 2.2%;
+    position: relative;
+    padding-bottom: 50px;
 }
-
+.columnPrefooterMy .button{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+}
 p.label.small-lab,
 span.label.small-lab {
     font-size: 1em
@@ -4724,6 +4726,9 @@ textarea:focus {
     padding: 40px 20px
 }
 
+#footerBlock1 h2{
+    margin: 50px 0;
+}
 #footerBlock1 h2,
 #footerBlock1 p {
     text-align: center
@@ -4734,10 +4739,7 @@ textarea:focus {
 }
 
 #footerBlock1 li {
-    width: 200px;
-    margin: 10px 20px;
     text-transform: none;
-    padding: 0 10px;
     height: auto;
     font-size: 13px
 }
@@ -4888,7 +4890,7 @@ hr.menuHr {
 
 .scollerContainer {
     position: relative;
-    height: 200px
+    height: 100px
 }
 
 .textParagraphBlog img {
