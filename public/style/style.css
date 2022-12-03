@@ -879,129 +879,17 @@ img {
 .mobile-nav-toggle-label .bottom-bar {
     top: 14px
 }
-
-@media screen and (max-width:1200px) {
-    .navGrid {
-        display: none
-    }
-
-    .mobile-nav-toggle-label {
-        display: inline-block
-    }
+#mobileNavWrapper .social{
+    display: grid;
+    grid-template-columns: repeat(3, 40px);
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+#mobileNavWrapper .social a{
+    padding: 0 !important;
 }
 
-@media screen and (max-width:750px) {
-
-    .project-details-primary,
-    .project-details-secondary {
-        float: none !important;
-        width: 100% !important;
-        padding: 0 !important
-    }
-
-    .project-details-secondary {
-        border-left: none !important
-    }
-
-    .projectOverViewWide {
-        padding-left: 40px !important;
-        padding-right: 40px !important
-    }
-}
-
-@media only screen and (max-width:768px) {
-    .circle-wrapper .icon {
-        float: left !important;
-        margin: 0 0 0 80px !important;
-        width: 40px !important;
-        height: 40px !important
-    }
-
-    .headingIntro.homeFV {
-        padding-top: 140px !important
-    }
-
-    .icon img {
-        display: none !important
-    }
-
-    .story-container {
-        margin: 0 10% !important;
-        overflow: hidden !important;
-        width: 80% !important
-    }
-
-    .story-part {
-        float: left !important;
-        margin-top: -55px !important;
-        width: 100% !important
-    }
-
-    .story-part .story-description,
-    .story-part .storyIntro {
-        float: right !important;
-        padding: 0 !important;
-        text-align: left !important;
-        width: 85% !important
-    }
-
-    #storyLine #about-line {
-        bottom: 40px !important;
-        left: 100px !important;
-        top: 40px !important
-    }
-
-    .circle-wrapper {
-        margin: 40px 0 0 !important
-    }
-
-    .circle-wrapper:last-child {
-        margin: 40px 0 !important
-    }
-
-    .headingIntro {
-        margin-top: 70px
-    }
-}
-
-@media only screen and (max-width:568px) {
-    #storyLine #about-line {
-        bottom: 40px !important;
-        left: 80px !important;
-        top: 40px !important
-    }
-
-    .wrapAbout {
-        max-width: 250px;
-        margin: 0 auto
-    }
-
-    .wrapAbout img {
-        max-width: 200px
-    }
-}
-
-@media only screen and (max-width:414px) {
-    #storyLine #about-line {
-        left: 30px !important
-    }
-
-    .circle-wrapper {
-        margin: 40px 0 0 -30px !important
-    }
-
-    .soc {
-        margin-top: 15px !important
-    }
-
-    .entry-title {
-        max-height: 170px !important
-    }
-
-    .wrapAbout img {
-        max-width: 200px
-    }
-}
 
 @media only screen and (max-width:1280px) {
     .menu li a {
@@ -1364,7 +1252,6 @@ img {
         float: none !important;
         margin-left: auto !important;
         margin-right: auto !important;
-        width: 66.6667%
     }
 
     .preFooterBlocks p.small-lab {
@@ -3972,6 +3859,7 @@ body.mobile .fade-in-selector.fade-in-active {
     padding: 0 2.2%;
     position: relative;
     padding-bottom: 50px;
+    min-width: 300px;
 }
 .columnPrefooterMy .button{
     position: absolute;
@@ -4231,6 +4119,9 @@ img {
     .headingIntro p>em>strong,
     .headingIntro p>strong {
         font-size: 65px
+    }
+    .preFooterBlocks>.My-row{
+        flex-wrap: wrap;
     }
 }
 
@@ -4946,4 +4837,147 @@ hr.menuHr {
 .portfolio__description {
     margin: auto;
     width: 80%
+}
+
+@media screen and (max-width:1200px) {
+    .navGrid {
+        display: none
+    }
+
+    .mobile-nav-toggle-label {
+        display: inline-block
+    }
+}
+
+@media screen and (max-width:750px) {
+
+    .project-details-primary,
+    .project-details-secondary {
+        float: none !important;
+        width: 100% !important;
+        padding: 0 !important
+    }
+
+    .project-details-secondary {
+        border-left: none !important
+    }
+
+    .projectOverViewWide {
+        padding-left: 40px !important;
+        padding-right: 40px !important
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .circle-wrapper .icon {
+        float: left !important;
+        margin: 0 0 0 80px !important;
+        width: 40px !important;
+        height: 40px !important
+    }
+
+    .headingIntro.homeFV {
+        padding-top: 140px !important
+    }
+
+    .icon img {
+        display: none !important
+    }
+
+    .story-container {
+        margin: 0 10% !important;
+        overflow: hidden !important;
+        width: 80% !important
+    }
+
+    .story-part {
+        float: left !important;
+        margin-top: -55px !important;
+        width: 100% !important
+    }
+
+    .story-part .story-description,
+    .story-part .storyIntro {
+        float: right !important;
+        padding: 0 !important;
+        text-align: left !important;
+        width: 85% !important
+    }
+
+    #storyLine #about-line {
+        bottom: 40px !important;
+        left: 100px !important;
+        top: 40px !important
+    }
+
+    .circle-wrapper {
+        margin: 40px 0 0 !important
+    }
+
+    .circle-wrapper:last-child {
+        margin: 40px 0 !important
+    }
+
+    .headingIntro {
+        margin-top: 70px
+    }
+    .soc{
+        column-gap: 30px;
+        margin: 30px 0;
+    }
+    .socialContacts .soc{
+        grid-template-columns: repeat(3,  minmax(150px, max-content));
+    }
+    .headingIntro h1,
+    .headingIntro strong{
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width:568px) {
+    #storyLine #about-line {
+        bottom: 40px !important;
+        left: 80px !important;
+        top: 40px !important
+    }
+
+    .wrapAbout {
+        max-width: 250px;
+        margin: 0 auto
+    }
+
+    .wrapAbout img {
+        max-width: 200px
+    }
+    .preFooterBlocks div.columnPrefooterMy{
+        height: 150px;
+    }
+    .socialContacts .soc{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width:414px) {
+    #storyLine #about-line {
+        left: 30px !important
+    }
+
+    .circle-wrapper {
+        margin: 40px 0 0 -30px !important
+    }
+
+    .soc {
+        margin-top: 15px !important
+    }
+
+    .entry-title {
+        max-height: 170px !important
+    }
+
+    .wrapAbout img {
+        max-width: 200px
+    }
+    #footerBlock2{
+        padding: 17px 17px 60px;
+    }
 }
