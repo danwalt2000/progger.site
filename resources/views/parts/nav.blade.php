@@ -79,7 +79,7 @@ $curPage = substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], "/")
               </div>
 
               <div class="index home">
-                  <a href="/portfolio"> Портфолио </a>
+                  <a href="/projects"> Портфолио </a>
               </div>
               <div class="index home">
                   <a href="/experience"> Опыт  </a>
@@ -114,57 +114,62 @@ $curPage = substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], "/")
 
   <nav class="navGrid">
       <ul class="menuList">
-          <li class="a-nav-item">
+          <li class="a-nav-item link-index">
               <a class="menuBlockLink" href="/">
                   <div id="menuBlockSelected" class="menuBlock menuBlockFirst">
                       <div class="linkSummary"><span class="counterSpan">01.</span>
                           <header class="MenuHeader">Главная</header>
                           <p>Краткая информация.</p>
                       </div>
+                      <hr class="menuHr">
                   </div>
               </a>
           </li>
 
-          <li class="a-nav-item">
+          <li class="a-nav-item link-about">
               <a class="menuBlockLink" href="/about">
                   <div class="menuBlock">
                       <div class="linkSummary"><span class="counterSpan">02.</span>
                           <header class="MenuHeader">Обо мне</header>
                           <p>Немного информации обо мне.</p>
                       </div>
+                      <hr class="menuHr">
                   </div>
               </a>
           </li>
 
-          <li class="a-nav-item">
-              <a class="menuBlockLink" href="/portfolio">
+          <li class="a-nav-item link-projects">
+              <a class="menuBlockLink" href="/projects">
                   <div class="menuBlock">
                       <div class="linkSummary"><span class="counterSpan">03.</span>
                           <header class="MenuHeader">Портфолио</header>
                           <p>Некоторые проекты, над которыми я работал.</p>
                       </div>
+                      <hr class="menuHr">
                   </div>
               </a>
           </li>
 
-          <li class="a-nav-item">
+          <li class="a-nav-item link-experience">
               <a class="menuBlockLink" href="/experience">
                   <div class="menuBlock">
                       <div class="linkSummary"><span class="counterSpan">04.</span>
                           <header class="MenuHeader">Опыт</header>
                           <p>Мои навыки и способности.</p>
                       </div>
+                      <hr class="menuHr">
                   </div>
               </a>
           </li>
 
-          <li class="a-nav-item">
+          <li class="a-nav-item link-blog">
               <a class="menuBlockLink" href="/blog">
                   <div class="menuBlock">
                       <div class="linkSummary"><span class="counterSpan">05.</span>
                           <header class="MenuHeader">Блог</p></header>
                           <p>Мои статьи о разработке и дизайне.</p>
                       </div>
+                      <hr class="menuHr">
                   </div>
               </a>
           </li>

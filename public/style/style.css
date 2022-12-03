@@ -1993,14 +1993,16 @@ input[type=textarea] {
     background: #1a1a1a;
     color: #fff
 }
-
-/* .icon-15:hover,
-.icon-17:hover,
-.icon-25:hover,
-.icon-26:hover,
-.icon-8:hover {
-    background: #fff
-} */
+.menuHr{
+    display: none;
+}
+.index-page .link-index .menuHr,
+.about  .link-about .menuHr,
+.projects  .link-projects .menuHr,
+.experience .link-experience .menuHr,
+.blog .link-blog .menuHr{
+    display: block;
+}
 
 .copyright {
     font-size: 14px

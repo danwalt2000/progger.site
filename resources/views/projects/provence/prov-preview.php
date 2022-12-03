@@ -534,7 +534,7 @@
 </style>
 <div class="preview">
     <img src="css/images/back-to-home.png"  href="../index.php" />
-    <a href="../portfolio.php">Вернуться назад</a>
+    <a href="../projects">Вернуться назад</a>
     <h1 id="prev-h1">Это превью сайта. Все ссылки ведут на главную страницу.</h1>
 </div>
     <div id="page" class="site">

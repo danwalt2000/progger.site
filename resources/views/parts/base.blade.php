@@ -35,7 +35,7 @@
     }?>
 </head>
 
-<body class="">
+<body class="@if(Request::segment(1)) {{Request::segment(1)}} @else index-page @endif">
     <section id="siteWrapper" class="siteWrap">
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
