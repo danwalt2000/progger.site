@@ -91,7 +91,7 @@
 <div class="buttonBlock">
     <div>
         <div style="text-align:center">
-            <a href="blog.php" class="buttonBlockElement">Больше статей</a>
+            <a href="/blog" class="buttonBlockElement">Больше статей</a>
         </div>
     </div>
 </div>

@@ -32,7 +32,7 @@
                                 </div>
 
 
-                                <a href="portfolio.php" style="
+                                <a href="/projects" style="
                             position: absolute;left: 50%; margin-left: -24px;">
                                 <span style="height: 20px;overflow: hidden;position: relative;width: 20px;left:10px;margin-top:11px;">
                                 <i class="b1 c1"></i>

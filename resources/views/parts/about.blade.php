@@ -1,6 +1,6 @@
 <div class="layout">
 
-    <h1 class="introBlockHeading">Привет, меня зовут Виталий</h1>
+    <h2 class="introBlockHeading">Привет, меня зовут Виталий</h2>
     <div class="briefBackgroundBlock">
         <div class="MyColSide">
             <div class="My-block-image"></div>
@@ -19,7 +19,7 @@
         <hr class="hrHomePage1">
     </div>
 
-    <h1 class="introBlockHeading">Что я могу Вам предложить</h1>
+    <h2 class="introBlockHeading">Что я могу Вам предложить</h2>
     <div class="myServices">
 
         <div class="wrap cf text-c">

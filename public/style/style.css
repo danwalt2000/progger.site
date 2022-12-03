@@ -318,6 +318,9 @@ a {
 .menuBlockLink:hover .counterSpan {
     color: #333 !important
 }
+.menuBlock:hover .menuHr{
+    background-color: #333;
+}
 
 .menuBlock {
     width: 14%;

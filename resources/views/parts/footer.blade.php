@@ -80,7 +80,7 @@
               <h3 class="text-align-center">
                 <a href="/">ГЛАВНАЯ &nbsp;  </a>
                 <a href="/about">ОБО МНЕ &nbsp;</a>
-                <a href="/portfolio">МОИ РАБОТЫ &nbsp;</a>
+                <a href="/projects">МОИ РАБОТЫ &nbsp;</a>
                 <a href="/experience">ОПЫТ &nbsp;</a>
                 <a href="/blog">БЛОГ &nbsp;</a>
             </h3>

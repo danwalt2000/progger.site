@@ -2,7 +2,7 @@
     <hr class="hrHomePage2">
 </div>
 
-<h1 class="introBlockHeading">Уровень моих навыков</h1>
+<h2 class="introBlockHeading">Уровень моих навыков</h2>
 <div id="circleContainer">
 
     <div class="circleRow">

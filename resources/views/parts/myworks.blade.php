@@ -79,7 +79,7 @@
     <div class="buttonBlock">
         <div>
             <div style="text-align:center">
-                <a href="portfolio.php" class="buttonBlockElement">Больше проектов</a>
+                <a href="/projects" class="buttonBlockElement">Больше проектов</a>
             </div>
         </div>
     </div>
