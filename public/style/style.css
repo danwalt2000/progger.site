@@ -701,12 +701,14 @@ h2 {
     font-weight: 400;
     text-decoration: none
 }
-
+#footerBlocks .socialContacts a{
+    display: block;
+}
 #footerBlocks p {
     margin: 0 0 1%
 }
 
-#footerBlocks a:hover {
+#footerBlock2 a:hover {
     color: #fff
 }
 
@@ -1992,13 +1994,13 @@ input[type=textarea] {
     color: #fff
 }
 
-.icon-15:hover,
+/* .icon-15:hover,
 .icon-17:hover,
 .icon-25:hover,
 .icon-26:hover,
 .icon-8:hover {
     background: #fff
-}
+} */
 
 .copyright {
     font-size: 14px
@@ -4763,8 +4765,6 @@ textarea:focus {
 #footerBlock1 .inner_wrapper_social {
     margin-left: auto;
     margin-right: auto;
-    width: 30px;
-    pointer-events: none
 }
 
 hr.menuHr {
