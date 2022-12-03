@@ -71,21 +71,21 @@ $curPage = substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], "/")
       <div id="mobileNavWrapper" class="nav-wrapper">
           <nav id="mobileNavigation">
               <div class="index home active">
-                  <a href="index"> Главная </a>
+                  <a href="/"> Главная </a>
               </div>
 
               <div class="index home">
-                  <a href="about"> Обо мне </a>
+                  <a href="/about"> Обо мне </a>
               </div>
 
               <div class="index home">
-                  <a href="portfolio"> Портфолио </a>
+                  <a href="/portfolio"> Портфолио </a>
               </div>
               <div class="index home">
-                  <a href="experience"> Опыт  </a>
+                  <a href="/experience"> Опыт  </a>
               </div>
               <div class="index home">
-                  <a href="blog.php"> Блог </a>
+                  <a href="/blog"> Блог </a>
               </div>
               <div class="index home social">
                   <a class="iconMobileNav twitter" title="GitHub" href="//www.github.com/danwalt2000">
@@ -115,7 +115,7 @@ $curPage = substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], "/")
   <nav class="navGrid">
       <ul class="menuList">
           <li class="a-nav-item">
-              <a class="menuBlockLink" href="index">
+              <a class="menuBlockLink" href="/">
                   <div id="menuBlockSelected" class="menuBlock menuBlockFirst">
                       <div class="linkSummary"><span class="counterSpan">01.</span>
                           <header class="MenuHeader">Главная</header>
@@ -126,7 +126,7 @@ $curPage = substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], "/")
           </li>
 
           <li class="a-nav-item">
-              <a class="menuBlockLink" href="about">
+              <a class="menuBlockLink" href="/about">
                   <div class="menuBlock">
                       <div class="linkSummary"><span class="counterSpan">02.</span>
                           <header class="MenuHeader">Обо мне</header>
@@ -137,7 +137,7 @@ $curPage = substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], "/")
           </li>
 
           <li class="a-nav-item">
-              <a class="menuBlockLink" href="portfolio">
+              <a class="menuBlockLink" href="/portfolio">
                   <div class="menuBlock">
                       <div class="linkSummary"><span class="counterSpan">03.</span>
                           <header class="MenuHeader">Портфолио</header>
@@ -148,7 +148,7 @@ $curPage = substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], "/")
           </li>
 
           <li class="a-nav-item">
-              <a class="menuBlockLink" href="experience">
+              <a class="menuBlockLink" href="/experience">
                   <div class="menuBlock">
                       <div class="linkSummary"><span class="counterSpan">04.</span>
                           <header class="MenuHeader">Опыт</header>
@@ -159,7 +159,7 @@ $curPage = substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], "/")
           </li>
 
           <li class="a-nav-item">
-              <a class="menuBlockLink" href="blog.php">
+              <a class="menuBlockLink" href="/blog">
                   <div class="menuBlock">
                       <div class="linkSummary"><span class="counterSpan">05.</span>
                           <header class="MenuHeader">Блог</p></header>

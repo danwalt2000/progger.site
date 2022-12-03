@@ -19,6 +19,9 @@ Route::get('/', function () {
 });
 
 Route::view('/about', 'pages.about');
+Route::view('/portfolio', 'pages.portfolio');
+Route::view('/experience', 'pages.experience');
+Route::view('/about', 'pages.about');
 
 Auth::routes();
 

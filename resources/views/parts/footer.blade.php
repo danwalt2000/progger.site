@@ -27,9 +27,9 @@
                   </a>
               </div>
               <div class="My-large-trio big columnPrefooterMy fade-in-selector fade-in-delay-500ms">
-                  <p class="label small-lab">Нанять меня</p>
-                  <p class="small-par">Нужен крутой сайт? Свяжитесь со мной</p>
-                  <a class="button" href="mailto:danwalt@mail.ru">Заказать сайт</a>
+                  <p class="label small-lab">Связаться со мной</p>
+                  <p class="small-par">Узнать детали сотрудничества</p>
+                  <a class="chat-icon button" href="mailto:danwalt@mail.ru">Написать письмо</a>
               </div>
           </div>
       </div>
@@ -43,7 +43,7 @@
         <div id="footerBlock1" class="fade-in-selector">
           <h2 id="contacts">КОНТАКТЫ</h2>
           <div>
-              <nav class="socialIconsNav">
+              <nav class="socialIconsNav socialContacts">
                   <ul class="soc">
                     <li>
                       <div class="inner_wrapper_social">
