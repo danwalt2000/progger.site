@@ -36,7 +36,7 @@
                 </g>
                 <text id="text3" x="70" y="100" fill="#fff" font-family="Verdana" font-size="28">80</text>
             </svg>
-            <span class="skillSpan">Build tools</span>
+            <span class="skillSpan">NGINX & Apache</span>
         </div>
 
         <div class="top">
@@ -230,7 +230,7 @@
             <text id="text12" x="70" y="100" fill="#fff" font-family="Verdana" font-size="28">70</text>
         </svg>
 
-        <span class="skillSpan">NGINX & Apache</span>
+        <span class="skillSpan">Build tools</span>
 
     </div>
 

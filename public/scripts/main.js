@@ -9,12 +9,6 @@ function toggleOverFlowHiddenMobileMenu() {
 	}
 }
 $(document).ready(function () {
-	$("#menuBlockSelected").hover(function () {
-		$(".menuHr").css("display", "none");
-	});
-	$("#menuBlockSelected").mouseleave(function () {
-		$(".menuHr").css("display", "");
-	});
 	$(".scrollIndicator").click(function () {
 		$('html, body').animate({
 			scrollTop: $(".page-content").offset().top
@@ -24,24 +18,34 @@ $(document).ready(function () {
 		toggleOverFlowHiddenMobileMenu();
 	});
 	$(".icon-10").hover(function () {
-		$(".icon-15,.icon-17,.icon-26").css("fill", "#585656");
+		$(".icon-15,.icon-17,.icon-26, .icon-27, .icon-28").css("fill", "#585656");
 	}, function () {
-		$(".icon-15,.icon-17,.icon-26").css("fill", "#fff");
+		$(".icon-15,.icon-17,.icon-26, .icon-27, .icon-28").css("fill", "#fff");
 	});
 	$(".icon-15").hover(function () {
-		$(".icon-10,.icon-17,.icon-26").css("fill", "#585656");
+		$(".icon-10,.icon-17,.icon-26, .icon-27, .icon-28").css("fill", "#585656");
 	}, function () {
-		$(".icon-10,.icon-17,.icon-26").css("fill", "#fff");
+		$(".icon-10,.icon-17,.icon-26, .icon-27, .icon-28").css("fill", "#fff");
 	});
 	$(".icon-17").hover(function () {
-		$(".icon-10,.icon-15,.icon-26").css("fill", "#585656");
+		$(".icon-10,.icon-15,.icon-26, .icon-27, .icon-28").css("fill", "#585656");
 	}, function () {
-		$(".icon-10,.icon-15,.icon-26").css("fill", "#fff");
+		$(".icon-10,.icon-15,.icon-26, .icon-27, .icon-28").css("fill", "#fff");
 	});
 	$(".icon-26").hover(function () {
-		$(".icon-10,.icon-15,.icon-17").css("fill", "#585656");
+		$(".icon-10,.icon-15,.icon-17, .icon-27, .icon-28").css("fill", "#585656");
 	}, function () {
-		$(".icon-10,.icon-15,.icon-17").css("fill", "#fff");
+		$(".icon-10,.icon-15,.icon-17, .icon-27, .icon-28").css("fill", "#fff");
+	});
+	$(".icon-27").hover(function () {
+		$(".icon-10,.icon-15,.icon-17, .icon-26, .icon-28").css("fill", "#585656");
+	}, function () {
+		$(".icon-10,.icon-15,.icon-17,.icon-26, .icon-28").css("fill", "#fff");
+	});
+	$(".icon-28").hover(function () {
+		$(".icon-10,.icon-15,.icon-17, .icon-26, .icon-27").css("fill", "#585656");
+	}, function () {
+		$(".icon-10,.icon-15,.icon-17, .icon-26, .icon-27").css("fill", "#fff");
 	});
 	$("#moreSkillsButton").click(function(){
 	      $("#circleRow2").removeClass("hidden");

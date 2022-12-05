@@ -53,11 +53,10 @@ $curPage = substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], "/")
 
 <!-- Конец head -->
 
-
 <!-- Начало header -->
   <div class="logoDiv">
 
-      <a href='index'>
+      <a href='/'>
           <div id="logoImage">
               <img src="content/sharp-logo.png" alt="Logo" />
           </div>

@@ -318,7 +318,7 @@ a {
 .menuBlockLink:hover .counterSpan {
     color: #333 !important
 }
-.menuBlock:hover .menuHr{
+.menuBlock:hover > .menuHr{
     background-color: #333;
 }
 
@@ -638,7 +638,14 @@ h2 {
     text-align: center;
     display: block
 }
-
+.socialIconsNav .soc li{
+    display: flex;
+    align-items: center;
+}
+#footerBlocks .icons-grid a{
+    display: flex;
+    align-items: center;
+}
 .footerLogoWideContainer {
     position: relative;
     padding: 0 17px 17px
@@ -1973,17 +1980,25 @@ input[type=textarea] {
         opacity: 1
     }
 }
-.My-row .chat-icon{
+.My-row .icon-before{
     display: flex;
     align-items: center;
 }
-.chat-icon::before{
+.icon-before::before{
     content: "";
     display: block;
     width: 20px;
     height: 20px;
     margin-right: 0.7rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.chat-icon::before{
     background-image: url(/content/icon-chat.svg);
+}
+.linkedin-icon::before{
+    background-image: url(/content/linkedin-logo.svg);
+    background-size: 170%;
 }
 .soc {
     display: grid;
@@ -2049,13 +2064,15 @@ input[type=textarea] {
 .icon-17:hover,
 .icon-25:hover,
 .icon-26:hover,
+.icon-27:hover,
+.icon-28:hover,
 .icon-8:hover {
     border-radius: 100%;
     fill: #fff;
     opacity: 4;
-    -webkit-transform: scale(1.25);
-    -ms-transform: scale(1.25);
-    transform: scale(1.25);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
     -webkit-transition: background-color .5s, -webkit-transform .5s ease-out;
     transition: background-color .5s, transform .5s ease-out
 }
@@ -2089,7 +2106,9 @@ input[type=textarea] {
     fill: #fff
 }
 
-.icon-26 {
+.icon-26,
+.icon-27,
+.icon-28 {
     color: #d926b5;
     fill: #fff
 }
