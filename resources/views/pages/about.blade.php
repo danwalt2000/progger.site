@@ -10,5 +10,6 @@
         <strong id="mainHeroTitle">Обо мне</strong>
     </h1>
 </header>
+</header>
     @include("parts.about")
 @stop

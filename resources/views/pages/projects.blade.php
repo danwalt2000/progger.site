@@ -9,6 +9,7 @@
         <strong id="mainHeroTitle">Проекты</strong>
     </h1>
 </header>
+</header>
 <main id="page">
     <main id="content">
         <div class="page-content portfolio">

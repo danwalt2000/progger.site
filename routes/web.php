@@ -31,6 +31,7 @@ Route::view('/projects/mebel', 'projects.mebel');
 Route::view('/projects/drive-don', 'projects.drive-don');
 Route::view('/projects/my-port', 'projects.my-port');
 
+Route::permanentRedirect('/index', '/');
 Route::permanentRedirect('/portfolio', '/projects');
 Route::permanentRedirect('/novozarievka', '/projects/novozarievka');
 Route::permanentRedirect('/sheeps', '/projects/sheeps');

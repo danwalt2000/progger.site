@@ -216,7 +216,7 @@ body {
 }
 
 .site-header {
-    background-image: url(../content/digital-field.jpg);
+    background-image: url(/content/digital-field.jpg);
     -webkit-animation: 1.5s ease-in-out 0s normal none 1 running bgImageAnim;
     animation: 1.5s ease-in-out 0s normal none 1 running bgImageAnim;
     background-repeat: no-repeat;
@@ -227,8 +227,17 @@ body {
     z-index: -1;
     background-color: #000;
     opacity: 1;
-    font-weight: 200
+    font-weight: 200;
+    padding: 0;
 }
+.index-page .site-header{
+    background-image: url(/content/digital-field.jpg);
+    height: 100vh;
+}
+.projects .site-header{
+    background-image: url(/content/digital-field.jpg);
+}
+
 
 svg .des1,
 svg .development1,
@@ -735,7 +744,7 @@ h2 {
 
 .overlay {
     background: rgba(0, 0, 0, .7);
-    opacity: 1
+    opacity: 1;
 }
 
 header {

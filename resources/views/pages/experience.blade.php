@@ -10,6 +10,7 @@
         <strong id="mainHeroTitle">Опыт</strong>
     </h1>
 </header>
+</header>
 @include("parts.skills")
 
 <!-- Начало раздела опыта -->

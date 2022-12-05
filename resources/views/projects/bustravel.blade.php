@@ -9,6 +9,7 @@
         <strong id="mainHeroTitle">Транспортной компании</strong>
     </h1>
 </header>
+</header>
 
 <main id="page">
     <div id="content">
@@ -52,7 +53,9 @@
                 </div>
             </div>
 
-            <a class="buttonBlockElement" rel="nofollow" href="http://bustravel.dn.ua">Перейти на сайт</a>
+            <a class="buttonBlockElement" rel="nofollow" 
+            {{-- href="http://bustravel.dn.ua" --}}
+            >Посмотреть скриншот</a>
         </div>
     </div>
 </div>

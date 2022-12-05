@@ -2,7 +2,9 @@
 $curPage = substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], "/") + 1);
 ?>
 
-
+<header class="site-header" style="background: url(content/woodBack.jpg) repeat;">
+    <div class="overlay" style="padding: 0 !important;">
+        
 <?php if ($curPage == "index" || $curPage == "index.php" || $curPage == ""): ?>
     <header class="site-header" style="height:100vh !important;">
     <div class="overlay" style="width:100%;height:100vh !important">
