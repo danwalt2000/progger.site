@@ -271,7 +271,7 @@
                                             <div>
                                                 <section class="portfolio-block">
                                                     <div class="portfolio-image-block">
-                                                        <a class="portfolio-image-block__link" href="provence.php">
+                                                        <a class="portfolio-image-block__link" href="/projects/provence">
                                                             <img src="content/provence1.jpg" alt="Provence"
                                                                 class="projectImage"
                                                                 style="left:0;position: relative;top: 0;" />
@@ -285,7 +285,7 @@
                                                                 <div class="portfolio-content-block__title">
                                                                     Прованс</div>
                                                                 <a class="portfolio-content-block__link" title="Прованс"
-                                                                    href="provence.php">Подробнее</a>
+                                                                    href="/projects/provence">Подробнее</a>
                                                             </div>
                                                         </div>
                                                     </div>

@@ -1,72 +1,25 @@
+@extends('parts.base')
+ 
+@section('title', "Сайт салона штор 'Прованс'")
 
-<?php
-    $title = "Сайт салона штор 'Прованс'";
-    $description = "Небольшой сайт сверстанный по макету и 'натянутый' на Wordpress";
-    $underline = 3;
-?>
-<?php include "./head.php"; ?>
+@section('main')
+<div class="headingIntro">
+    <h1>
+        <em>Сайт салона штор</em>
+        <strong id="mainHeroTitle">'Прованс'</strong>
+    </h1>
+</header>
+</header>
+<main id="page">
+    <div id="content">
+        <div class="page-content projectOverViewWide" >
+            @include('parts.projects-nav', ['prev' => "sheeps", 'next' => "novozarievka"])
 
-            <div class="headingIntro">
-                <p>
-                    <em>Салон штор</em>
-                </p>
-                <p>
-                    <strong id="mainHeroTitle">Прованс</strong>
-                </p>
-
-
-
+            <div class="MyMultiDeviceImages">
+                <img src="/content/provence.jpg" alt="Сайт салона штор 'Прованс' на разных устройствах"/>
             </div>
-        </div>
-    </header>
-    <main id="page">
-        <div id="content">
-            <div class="page-content projectOverViewWide" >
 
-                <div class="projectNavWrapper">
-                    <div class="projectNavContainer">
-                        <div>
-                            <nav class="projectNavigationControl">
-                                <div class="prev">
-                                    <a href="sheeps"></a>
-                                </div>
-
-
-                                <a href="/projects" style="
-                            position: absolute;left: 50%; margin-left: -24px;">
-                                <span style="height: 20px;overflow: hidden;position: relative;width: 20px;left:10px;margin-top:11px;">
-                                <i class="b1 c1"></i>
-                                <i class="b1 c2"></i>
-                                <i class="b1 c3"></i>
-                                <i class="b2 c1"></i>
-                                <i class="b2 c2"></i>
-                                <i class="b2 c3"></i>
-                                <i class="b3 c1"></i>
-                                <i class="b3 c2"></i>
-                                <i class="b3 c3"></i>
-                                </span>
-                                </a>
-
-                                <div class="next">
-                                    <a href="novozarievka"></a>
-                                </div>
-
-                            </nav>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="hrContainer" style="margin-top:0;
-                    margin-bottom:30px;">
-                </div>
-
-
-
-                <div class="MyMultiDeviceImages">
-        <img src="content/provence.jpg" alt=""/>
-    </div>
-
+            
     <!-- Описание проекта -->
 
 
@@ -111,4 +64,4 @@
 
     <!-- конец описания проекта -->
 
-<?php include "./footer.php"; ?>
+@stop

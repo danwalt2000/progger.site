@@ -1,90 +1,46 @@
-<?php
-$title = "Игра Волк и овцы";
-$description = "Легкая браузерная игра, написанная на JS";
-$underline = 3;
-?>
-<?php include "./head.php"; ?>
+@extends('parts.base')
+ 
+@section('title', "Игра Волк и овцы")
+@section('description', "Легкая браузерная игра, написанная на JS")
 
-            <div class="headingIntro">
-                <p>
-                    <em>Игра</em>
-                </p>
-                <p>
-                    <strong id="mainHeroTitle">Волк и овцы</strong>
-                </p>
+@section('main')
+<div class="headingIntro">
+    <h1>
+        <em>Игра</em>
+        <strong id="mainHeroTitle">Волк и овцы</strong>
+    </h1>
+</header>
+</header>
+<main id="page">
+    <div id="content">
+        <div class="page-content projectOverViewWide" >
+            @include('parts.projects-nav', ['prev' => "15", 'next' => "provence"])
 
-
-
-            </div>
+                    
+        <link href="/Game_Sheeps/style/style.css" rel="stylesheet" type="text/css">
+        <div class="mobile__only">
+            <h1>Извините, на экранах шириной ниже 600 dpi игра не может быть отображена.<br>
+            Я работаю над этим, а пока, если Ваш браузер поддерживает функцию "полная версия сайта" попробуйте воспользоваться ею.</h1>
         </div>
-    </header>
-    <main id="page">
-        <div id="content">
-            <div class="page-content projectOverViewWide" >
-
-                <div class="projectNavWrapper">
-                    <div class="projectNavContainer">
-                        <div>
-                            <nav class="projectNavigationControl">
-                                <div class="prev">
-                                    <a href="15"></a>
-                                </div>
-
-
-                                <a href="/projects" style="
-                            position: absolute;left: 50%; margin-left: -24px;">
-                                <span style="height: 20px;overflow: hidden;position: relative;width: 20px;left:10px;margin-top:11px;">
-                                <i class="b1 c1"></i>
-                                <i class="b1 c2"></i>
-                                <i class="b1 c3"></i>
-                                <i class="b2 c1"></i>
-                                <i class="b2 c2"></i>
-                                <i class="b2 c3"></i>
-                                <i class="b3 c1"></i>
-                                <i class="b3 c2"></i>
-                                <i class="b3 c3"></i>
-                                </span>
-                                </a>
-
-                                <div class="next">
-                                    <a href="provence.php"></a>
-                                </div>
-
-                            </nav>
-                        </div>
-
-                    </div>
-
-                </div>
-                  <div class="hrContainer" style="margin-top:0;
-                    margin-bottom:30px;">
-                </div>
-
-<div class="mobile__only"><h1>Извините, на экранах шириной ниже 600 dpi игра не может быть отображена.</h1>
-<h1>Я работаю над этим, а пока, если Ваш браузер поддерживает функцию "полная версия сайта" попробуйте воспользоваться ею.</h1>
-</div>
-         <div class="wrap__sheeps">
+         <section class="wrap__sheeps">
              <div class="relative">
                 <canvas id='example'>Обновите браузер</canvas>
 
-                <img id="wolf" width="35" height="35" src="Game_Sheeps/images/wolf.png"/>
-                <img class="sheep" id="sheep_0" width="35" height="35" src="Game_Sheeps/images/sheep.png"/>
-                <img class="sheep" id="sheep_1" width="35" height="35" src="Game_Sheeps/images/sheep.png"/>
-                <img class="sheep" id="sheep_2" width="35" height="35" src="Game_Sheeps/images/sheep.png"/>
-                <img class="sheep" id="sheep_3" width="35" height="35" src="Game_Sheeps/images/sheep.png"/
-
-
+                <img id="wolf" width="35" height="35" src="/Game_Sheeps/images/wolf.png"/>
+                <img class="sheep" id="sheep_0" width="35" height="35" src="/Game_Sheeps/images/sheep.png"/>
+                <img class="sheep" id="sheep_1" width="35" height="35" src="/Game_Sheeps/images/sheep.png"/>
+                <img class="sheep" id="sheep_2" width="35" height="35" src="/Game_Sheeps/images/sheep.png"/>
+                <img class="sheep" id="sheep_3" width="35" height="35" src="/Game_Sheeps/images/sheep.png"/
              </div>
              <div class="rules" id="rule">
-                  <h1>Правила игры</h1>
-                  <p>Волку нужно добраться до нижнего поля.</p>
-                  <p>Овцам нужно окружить волка, то есть, сделать так, чтобы у волка не осталось ходов.</p>
-                  <p>Для того, чтобы совершить ход - нажмите на фигуру: появятся доступные ходы.</p>
-                  <p>Выберите один из появившихся элементов и фигура переместится на его клетку. </p>
-                 <button class="refresh" onclick="window.location.reload();">Сброс</button>
-            </div>
-                <!-- Описание проекта -->
-        </div>
+                <h1>Правила игры</h1>
+                <p>Волку нужно добраться до нижнего поля.</p>
+                <p>Овцам нужно окружить волка, то есть, сделать так, чтобы у волка не осталось ходов.</p>
+                <p>Для того, чтобы совершить ход - нажмите на фигуру: появятся доступные ходы.</p>
+                <p>Выберите один из появившихся элементов и фигура переместится на его клетку. </p>
+               <button class="refresh" onclick="window.location.reload();">Сброс</button>
+          </div>
+        </section>
 
                 <div class="project-details" style="box-sizing:border-box;">
                     <div class="project-details-primary">
@@ -133,9 +89,9 @@ $underline = 3;
                 </script>
 
                 <!-- конец описания проекта -->
-                <script src="Game_Sheeps/scripts/jquery.js" type="text/javascript"></script>
-                <script src="Game_Sheeps/scripts/canvas.js" type="text/javascript"></script>
-                <script src="Game_Sheeps/scripts/main.js" type="text/javascript"></script>
+                <script src="/Game_Sheeps/scripts/jquery.js" type="text/javascript"></script>
+                <script src="/Game_Sheeps/scripts/canvas.js" type="text/javascript"></script>
+                <script src="/Game_Sheeps/scripts/main.js" type="text/javascript"></script>
     </main>
 
-<?php include "./footer.php"; ?>
+@stop

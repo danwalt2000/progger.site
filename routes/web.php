@@ -30,6 +30,7 @@ Route::view('/projects/infotech', 'projects.infotech');
 Route::view('/projects/mebel', 'projects.mebel');
 Route::view('/projects/drive-don', 'projects.drive-don');
 Route::view('/projects/my-port', 'projects.my-port');
+Route::view('/projects/provence', 'projects.provence');
 
 Route::permanentRedirect('/index', '/');
 Route::permanentRedirect('/portfolio', '/projects');
@@ -41,6 +42,7 @@ Route::permanentRedirect('/infotech', '/projects/infotech');
 Route::permanentRedirect('/mebel', '/projects/mebel');
 Route::permanentRedirect('/drive-don', '/projects/drive-don');
 Route::permanentRedirect('/my-port', '/projects/my-port');
+Route::permanentRedirect('/provence', '/projects/provence');
 
 Auth::routes();
 

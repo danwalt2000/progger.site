@@ -1,7 +1,3 @@
-<?php
-$curPage = substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], "/") + 1);
-?>
-
 <header class="site-header" >
     <div class="overlay">
         
@@ -13,7 +9,7 @@ $curPage = substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], "/")
 
       <a href='/'>
           <div id="logoImage">
-              <img src="content/sharp-logo.png" alt="Logo" />
+              <img src="/content/sharp-logo.png" alt="Logo" />
           </div>
       </a>
 
