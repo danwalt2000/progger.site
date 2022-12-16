@@ -130,20 +130,8 @@ p {
 }
 
 @font-face {
-    font-family: garamond;
-    src: url(/style/fonts/AdobeGaramondProRegular.ttf);
-    font-display: swap
-}
-
-@font-face {
     font-family: nevis;
     src: url(/style/fonts/nevis.ttf);
-    font-display: swap
-}
-
-@font-face {
-    font-family: Montserrat;
-    src: url(/style/fonts/Montserrat-Regular.ttf);
     font-display: swap
 }
 
@@ -222,7 +210,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    font-family: Montserrat, serif;
+    font-family: Open Sans, serif;
     text-align: center;
     z-index: -1;
     background-color: #000;
@@ -237,7 +225,42 @@ body {
 .projects .site-header{
     background-image: url(/content/digital-field.jpg);
 }
-
+.about .site-header{
+    background-image: url(/content/about-Bg.jpg);
+}
+.drive-don .site-header{
+    background-image: url(/content/beaconBanner.jpg);
+}
+.experience .site-header{
+    background-image: url(/content/skill.jpg);
+}
+.my-port .site-header{
+    background-image: url(/content/digital-field.jpg);
+}
+.projects .site-header{
+    background-image: url(/content/projectBanner.jpg);
+}
+.provence .site-header{
+    background-image: url(/content/provBanner.jpg);
+}
+.novozarievka .site-header{
+    background-image: url(/content/novozar-Bg.jpg);
+}
+.sheeps .site-header{
+    background: url(/content/woodBack.jpg) repeat;
+}
+.bustravel .site-header{
+    background-image: url(/content/bustravel-head.jpg);
+}
+.mebel .site-header{
+    background-image: url(/content/mebel-head.jpg);
+}
+.infotech .site-header{
+    background-image: url(/content/infotech-head.jpg);
+}
+.index-page .overlay{
+    height: 100%;
+}
 
 svg .des1,
 svg .development1,
@@ -316,7 +339,7 @@ a {
     top: 0;
     font-size: .35em;
     position: relative;
-    font-family: Montserrat, serif
+    font-family: Open Sans, serif
 }
 
 .scroll-down-arrow:hover {
@@ -339,7 +362,7 @@ a {
     transition: background .2s ease-in-out 0s;
     float: left;
     padding: 11% 2% 1%;
-    font-size: 1.6em;
+    font: 600 1.6em/140% "Open sans";
     letter-spacing: 2px
 }
 
@@ -350,22 +373,21 @@ a {
 
 .menuBlock:hover {
     background: rgba(255, 255, 255, .6) !important;
-    font-weight: 400
 }
 
 .linkSummary {
     text-align: left;
     width: 100%;
-    margin-top: -40px;
+    margin-top: -80px;
     max-width: 100%
 }
 
 .linkSummary p {
     text-align: left;
-    font-size: 10px;
+    font-size: 11px;
     letter-spacing: 1px;
     line-height: 1.4;
-    font-family: Montserrat, sans-serif
+    font-family: Open Sans, sans-serif
 }
 
 .lightBoxHandleWrapper,
@@ -461,7 +483,7 @@ h2 {
     letter-spacing: 3px;
     line-height: 1.2em;
     margin-bottom: 15px;
-    font-family: Montserrat;
+    font-family: Open Sans;
     color: rgba(26, 26, 26, .9)
 }
 
@@ -1427,7 +1449,7 @@ img {
 }
 
 .MenuHeader {
-    font-family: Montserrat, sans-serif;
+    font-family: Open Sans, sans-serif;
     margin-top: 12px;
     font-size: .5em
 }
@@ -1751,7 +1773,7 @@ body:not(.force-mobile-nav) .nav-wrapper {
     line-height: 1em;
     margin-top: 5px;
     padding: 1em 1.75em;
-    font-family: Montserrat, sans-serif
+    font-family: Open Sans, sans-serif
 }
 
 .portfolio-content-block__link {
@@ -1776,7 +1798,7 @@ body:not(.force-mobile-nav) .nav-wrapper {
 }
 
 .portfolio-content-block__title {
-    font-family: Montserrat, sans-serif;
+    font-family: Open Sans, sans-serif;
     font-size: 24px;
     margin-bottom: 10px;
     transform: translate(0, 0);
@@ -1800,7 +1822,7 @@ body:not(.force-mobile-nav) .nav-wrapper {
     cursor: pointer;
     color: #272727;
     font-size: 12px;
-    font-family: pier, serif;
+    font-family: Open Sans, sans-serif;
     padding: 13px 26px;
     display: inline-block;
     width: auto;
@@ -2011,7 +2033,7 @@ input[type=textarea] {
 }
 .soc {
     display: grid;
-    grid-template-columns: repeat(3,  minmax(50px, max-content));
+    grid-template-columns: repeat(2,  minmax(50px, max-content));
     font-size: 0;
     list-style: none;
     margin: 0;
@@ -2448,7 +2470,7 @@ pre {
 
 .skillSpan {
     font-size: 12px;
-    font-family: Montserrat, sans-serif;
+    font-family: Open Sans, sans-serif;
     width: 100%;
     float: left
 }
@@ -3269,7 +3291,7 @@ li.comment .comment {
 }
 .headingIntro{
     color: #fff;
-    font-family: Montserrat,sans-serif;
+    font-family: Open Sans,sans-serif;
 }
 
 .headingIntro strong{
@@ -3474,7 +3496,7 @@ textarea:focus {
 .headingIntro p>strong {
     color: #fff;
     display: block;
-    font-family: Montserrat, sans-serif;
+    font-family: Open Sans, sans-serif;
     font-size: 85px;
     font-style: normal;
     font-weight: 700;
@@ -4560,7 +4582,7 @@ textarea:focus {
 }
 
 .storyIntro h2 {
-    font-family: Montserrat, serif
+    font-family: Open Sans, serif
 }
 
 .storyIntro span {
@@ -4908,7 +4930,7 @@ hr.menuHr {
     }
 
     .headingIntro.homeFV {
-        padding-top: 140px !important
+        padding-top: 100px !important
     }
 
     .icon img {

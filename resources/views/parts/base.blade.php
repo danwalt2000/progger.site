@@ -35,24 +35,37 @@
     }?>
 </head>
 
-<body class="@if(Request::segment(1)) {{Request::segment(1)}} @else index-page @endif">
+<body class="
+@if( Request::segment(1) == "projects" )
+    @empty( Request::segment(2) )
+        {{ Request::segment(1) }}
+    @else
+        {{ Request::segment(2) }}
+    @endempty    
+@elseif(Request::segment(1)) 
+    {{Request::segment(1)}} 
+@else 
+    index-page 
+@endif">
     <section id="siteWrapper" class="siteWrap">
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41622656-4"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-41622656-4');
-        </script>
+       
         @include('parts.nav')
         
         @section('main')
         @show
         @include('parts.footer')
     </section> <!-- end of site wrapper -->
+
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41622656-4"></script>
+     <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'UA-41622656-4');
+     </script>
 </body>
 
 </html>
