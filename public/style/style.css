@@ -218,45 +218,48 @@ body {
     font-weight: 200;
     padding: 0;
 }
-.index-page .site-header{
+.page-index .site-header{
     background-image: url(/content/digital-field.jpg);
     height: 100vh;
 }
-.projects .site-header{
+.page-projects .site-header{
     background-image: url(/content/digital-field.jpg);
 }
-.about .site-header{
+.page-about .site-header{
     background-image: url(/content/about-Bg.jpg);
 }
-.drive-don .site-header{
+.page-drive-don .site-header{
     background-image: url(/content/beaconBanner.jpg);
 }
-.experience .site-header{
+.page-experience .site-header{
     background-image: url(/content/skill.jpg);
 }
-.my-port .site-header{
+.page-my-port .site-header{
     background-image: url(/content/digital-field.jpg);
 }
-.projects .site-header{
+.page-projects .site-header{
     background-image: url(/content/projectBanner.jpg);
 }
-.provence .site-header{
+.page-provence .site-header{
     background-image: url(/content/provBanner.jpg);
 }
-.novozarievka .site-header{
+.page-novozarievka .site-header{
     background-image: url(/content/novozar-Bg.jpg);
 }
-.sheeps .site-header{
+.page-sheeps .site-header{
     background: url(/content/woodBack.jpg) repeat;
 }
-.bustravel .site-header{
+.page-bustravel .site-header{
     background-image: url(/content/bustravel-head.jpg);
 }
-.mebel .site-header{
+.page-mebel .site-header{
     background-image: url(/content/mebel-head.jpg);
 }
-.infotech .site-header{
+.page-infotech .site-header{
     background-image: url(/content/infotech-head.jpg);
+}
+.page-15 .site-header{
+    background-image: url(/content/woodBack.jpg);
 }
 .index-page .overlay{
     height: 100%;
@@ -1926,6 +1929,12 @@ input[type=textarea] {
 }
 .index-page .link-index .menuHr,
 .about  .link-about .menuHr,
+.projects  .link-projects .menuHr,
+.novozarievka  .link-projects .menuHr,
+.bustravel .link-projects .menuHr,
+.mebel  .link-projects .menuHr,
+.projects  .link-projects .menuHr,
+.projects  .link-projects .menuHr,
 .projects  .link-projects .menuHr,
 .experience .link-experience .menuHr,
 .blog .link-blog .menuHr{

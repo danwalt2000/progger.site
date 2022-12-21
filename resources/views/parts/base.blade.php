@@ -38,14 +38,14 @@
 <body class="
 @if( Request::segment(1) == "projects" )
     @empty( Request::segment(2) )
-        {{ Request::segment(1) }}
+        page-{{ Request::segment(1) }}
     @else
-        {{ Request::segment(2) }}
+        page-{{ Request::segment(2) }}
     @endempty    
 @elseif(Request::segment(1)) 
-    {{Request::segment(1)}} 
+    page-{{Request::segment(1)}} 
 @else 
-    index-page 
+    page-index 
 @endif">
     <section id="siteWrapper" class="siteWrap">
 
