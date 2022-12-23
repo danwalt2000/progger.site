@@ -55,9 +55,7 @@
                         </div>
                     </div>
 
-                    <a class="buttonBlockElement" rel="nofollow" 
-                    {{-- href="http://mebel-donetsk.ru" --}}
-                    target="_blank">Посмотреть скриншоты</a>
+                    {{-- <a id="gallery" class="buttonBlockElement" href="#">Посмотреть скриншоты</a> --}}
                 </div>
             </div>
         </div>

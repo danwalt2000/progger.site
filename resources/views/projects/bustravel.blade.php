@@ -53,9 +53,6 @@
                 </div>
             </div>
 
-            <a class="buttonBlockElement" rel="nofollow" 
-            {{-- href="http://bustravel.dn.ua" --}}
-            >Посмотреть скриншот</a>
         </div>
     </div>
 </div>

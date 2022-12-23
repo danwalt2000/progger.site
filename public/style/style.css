@@ -1652,11 +1652,17 @@ img {
     border: 0;
     height: auto
 }
-
+.portfolio-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
 .portfolio-block {
     position: relative;
     visibility: visible;
-    display: block
+    display: block;
+    border-radius: 6px;
+    overflow: hidden;
 }
 
 #overlayNav,
@@ -4190,6 +4196,9 @@ img {
     .preFooterBlocks>.My-row{
         flex-wrap: wrap;
     }
+    .portfolio-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width:800px) {
@@ -4208,6 +4217,11 @@ img {
     }
 }
 
+@media (max-width:580px) {
+    .portfolio-grid{
+        grid-template-columns: 1fr;
+    }
+}
 @media (max-width:400px) {
     #photos {
         -moz-column-count: 1;

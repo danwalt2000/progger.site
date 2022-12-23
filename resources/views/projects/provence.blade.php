@@ -54,13 +54,21 @@
                     </div>
                 </div>
 
-                <a class="buttonBlockElement" href="provence/prov-preview.php">Посмотреть превью</a>
+                <a id="gallery" class="buttonBlockElement" href="#">Посмотреть скриншот</a>
             </div>
         </div>
     </div>
-            </main>
-
-
+</main>
+<script src="/scripts/jquery2.14.js"></script>
+<script src="/scripts/swiperbox.js"></script>
+<script>
+    $( '#gallery' ).click( function( e ) {
+        e.preventDefault();
+        $.swipebox( [
+            { href:'/content/screenshots/provence.png', title:'Салон штор - главная страница' }
+        ] );
+    } );
+</script>
 
     <!-- конец описания проекта -->
 

@@ -50,12 +50,22 @@
                     </div>
                 </div>
 
-                <a class="buttonBlockElement" rel="nofollow" 
-                {{-- href="https://perevozkirostov.ru"  --}}
-                target="_blank">Посмотреть превью</a>
+                <a id="gallery" class="buttonBlockElement" href="#">Посмотреть скриншоты</a>
             </div>
         </div>
     </div>
 </main>
-
+<script src="/scripts/jquery2.14.js"></script>
+<script src="/scripts/swiperbox.js"></script>
+<script>
+    $( '#gallery' ).click( function( e ) {
+        e.preventDefault();
+        $.swipebox( [
+            { href:'/content/screenshots/drive-don-home.png', title:'Сайт перевозчика - главная страница' }, 
+            { href:'/content/screenshots/drive-don-directions.png', title:'Сайт перевозчика - направления поездок' }, 
+            { href:'/content/screenshots/drive-don-services.png', title:'Сайт перевозчика - услуги' }, 
+            { href:'/content/screenshots/drive-don-contacts.png', title:'Сайт перевозчика - контакты' }, 
+        ] );
+    } );
+</script>
 @stop

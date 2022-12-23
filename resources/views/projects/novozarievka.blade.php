@@ -3,9 +3,6 @@
  
 @section('title', "Сайт агрофирмы")
 @section('description', "Небольшой сайт сверстанный по макету и 'натянутый' на Wordpress")
-@section('addition')
-    <link href="/style/lightGallery-master/dist/css/lightgallery-bundle.min.css" rel="stylesheet" type="text/css">
-@endsection
 
 @section('main')
 <div class="headingIntro">
@@ -52,17 +49,23 @@
                                 <ul><li>HTML5, CSS3, JS, PHP</li></ul>
                             </div>
                         </div>
-
-                        <div id="lightgallery">
-                            <a class="buttonBlockElement" href="/content/screenshots/novozarievka1.jpg" data-lg-size="1600-2400">
-                                Перейти на сайт
-                            </a>
-                        </div>                        
-                        
+                        <a id="gallery" class="buttonBlockElement" href="#">Посмотреть скриншоты</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </main>
+<script src="/scripts/jquery2.14.js"></script>
+<script src="/scripts/swiperbox.js"></script>
+<script>
+    $( '#gallery' ).click( function( e ) {
+        e.preventDefault();
+        $.swipebox( [
+            { href:'/content/screenshots/novozarievka-main.png', title:'Магазин агрофирмы - главная страница' }, 
+            { href:'/content/screenshots/novozarievka-catalog.png', title:'Магазин агрофирмы - каталог товаров' }, 
+            { href:'/content/screenshots/novozarievka-product.png', title:'Магазин агрофирмы - карточка товара' }, 
+        ] );
+    } );
+</script>
 @stop
