@@ -2,6 +2,9 @@
  
 @section('title', "Игра Волк и овцы")
 @section('description', "Легкая браузерная игра, написанная на JS")
+@section('addition')
+    <link href="/Game_Sheeps/style/style.css" rel="stylesheet" type="text/css">
+@endsection
 
 @section('main')
 <div class="headingIntro">
@@ -15,9 +18,6 @@
     <div id="content">
         <div class="page-content projectOverViewWide" >
             @include('parts.projects-nav', ['prev' => "15", 'next' => "provence"])
-
-                    
-        <link href="/Game_Sheeps/style/style.css" rel="stylesheet" type="text/css">
         <div class="mobile__only">
             <h2>Извините, на экранах шириной ниже 600 dpi игра не может быть отображена.<br>
             Я работаю над этим, а пока, если Ваш браузер поддерживает функцию "полная версия сайта" попробуйте воспользоваться ею.</h2>

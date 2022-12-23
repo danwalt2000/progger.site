@@ -3,6 +3,9 @@
 
 @section('title', "Игра пятнашки на чистом JS")
 @section('description', "Простой и понятный скрипт игры пятнашки, написанный без использования сторонних библиотек")
+@section('addition')
+    <link href="/style/15.css" rel="stylesheet" type="text/css">
+@endsection
 
 @section('main')
 <div class="headingIntro">
@@ -16,40 +19,8 @@
     <div id="content">
         <div class="page-content projectOverViewWide" >
             @include('parts.projects-nav', ['prev' => "bustravel", 'next' => "sheeps"])
-
-<?php
-
-// $link = mysqli_connect($host, $user, $password, $database)
-// or die("Ошибка " . mysqli_error($link));
-
-// $query = "SELECT * FROM rec ORDER BY score LIMIT 10";
-// $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
-// $queryScore = "SELECT score FROM rec LIMIT 10 ORDER BY ASC";
-// $resultScore = mysqli_query($link, $queryScore);
-
-// $sql = mysqli_query($link, $query);
-
-
-// if ($_SERVER["REQUEST_METHOD"] === "POST") {
-//     $username = htmlspecialchars($_POST["winName"]);
-//     $score = $_POST["score"];
-//     if (isset($username)) {
-//         $quer = "INSERT INTO rec (name, score) VALUES('$username', '$score')";
-//         mysqli_query($link, $quer) or die("Ошибка " . mysqli_error($link));
-//         echo "<meta http-equiv='refresh' content='0'>";
-//         header("Refresh: 0");
-//     } else {
-//         $feedback = $validation_error;
-//     }
-
-// }
-// mysqli_close($link);
-
-?>
       
                 <div class="MyMultiDeviceImages">
-
-                <link href="/style/15.css" rel="stylesheet" type="text/css">
                  <div class="wrap15">
                     <div class="row">
                      <table class="table-bordered" onselectstart="return false" onmousedown="return false">

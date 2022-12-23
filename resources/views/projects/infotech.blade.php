@@ -2,6 +2,13 @@
  
 @section('title', "Интернет-магазин на Вордпрессе")
 @section('description', "Небольшой интернет-магазин торгового и кассового оборудования на Wordpress")
+@section('addition')
+
+<script src="/scripts/jquery2.14.js"></script>
+  
+<script src="/scripts/swiperbox.js"></script>
+
+@endsection
 
 @section('main')
 <div class="headingIntro">
@@ -55,13 +62,20 @@
                         </div>
                     </div>
 
-                    <a class="buttonBlockElement" rel="nofollow" 
-                    {{-- href="http://infoteh-dnr.000webhostapp.com"  --}}
-                    target="_blank">Посмотреть скриншоты</a>
+                    <a id="gallery" class="buttonBlockElement" href="#">Посмотреть скриншот</a>
+                    
                 </div>
             </div>
         </div>
     </div>
 </main>
-
+<script>
+$( '#gallery' ).click( function( e ) {
+	e.preventDefault();
+	$.swipebox( [
+		// { href:'/content/screenshots/infotech.jpg', title:'My Caption' }, 
+		{ href:'/content/screenshots/infotech.png', title:'Интернет-магазин Инфотех' }
+	] );
+} );
+</script>
 @stop

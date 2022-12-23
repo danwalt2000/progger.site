@@ -3,6 +3,9 @@
  
 @section('title', "Сайт агрофирмы")
 @section('description', "Небольшой сайт сверстанный по макету и 'натянутый' на Wordpress")
+@section('addition')
+    <link href="/style/lightGallery-master/dist/css/lightgallery-bundle.min.css" rel="stylesheet" type="text/css">
+@endsection
 
 @section('main')
 <div class="headingIntro">
@@ -15,7 +18,7 @@
 <main id="page">
     <div id="content">
         <div class="page-content projectOverViewWide" >
-            @include('parts.projects-nav', ['prev' => "provence", 'next' => "bustravel"])
+            @include('parts.projects-nav', ['prev' => "provence", 'next' => "infotech"])
 
             <div class="MyMultiDeviceImages">
                 <img src="/content/novozar-wall.jpg" alt="Агросервис Новозариевка"/>
@@ -50,7 +53,12 @@
                             </div>
                         </div>
 
-                        <a class="buttonBlockElement" rel="nofollow" target="_blank" href="https://asnovozarievka.ru">Перейти на сайт</a>
+                        <div id="lightgallery">
+                            <a class="buttonBlockElement" href="/content/screenshots/novozarievka1.jpg" data-lg-size="1600-2400">
+                                Перейти на сайт
+                            </a>
+                        </div>                        
+                        
                     </div>
                 </div>
             </div>

@@ -48,7 +48,7 @@
                 <text id="text4" x="70" y="100" fill="#fff" font-family="Verdana" font-size="28">75</text>
             </svg>
 
-            <span class="skillSpan">Javascript</span>
+            <span class="skillSpan">JavaScript</span>
         </div>
 
         <div class="top">

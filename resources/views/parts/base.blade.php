@@ -12,9 +12,9 @@
     <meta property="og:type" content="article" />
     <meta property="og:title" content="@yield('title')" />
     <meta property="og:description" content="@yield('description')" />
-    <meta property="og:image" content="content/logo.gif" />
+    <meta property="og:image" content="/content/logo.gif" />
     
-    <link rel="icon" href="content/logo-sharp.svg" />
+    <link rel="icon" href="/content/logo-sharp.svg" />
     <link href="{{ asset('style/style.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('style/swipebox.css') }}" rel="stylesheet" type="text/css" />
     <title>@yield('title')</title>
@@ -30,9 +30,10 @@
     <script src="{{ asset('scripts/home.js') }}" type="text/javascript" defer></script>
     <script src="{{ asset('scripts/main.js') }}" type="text/javascript" defer></script>
     <script src="{{ asset('scripts/notificationsignup.js') }}" type="text/javascript" defer></script>
-    <?php if(isset($add)){
-        echo $add;
-    }?>
+    @hasSection('addition')
+        @section('addition')
+        @show
+    @endif
 </head>
 
 <body class="
@@ -57,15 +58,17 @@
         @include('parts.footer')
     </section> <!-- end of site wrapper -->
 
-     <!-- Global site tag (gtag.js) - Google Analytics -->
-     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41622656-4"></script>
-     <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-
-         gtag('config', 'UA-41622656-4');
-     </script>
+    @production
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41622656-4"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            
+            gtag('config', 'UA-41622656-4');
+            </script>
+    @endproduction
 </body>
 
 </html>
