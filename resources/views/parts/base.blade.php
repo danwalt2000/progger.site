@@ -7,18 +7,19 @@
 <html lang="ru">
 
 <head>
-
     <meta property="og:url" content="//sharpdesign.ru" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="@yield('title')" />
     <meta property="og:description" content="@yield('description')" />
     <meta property="og:image" content="/content/logo.gif" />
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     
     <link rel="icon" href="/content/logo-sharp.svg" />
     <link href="{{ asset('style/style.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('style/swipebox.css') }}" rel="stylesheet" type="text/css" />
-    <title>@yield('title')</title>
     
+    <title>@yield('title')</title>
     <meta charset="UTF-8">
     <meta name="description" content="@yield('description')">
     <meta name="keywords" content="Профессиональная разработака приложений, создание сайтов, заказать сайт, разработка сайтов, создать приложение, изготавливать сайт, веб профессионал, программист, разработчик, портфолио, PHP, Javascript, jQuery, сайты где можно заказать, верстка, Украина, Донецк, Ukraine, software development, web-design, web-development, frontend, backend, coding, sharp design" />

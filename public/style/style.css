@@ -261,6 +261,9 @@ body {
 .page-15 .site-header{
     background-image: url(/content/woodBack.jpg);
 }
+.page-ru .site-header{
+    background-image: url(/content/articles.jpg);
+}
 .page-index .overlay{
     height: 100%;
 }
@@ -323,7 +326,11 @@ a {
     color: #fff;
     font-weight: 400
 }
-
+.navbar a,
+.binshopsblog_container a {
+    color: unset;
+    text-decoration: underline;
+}
 .menuList {
     margin: 0;
     padding: 0;
@@ -1938,6 +1945,7 @@ input[type=textarea] {
 .page-index .link-index .menuHr,
 .page-about  .link-about .menuHr,
 .page-projects  .link-projects .menuHr,
+.page-ru  .link-blog .menuHr,
 .page-novozarievka  .link-projects .menuHr,
 .page-bustravel .link-projects .menuHr,
 .page-mebel  .link-projects .menuHr,
@@ -3523,6 +3531,10 @@ textarea:focus {
     letter-spacing: 5px;
     line-height: 1em;
     text-transform: uppercase
+}
+.page-ru .headingIntro p>strong {
+    font-size: 45px;
+    font-style: italic;
 }
 
 #resources a,
