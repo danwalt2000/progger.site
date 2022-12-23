@@ -14,7 +14,7 @@
 <main id="page">
     <div id="content">
         <div class="page-content projectOverViewWide" >
-            @include('parts.projects-nav', ['prev' => "drive-don", 'next' => "bustravel"])
+            @include('parts.projects-nav', ['prev' => $prev, 'next' => $next])
 
             <div class="MyMultiDeviceImages">
                 <img src="/content/portfolio-site.jpg" alt=""/>

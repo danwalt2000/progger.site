@@ -1,7 +1,7 @@
 @extends('parts.base')
  
-@section('title', "Интернет-магазин на Вордпрессе")
-@section('description', "Небольшой интернет-магазин торгового и кассового оборудования на Wordpress")
+@section('title', "Интернет-магазин на Opencart")
+@section('description', "Интернет-магазин мебели на Opencart")
 
 @section('main')
 <div class="headingIntro">
@@ -13,7 +13,7 @@
 <main id="page">
     <div id="content">
         <div class="page-content projectOverViewWide" >
-            @include('parts.projects-nav', ['prev' => "infotech", 'next' => "drive-don"])
+            @include('parts.projects-nav', ['prev' => $prev, 'next' => $next])
 
             <div class="MyMultiDeviceImages">
                 <img src="/content/mebel-wall.jpg" alt="'Мебель Донецк'"/>

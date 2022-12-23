@@ -1,6 +1,7 @@
 @extends('parts.base')
  
-@section('title', "Портфолио разработчика")
+@section('title', "Сайт транспортной компании")
+@section('description', "Я создал сайт транспортной компании, который вышел в топ по региону даже без продвижения")
 
 @section('main')
 <div class="headingIntro">
@@ -13,7 +14,7 @@
 <main id="page">
     <div id="content">
         <div class="page-content projectOverViewWide" >
-            @include('parts.projects-nav', ['prev' => "mebel", 'next' => "my-port"])
+            @include('parts.projects-nav', ['prev' => $prev, 'next' => $next])
 
             <div class="MyMultiDeviceImages">
                 <img src="/content/drive-don-wall.jpg" alt="Drive-don на разных устройствах"/>

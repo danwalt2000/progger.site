@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\ProjectsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,23 +15,25 @@ use Illuminate\Support\Facades\DB;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [ProjectsController::class, 'index']);
+Route::get('/projects', [ProjectsController::class, 'projects']);
 
 Route::view('/about', 'pages.about');
-Route::view('/projects', 'pages.projects');
 Route::view('/experience', 'pages.experience');
 Route::view('/about', 'pages.about');
-Route::view('/projects/novozarievka', 'projects.novozarievka');
-Route::view('/projects/sheeps', 'projects.sheeps');
-Route::view('/projects/bustravel', 'projects.bustravel');
-Route::view('/projects/15', 'projects.15');
-Route::view('/projects/infotech', 'projects.infotech');
-Route::view('/projects/mebel', 'projects.mebel');
-Route::view('/projects/drive-don', 'projects.drive-don');
-Route::view('/projects/my-port', 'projects.my-port');
-Route::view('/projects/provence', 'projects.provence');
+
+Route::get('/projects/novozarievka', [ProjectsController::class, 'single']);
+Route::get('/projects/{project}', [ProjectsController::class, 'single']
+   )->where('project', 'novozarievka|sheeps|bustravel|15|infotech|mebel|drive-don|my-port|provence');
+// Route::view('/projects/novozarievka', 'projects.novozarievka');
+// Route::view('/projects/sheeps', 'projects.sheeps');
+// Route::view('/projects/bustravel', 'projects.bustravel');
+// Route::view('/projects/15', 'projects.15');
+// Route::view('/projects/infotech', 'projects.infotech');
+// Route::view('/projects/mebel', 'projects.mebel');
+// Route::view('/projects/drive-don', 'projects.drive-don');
+// Route::view('/projects/my-port', 'projects.my-port');
+// Route::view('/projects/provence', 'projects.provence');
 
 Route::permanentRedirect('/index', '/');
 Route::permanentRedirect('/portfolio', '/projects');

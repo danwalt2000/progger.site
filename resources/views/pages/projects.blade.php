@@ -1,62 +1,3 @@
-@php
-    $projects = [
-        [
-            "title" => "Сайт агрофирмы",
-            "link" => "novozarievka",
-            "second_title" => "Новозариевка",
-            "img" => "/content/novozar.png"
-        ],
-        [
-            "title" => "Интернет-магазин",
-            "second_title" => 'ЧП "ИНФОТЕХ"',
-            "link" => "infotech",
-            "img" => "/content/infotech.jpg"
-        ],
-        [
-            "title" => "Интернет-магазин",
-            "second_title" => 'Мебель-Донецк',
-            "link" => "mebel",
-            "img" => "/content/mebel.jpg"
-        ],
-        [
-            "title" => "Сайт транспортной компании",
-            "second_title" => 'Drive-don',
-            "link" => "drive-don",
-            "img" => "/content/drive-don.jpg"
-        ],
-        [
-            "title" => "Вебсайт",
-            "second_title" => 'Портфолио',
-            "link" => "my-port",
-            "img" => "/content/portfolio.jpg"
-        ],
-        [
-            "title" => "Транспортная компания",
-            "second_title" => 'Bustravel',
-            "link" => "bustravel",
-            "img" => "/content/bustravel.jpg"
-        ],
-        [
-            "title" => "Игра",
-            "second_title" => 'Пятнашки',
-            "link" => "15",
-            "img" => "/content/15-preview.jpg"
-        ],
-        [
-            "title" => "Игра",
-            "second_title" => 'Волк и овцы',
-            "link" => "sheeps",
-            "img" => "/content/sheeps.jpg"
-        ],
-        [
-            "title" => "Сайт салона штор",
-            "second_title" => 'Прованс',
-            "link" => "provence",
-            "img" => "/content/provence1.jpg"
-        ]
-    ];
-@endphp
-
 @extends('parts.base')
  
 @section('title', "Портфолио разработчика")
@@ -116,7 +57,7 @@
                                                             {{ $project["second_title"] }}</div>
                                                         <a class="portfolio-content-block__link"
                                                             title="{{ $project["title"] }}"
-                                                            href="novozarievka">Подробнее</a>
+                                                            href="{{ $project["link"] }}">Подробнее</a>
                                                     </div>
                                                 </div>
                                             </div>

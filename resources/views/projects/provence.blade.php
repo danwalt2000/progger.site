@@ -13,7 +13,7 @@
 <main id="page">
     <div id="content">
         <div class="page-content projectOverViewWide" >
-            @include('parts.projects-nav', ['prev' => "sheeps", 'next' => "novozarievka"])
+            @include('parts.projects-nav', ['prev' => $prev, 'next' => $next])
 
             <div class="MyMultiDeviceImages">
                 <img src="/content/provence.jpg" alt="Сайт салона штор 'Прованс' на разных устройствах"/>
