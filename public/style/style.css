@@ -84,7 +84,13 @@ body, html {
 .process img {
     width: 1000px
 }
-
+.blog_title{
+    font: 400 40px/140% "Open Sans", sans-serif;
+    text-align: center;
+}
+.blog_desc{
+    font-style: italic;
+}
 .circleRow,
 .projectRow {
     content: "";
@@ -97,7 +103,26 @@ body, html {
 .siteWrap {
     color: rgba(26, 26, 26, .6)
 }
-
+.breadcrumps{
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.breadcrump{
+    color: #3e3e40;
+}
+.breadcrump_current{
+    color: #9b9c9f;
+}
+.breadcrump_arrow::after{
+    content: "";
+    margin-left: 8px;
+    background-image: url(/content/arrow-right-black.svg);
+    color: #7a7a7a;
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 10px;
+}
 .siteWrap,
 body {
     font-size: 16px
@@ -267,7 +292,10 @@ body {
 .page-index .overlay{
     height: 100%;
 }
-
+.login-nav{
+    display: none;
+    visibility: hidden;
+}
 svg .des1,
 svg .development1,
 svg .development2,
@@ -2903,7 +2931,6 @@ ul.pagination li a:hover:not(.active) {
 .blog-posts {
     content: " ";
     display: table;
-    margin-top: 5%;
     width: 100%
 }
 
@@ -4067,12 +4094,14 @@ a.button svg {
     text-align: left;
 }
 
-.aboutPillar,
-.wrapAbout {
+.aboutPillar {
     width: 33.3333%;
     float: left
 }
-
+.wrapAbout img{
+    border-radius: 50%;
+    object-fit: contain;
+}
 .textIntroMy {
     display: block;
     box-sizing: border-box

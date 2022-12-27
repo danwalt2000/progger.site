@@ -14,26 +14,26 @@
 
     {{--https://binshops.binshops.com/laravel/packages/binshopsblog-blog-system-for-your-laravel-app/help-documentation/laravel-blog-package-binshopsblog#guide_to_views--}}
 
-    <div class='container'>
-    <div class='row'>
-        <div class='col-sm-12 col-md-12 col-lg-12'>
+    <div id="blogWrap" class='wrap page-content'>
+        <div class='blog-posts'>
+            <div class='postSingle'>
 
-            @include("binshopsblog::partials.show_errors")
-            @include("binshopsblog::partials.full_post_details")
-
-
-            @if(config("binshopsblog.comments.type_of_comments_to_show","built_in") !== 'disabled')
-                <div class="" id='maincommentscontainer'>
-                    <h2 class='text-center' id='binshopsblogcomments'>Comments</h2>
-                    @include("binshopsblog::partials.show_comments")
-                </div>
-            @else
-                {{--Comments are disabled--}}
-            @endif
+                @include("binshopsblog::partials.show_errors")
+                @include("binshopsblog::partials.full_post_details")
 
 
+                @if(config("binshopsblog.comments.type_of_comments_to_show","built_in") !== 'disabled')
+                    <div class="" id='maincommentscontainer'>
+                        <h2 class='text-center' id='binshopsblogcomments'>Comments</h2>
+                        @include("binshopsblog::partials.show_comments")
+                    </div>
+                @else
+                    {{--Comments are disabled--}}
+                @endif
+
+
+            </div>
         </div>
-    </div>
     </div>
 
 @endsection

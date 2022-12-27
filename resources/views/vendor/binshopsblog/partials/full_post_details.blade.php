@@ -2,12 +2,23 @@
     <a href="{{$post->edit_url()}}" class="btn btn-outline-secondary btn-sm pull-right float-right">Edit
         Post</a>
 @endif
-
+<div class="breadcrumps">
+    <a class="breadcrump breadcrump_arrow" href="/">Главная</a>
+    <a class="breadcrump breadcrump_arrow" href="/blog">Блог</a>
+    <span class="breadcrump breadcrump_current" href="/blog">{{$post->title}}</span>
+</div>
+<p class="posted_at">Опубликовано <strong>{{$post->post->posted_at}}</strong></p>
 <h1 class='blog_title'>{{$post->title}}</h1>
-<h5 class='blog_subtitle'>{{$post->subtitle}}</h5>
+{{-- <h5 class='blog_subtitle'>{{$post->subtitle}}</h5> --}}
 
+<div class="blogPostImage">
+    <div class="aboutPillar"><div class="paddingMy"></div></div>
 
-<?=$post->image_tag("medium", false, 'd-block mx-auto'); ?>
+    <div class="wrapAbout">
+        <?=$post->image_tag("thumbnail", false, 'd-block mx-auto'); ?>
+    </div>
+    <div class="aboutPillar"><div class="paddingMy"></div></div>
+</div>
 
 <p class="blog_body_content">
     {!! $post->post_body_output() !!}
@@ -20,10 +31,6 @@
     {{--   {{ $post->post_body }}          // for safe escaping --}}
     {{--@endif--}}
 </p>
-
-<hr/>
-
-Posted <strong>{{$post->post->posted_at->diffForHumans()}}</strong>
 
 @includeWhen($post->author,"binshopsblog::partials.author",['post'=>$post])
 @includeWhen($categories,"binshopsblog::partials.categories",['categories'=>$categories])
