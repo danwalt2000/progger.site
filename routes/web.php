@@ -28,10 +28,18 @@ Route::get('/projects/{project}', [ProjectsController::class, 'single']
 
 Route::permanentRedirect('/index', '/');
 Route::permanentRedirect('/portfolio', '/projects');
+Route::get('/misc/{any}', function() {
+   return redirect('/');
+})->where('any', '.*');
+
+// Route::get('/en/blog/{any}', function() {
+//    return redirect('/blog/{any}');
+// })->where('any', '.*');
+
+// Route::permanentRedirect('/en/blog', '/blog' );
+// Route::permanentRedirect('/en/blog/{post}', '/blog/{post}' );
 Route::permanentRedirect('/{project}', '/projects/{project}'
    )->where('project', 'novozarievka|sheeps|bustravel|15|infotech|mebel|drive-don|my-port|provence');
-Route::permanentRedirect('/blog/{post}', '/ru/blog/{post}'
-   );
 
 Auth::routes();
 

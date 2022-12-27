@@ -39,7 +39,7 @@ body, html {
 }
 
 .tag {
-    color: #ae2824
+    color: #ae2824;
 }
 
 .cl {
@@ -261,7 +261,7 @@ body {
 .page-15 .site-header{
     background-image: url(/content/woodBack.jpg);
 }
-.page-ru .site-header{
+.page-blog  .site-header{
     background-image: url(/content/articles.jpg);
 }
 .page-index .overlay{
@@ -1945,7 +1945,7 @@ input[type=textarea] {
 .page-index .link-index .menuHr,
 .page-about  .link-about .menuHr,
 .page-projects  .link-projects .menuHr,
-.page-ru  .link-blog .menuHr,
+.page-blog   .link-blog .menuHr,
 .page-novozarievka  .link-projects .menuHr,
 .page-bustravel .link-projects .menuHr,
 .page-mebel  .link-projects .menuHr,
@@ -3532,7 +3532,7 @@ textarea:focus {
     line-height: 1em;
     text-transform: uppercase
 }
-.page-ru .headingIntro p>strong {
+.page-blog  .headingIntro p>strong {
     font-size: 45px;
     font-style: italic;
 }

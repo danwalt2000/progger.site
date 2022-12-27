@@ -18,7 +18,7 @@
             @include('parts.projects-nav', ['prev' => $prev, 'next' => $next])
 
             <div class="MyMultiDeviceImages">
-                <img src="/content/novozar-wall.jpg" alt="Агросервис Новозариевка"/>
+                <img src="/content/novozar-wall.jpg" alt="Сайт агрофирмы"/>
             </div>
 
             <div class="project-details" style="box-sizing:border-box;">
