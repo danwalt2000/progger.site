@@ -18,10 +18,15 @@
                 </p>
             </div>
         @endif
-
-        <div class="row">
-            <div class="col-md-9">
-
+        
+        <div class="page-content feed">
+            <div class="">
+                <div class="blog_header">
+                    <h1>Последние статьи</h1>
+                    @if (config('binshopsblog.search.search_enabled') )
+                        @include('binshopsblog::sitewide.search_form')
+                    @endif
+                </div>
                 @if($category_chain)
                     <div class="container">
                         <div class="row">
@@ -46,18 +51,18 @@
                 @endif
 
                 <div class="container">
-                    <div class="row">
+                    <div class="blog-posts">
                         @forelse($posts as $post)
                             @include("binshopsblog::partials.index_loop")
                         @empty
                             <div class="col-md-12">
-                                <div class='alert alert-danger'>No posts!</div>
+                                <div class='alert alert-danger'>Статей нет.</div>
                             </div>
                         @endforelse
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            {{-- <div class="col-md-3">
                 <h6>Blog Categories</h6>
                 <ul class="binshops-cat-hierarchy">
                     @if($categories)
@@ -69,12 +74,10 @@
                         <span>No Categories</span>
                     @endif
                 </ul>
-            </div>
+            </div> --}}
         </div>
 
-        @if (config('binshopsblog.search.search_enabled') )
-            @include('binshopsblog::sitewide.search_form')
-        @endif
+
         {{-- <div class="row">
             <div class="col-md-12 text-center">
                 @foreach($lang_list as $lang)

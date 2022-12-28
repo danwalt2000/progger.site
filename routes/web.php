@@ -32,9 +32,9 @@ Route::get('/misc/{any}', function() {
    return redirect('/');
 })->where('any', '.*');
 
-// Route::get('/en/blog/{any}', function() {
-//    return redirect('/blog/{any}');
-// })->where('any', '.*');
+// Route::get('/en/blog', function() {
+//    return redirect('/blog');
+// });
 
 // Route::permanentRedirect('/en/blog', '/blog' );
 // Route::permanentRedirect('/en/blog/{post}', '/blog/{post}' );

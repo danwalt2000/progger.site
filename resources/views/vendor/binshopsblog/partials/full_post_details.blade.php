@@ -7,7 +7,7 @@
     <a class="breadcrump breadcrump_arrow" href="/blog">Блог</a>
     <span class="breadcrump breadcrump_current" href="/blog">{{$post->title}}</span>
 </div>
-<p class="posted_at">Опубликовано <strong>{{$post->post->posted_at}}</strong></p>
+<p class="posted_at">Опубликовано <strong>{{date('d.m.Y ', strtotime($post->post->posted_at))}}</strong></p>
 <h1 class='blog_title'>{{$post->title}}</h1>
 {{-- <h5 class='blog_subtitle'>{{$post->subtitle}}</h5> --}}
 

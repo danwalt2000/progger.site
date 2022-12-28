@@ -73,7 +73,7 @@
                             <div class="textParagraph" style='text-align:left;padding-left:0; padding-right:0;padding-top:0'>
                                 <div style="outline: medium none;cursor:auto">
                                     <h2>Примененные технологии</h2>
-                                    <ul><li>HTML5, CSS3/SASS, Javascript, jQuery, Canvas</li></ul>
+                                    <ul><li>HTML5, CSS3, Javascript, jQuery, Canvas</li></ul>
                                 </div>
                             </div>
 

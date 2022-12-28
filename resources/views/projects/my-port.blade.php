@@ -52,11 +52,11 @@
                         <div class="textParagraph" style='text-align:left;padding-left:0; padding-right:0;padding-top:0'>
                             <div style="outline: medium none;cursor:auto">
                                 <h2>Использованные технологии</h2>
-                                <ul><li>HTML5, CSS3/SASS, JS, JQuery, PHP, Photoshop</li></ul>
+                                <ul><li>HTML5, CSS3, JS, JQuery, PHP, Photoshop</li></ul>
                             </div>
                         </div>
 
-                        <a class="buttonBlockElement" href="index">Перейти на главную</a>
+                        <a class="buttonBlockElement" href="/">Перейти на главную</a>
                     </div>
                 </div>
             </div>

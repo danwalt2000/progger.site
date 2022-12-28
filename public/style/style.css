@@ -35,7 +35,8 @@ body, html {
 }
 .codeInject {
     background: #2b2b2b;
-    color: #fff
+    color: #fff;
+    padding: 15px;
 }
 
 .tag {
@@ -104,8 +105,16 @@ body, html {
     color: rgba(26, 26, 26, .6)
 }
 .breadcrumps{
-    margin-bottom: 10px;
+    margin: 10px 0;
     font-style: italic;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+.posted_at{
+    font-size: 14px;
+    padding: 0 15px;
 }
 .breadcrump{
     color: #3e3e40;
@@ -115,7 +124,7 @@ body, html {
 }
 .breadcrump_arrow::after{
     content: "";
-    margin-left: 8px;
+    margin: 0 8px;
     background-image: url(/content/arrow-right-black.svg);
     color: #7a7a7a;
     display: inline-block;
@@ -542,7 +551,7 @@ h2 {
 
 .page-content {
     padding: 45px 32px;
-    font-size: 16px;
+    font-size: 18px;
     overflow: hidden
 }
 
@@ -2505,7 +2514,7 @@ h3 {
 }
 
 pre {
-    white-space: pre-wrap
+    white-space: pre-wrap;
 }
 
 .image-block-wrapper {
@@ -2930,10 +2939,11 @@ ul.pagination li a:hover:not(.active) {
 
 .blog-posts {
     content: " ";
-    display: table;
     width: 100%
 }
-
+.textParagraphBlog .mb-30{
+    margin-bottom: 30px;
+}
 .post:only-child {
     width: 100% !important;
     border-right: none !important;
@@ -2955,7 +2965,36 @@ ul.pagination li a:hover:not(.active) {
     width: 50%;
     box-sizing: border-box
 }
-
+.blog_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search_form{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.search_input{
+    min-width: 180px;
+    padding: 10px 40px 10px 10px;
+    border: none;
+    border: 1px solid #201e1c;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.search_submit{
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    bottom: 0.3125rem;
+    color: #7a7a7a;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: fit-content;
+}
 .blog-posts .post img {
     border: 1px solid #eee;
     border-radius: 50%;
@@ -2963,7 +3002,13 @@ ul.pagination li a:hover:not(.active) {
     max-width: 260px;
     height: auto
 }
-
+.feed .blog-posts .post img{
+    max-width: unset;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: unset;
+}
 .blog-posts .post.odd,
 .blog-posts .post:nth-of-type(2n+2) {
     border-right: medium none
@@ -4261,6 +4306,9 @@ img {
 @media (max-width:580px) {
     .portfolio-grid{
         grid-template-columns: 1fr;
+    }
+    .blog_header{
+        flex-direction: column-reverse;
     }
 }
 @media (max-width:400px) {

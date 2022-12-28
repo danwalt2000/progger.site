@@ -47,7 +47,7 @@
                 <div class="textParagraph" style='text-align:left;padding-left:0; padding-right:0;padding-top:0'>
                     <div style="outline: medium none;cursor:auto">
                         <h2>Использованные технологии</h2>
-                        <ul><li>HTML5, CSS3/SASS, JQuery, Ajax, Photoshop</li></ul>
+                        <ul><li>HTML, CSS, JS, JQuery, Ajax, Photoshop</li></ul>
                     </div>
                 </div>
 

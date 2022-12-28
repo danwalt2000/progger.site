@@ -4,47 +4,41 @@
 
 <div class="published post home">
     <div class="blog-item">
-        <a href="15-article">
-            <img class="attachment-post-thumbnail" width="260" height="260"
-                 alt="{{$post->title}}" src="content/15.jpg">
-        </a>
         <header class="entry-header">
             <p class="entry-meta">
                 <small>Опубликовано</small>
-                <time itemprop="datePublished">{{date('d M Y ', strtotime($post->post->posted_at))}}</time>
+                <time itemprop="datePublished">{{date('d.m.Y ', strtotime($post->post->posted_at))}}</time>
 
-                <span class="entry-comments-link">
-
-</span>
+                <span class="entry-comments-link"></span>
             </p>
-            <h2 class="entry-title" itemprop="headline"><a rel="bookmark" href="15-article">{{$post->title}}</a></h2>
-            <a class="more-link go-right" href="15-article">Продолжить чтение?</a>
+            <h2 class="entry-title" itemprop="headline"><a rel="bookmark" href="15-article">{{\Illuminate\Support\Str::limit($post->title, 35, $end = "...")}}</a></h2>
+            <div class='text-center blog-image'>
+                <?=$post->image_tag("medium", true, ''); ?>
+            </div>
+            <a class="more-link go-right" href='{{$post->url("en")}}'>Продолжить чтение?</a>
         </header>
         <div class="entry-content" itemprop="text"></div>
 
         <footer class="entry-footer"></footer>
 
 
-        <div class='text-center blog-image'>
-            <?=$post->image_tag("medium", true, ''); ?>
-        </div>
-        <div class="blog-inner-item">
-            <h3 class=''><a href='{{$post->url($locale)}}'>{{$post->title}}</a></h3>
+        {{-- <div class="blog-inner-item">
+            <h3 class=''><a href='{{$post->url("en")}}'>{{$post->title}}</a></h3> --}}
             {{-- <h5 class=''>{{$post->subtitle}}</h5> --}}
 
-            @if (config('binshopsblog.show_full_text_at_list'))
+            {{-- @if (config('binshopsblog.show_full_text_at_list'))
                 <p>{!! $post->post_body_output() !!}</p>
             @else
                 <p>{!! mb_strimwidth($post->post_body_output(), 0, 400, "...") !!}</p>
-            @endif
+            @endif --}}
 
-            <div class="post-details-bottom">
+            {{-- <div class="post-details-bottom">
                 <span class="light-text">Автор: </span> {{$post->post->author->name}} <span class="light-text">Опубликовано в: </span> {{date('d M Y ', strtotime($post->post->posted_at))}}
             </div>
             <div class='text-center'>
-                <a href="{{$post->url($locale)}}" class="btn btn-primary">View Post</a>
+                <a href="{{$post->url("en")}}" class="btn btn-primary">View Post</a>
             </div>
-        </div>
+        </div> --}}
     </div>
 
 </div>
