@@ -1,8 +1,7 @@
 @extends('parts.base')
 
-@section('title', config('app.name', 'Laravel'))
-{{-- <title>{{ config('app.name', 'Laravel') }}</title> --}}
-@section('description', "Я создал сайт транспортной компании, который вышел в топ по региону даже без продвижения")
+@section('title', $title)
+@section('description', $description)
 
 @section('main')
 <div class="headingIntro">

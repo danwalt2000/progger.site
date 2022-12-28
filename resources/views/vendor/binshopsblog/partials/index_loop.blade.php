@@ -11,7 +11,7 @@
 
                 <span class="entry-comments-link"></span>
             </p>
-            <h2 class="entry-title" itemprop="headline"><a rel="bookmark" href="15-article">{{\Illuminate\Support\Str::limit($post->title, 35, $end = "...")}}</a></h2>
+            <h2 class="entry-title" itemprop="headline"><a rel="bookmark" href='{{$post->url("en")}}'>{{\Illuminate\Support\Str::limit($post->title, 35, $end = "...")}}</a></h2>
             <div class='text-center blog-image'>
                 <?=$post->image_tag("medium", true, ''); ?>
             </div>

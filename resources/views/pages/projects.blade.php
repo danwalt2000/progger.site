@@ -1,6 +1,7 @@
 @extends('parts.base')
  
-@section('title', "Портфолио разработчика")
+@section('title', "Мои проекты")
+@section('description', "Здесь собраны проекты, над которыми я работал с описанием выполненных задач и ссылкой на сайт")
 
 @section('main')
 <div class="headingIntro">

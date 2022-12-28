@@ -1,5 +1,9 @@
-@extends("layouts.app",['title'=>$post->gen_seo_title()])
+@extends("layouts.app",[
+    'title'=>$post->gen_seo_title(),
+    'description'=>$post->meta_desc
+])
 
+{{-- {{dd($post->meta_desc)}} --}}
 @section('blog-custom-css')
     <link type="text/css" href="{{ asset('binshops-blog.css') }}" rel="stylesheet">
 @endsection

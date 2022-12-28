@@ -1,4 +1,7 @@
-@extends("layouts.app",['title'=>$title])
+@extends("layouts.app",[
+    'title'=>"Мой блог",
+    'description'=>"Статьи о том, как верстать, оформлять и продвигать сайт, чтобы выйти в топ запросов, секреты и хитрости, которые помогут вам опередить конкурентов"
+])
 
 @section('blog-custom-css')
     <link type="text/css" href="{{ asset('binshops-blog.css') }}" rel="stylesheet">
@@ -22,7 +25,7 @@
         <div class="page-content feed">
             <div class="">
                 <div class="blog_header">
-                    <h1>Последние статьи</h1>
+                    <h1>Последние посты</h1>
                     @if (config('binshopsblog.search.search_enabled') )
                         @include('binshopsblog::sitewide.search_form')
                     @endif

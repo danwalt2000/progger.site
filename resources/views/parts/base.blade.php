@@ -19,9 +19,21 @@
     <link href="{{ asset('style/style.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('style/swipebox.css') }}" rel="stylesheet" type="text/css" />
     
-    <title>@yield('title')</title>
+    <title>
+        @hasSection('title')
+            @yield('title')
+        @else
+            Портфолио разработчика
+        @endif
+    </title>
     <meta charset="UTF-8">
-    <meta name="description" content="@yield('description')">
+    <meta name="description" 
+        @hasSection('title')
+            content="@yield('description')"
+        @else
+            content="Я - разработчик: создаю быстрые, функциональные и красивые сайты, ссуществляю поддержку приложения после разработки, помогаю с настройкой модулей, расширений, приложений. Сделаю для вас продающий сайт, который гарантированно принесет прибыль!"
+        @endif    
+    >
     <meta name="keywords" content="Профессиональная разработака приложений, создание сайтов, заказать сайт, разработка сайтов, создать приложение, изготавливать сайт, веб профессионал, программист, разработчик, портфолио, PHP, Javascript, jQuery, сайты где можно заказать, верстка, Украина, Донецк, Ukraine, software development, web-design, web-development, frontend, backend, coding, sharp design" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="document-state" content="Static" />
