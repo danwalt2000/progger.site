@@ -17,18 +17,12 @@
 
                 <h2 class="introBlockHeading">Портфолио</h2>
                 <div class="briefBackgroundBlock biggerMaxWidth" style="padding:0">
-                    <div class="MyColSide">
-                        <div class="My-block-image"></div>
-                    </div>
                     <div class="owenCol2">
                         <div class="paddingMy">
                             <p class="portfolio__description">Здесь вы найдете проекты, над которыми я
                                 работал. В каждом проекте я добавил краткое описание его содержания и
                                 примененных технологий. </p>
                         </div>
-                    </div>
-                    <div class="MyColSide">
-                        <div class="owen-block-image"></div>
                     </div>
                 </div>
 

@@ -2,16 +2,10 @@
 
     <h2 class="introBlockHeading">Привет, меня зовут Виталий</h2>
     <div class="briefBackgroundBlock">
-        <div class="MyColSide">
-            <div class="My-block-image"></div>
-        </div>
         <div class="MyCol2">
             <div class="paddingMy">
                 <p class="homepageDescription">Я - веб-разработчик широкого профиля. Создаю быстрые, функциональные и красивые приложения, специализируюсь на CMS и фреймворках на языке PHP. Сопровождаю разработку приложения начиная с концепии, заканчивая развертыванием на продакшн.</p>
             </div>
-        </div>
-        <div class="MyColSide">
-            <div class="My-block-image"></div>
         </div>
     </div>
 

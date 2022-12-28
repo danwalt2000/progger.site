@@ -446,7 +446,9 @@ a {
     clear: both;
     width: auto !important
 }
-
+.page-about .myServices{
+    margin-bottom: 70px;
+}
 .splitColumnsMy {
     float: left;
     padding: 0 20px;
@@ -1492,7 +1494,8 @@ img {
     font-weight: 400;
     font-size: 16px;
     max-width: 1020px;
-    padding: 17px
+    padding: 17px;
+    margin: auto;
 }
 
 .MenuHeader {
@@ -3627,8 +3630,8 @@ span.label {
 }
 
 .MyCol2 {
-    width: 66.6667%;
-    float: left
+    max-width: 700px;
+    margin: auto;
 }
 
 .paddingMy {
