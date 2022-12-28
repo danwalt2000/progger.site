@@ -79,7 +79,7 @@
                 <a href="/experience">ОПЫТ &nbsp;</a>
                 <a href="/blog">БЛОГ &nbsp;</a>
             </h3>
-            <p class="text-align-center copyright">© 2019-<script>document.write(new Date().getFullYear());</script> Портфолио веб-разработчика.</p>
+            <p class="text-align-center copyright">© 2019-{{ date("Y") }} Портфолио веб-разработчика.</p>
           </div>
           </div>
         <!--конец блока 2 футера -->
