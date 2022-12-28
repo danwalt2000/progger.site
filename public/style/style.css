@@ -528,7 +528,7 @@ svg .development4 {
     }
 }
 
-h2 {
+h2, .h2 {
     font-size: 1em;
     font-weight: 700;
     letter-spacing: 3px;
@@ -3634,7 +3634,9 @@ span.label {
 .paddingMy {
     padding: 17px
 }
-
+.paddingMy .h2{
+    margin: 15px 0;
+}
 .menuBlock p {
     margin-top: 12px
 }
@@ -4274,7 +4276,9 @@ img {
         -webkit-column-count: 3;
         column-count: 3
     }
-
+    #resources::after{
+        right: 50px;
+    }
     .headingIntro p>em>strong,
     .headingIntro p>strong {
         font-size: 65px
@@ -4407,7 +4411,7 @@ textarea:focus {
     background-image: url(../content/bg-pen.png);
     bottom: -120px;
     height: 340px;
-    right: 50px;
+    right: 150px;
     width: 361px
 }
 

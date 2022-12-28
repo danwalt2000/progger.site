@@ -22,10 +22,8 @@
 
                 <div class="paddingMy" style="clear:none">
                     <div style="cursor:auto;outline:medium none">
-
-                        <a href="http://www.developer-web.site">
-                            <h2>sharpdesign.ru</h2>
-                        </a>
+                        <h2>sharpdesign.ru</h2>
+                        <p class="para">(этот сайт)</p>
                     </div>
 
                 </div>
@@ -35,13 +33,57 @@
 
             <div class="MyCol2">
                 <div class="paddingMy" style="clear:none">
-                    <h3>Фриланс проекты в сфере программирования и дизайна</h3><span><i>С июля 2019 года - по
+                    <h3 class="h2">Фриланс проекты в сфере программирования и дизайна</h3><span><i>С июля 2019 года - по
                             настоящее время</i></span>
                     <p> <br>
                         Я занимаюсь разработкой сайтов и приложений в свободное от основной работы время.
                         Стараюсь писать чистый и понятный код, верстать высококачественные адаптивные сайты с легким
                         и приятным дизайном.
+                    </p>
+                </div>
+                <div class="hrContainer" style="margin-bottom:20px;">
+                    <hr class="hrHomePage" style="width:100%">
+                </div>
+            </div>
+        </div>
 
+        <div class="workExpJobContainer">
+            <div class="ProjectContentOuter">
+
+                <div class="paddingMy" style="clear:none">
+                    <div style="cursor:auto;outline:medium none">
+                        <h2>Рекламное агентство "Хамелеон"</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="MyCol2">
+                <div class="paddingMy" style="clear:none">
+                    <h3 class="h2">Web-разработчик</h3><span><i>С июля 2020 года - по ноябрь 2020 года</i></span>
+                    <p> <br>
+                        Разрабатывал сайты и приложения для клиентов компании. В большинстве случаев требовалось создать приложение с функционалом интернет-магазина либо витрины, работающее на CMS. 
+                    </p>
+                </div>
+                <div class="hrContainer" style="margin-bottom:20px;">
+                    <hr class="hrHomePage" style="width:100%">
+                </div>
+            </div>
+        </div>
+        <div class="workExpJobContainer">
+            <div class="ProjectContentOuter">
+
+                <div class="paddingMy" style="clear:none">
+                    <div style="cursor:auto;outline:medium none">
+                        <h2>TrueConf</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="MyCol2">
+                <div class="paddingMy" style="clear:none">
+                    <h3 class="h2">Web-разработчик</h3><span><i>С ноября 2020 года - по настоящее время</i></span>
+                    <p> <br>
+                        Занимаюсь поддержкой проектов разного масштаба и сложности, среди который есть, как крупные мультимагазины на PrestaShop, так и небольшие блоги на Wordpress. 
                     </p>
                 </div>
 

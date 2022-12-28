@@ -12,5 +12,7 @@
     </h1>
 </header>
 </header>
-    @include("parts.about")
+    <div class="page-content">
+        @include("parts.about")
+    </div>
 @stop
