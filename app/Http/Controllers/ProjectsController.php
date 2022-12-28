@@ -23,6 +23,12 @@ class ProjectsController extends Controller
             "img" => "/content/novozar.png"
         ],
         [
+            "title" => "Сайт транспортной компании",
+            "second_title" => 'Drive-don',
+            "link" => "drive-don",
+            "img" => "/content/drive-don.jpg"
+        ],
+        [
             "title" => "Интернет-магазин",
             "second_title" => 'ЧП "ИНФОТЕХ"',
             "link" => "infotech",
@@ -33,12 +39,6 @@ class ProjectsController extends Controller
             "second_title" => 'Мебель-Донецк',
             "link" => "mebel",
             "img" => "/content/mebel.jpg"
-        ],
-        [
-            "title" => "Сайт транспортной компании",
-            "second_title" => 'Drive-don',
-            "link" => "drive-don",
-            "img" => "/content/drive-don.jpg"
         ],
         [
             "title" => "Вебсайт",

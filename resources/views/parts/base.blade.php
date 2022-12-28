@@ -34,7 +34,7 @@
             content="Я - разработчик: создаю быстрые, функциональные и красивые сайты, ссуществляю поддержку приложения после разработки, помогаю с настройкой модулей, расширений, приложений. Сделаю для вас продающий сайт, который гарантированно принесет прибыль!"
         @endif    
     >
-    <meta name="keywords" content="Профессиональная разработака приложений, создание сайтов, заказать сайт, разработка сайтов, создать приложение, изготавливать сайт, веб профессионал, программист, разработчик, портфолио, PHP, Javascript, jQuery, сайты где можно заказать, верстка, Украина, Донецк, Ukraine, software development, web-design, web-development, frontend, backend, coding, sharp design" />
+    <meta name="keywords" content="Профессиональная разработка приложений, создание сайтов, заказать сайт, разработка сайтов, создать приложение, изготавливать сайт, веб профессионал, программист, разработчик, портфолио, PHP, Javascript, jQuery, сайты где можно заказать, верстка, web-development, responsive web-development, frontend, backend, coding, sharp design" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="document-state" content="Static" />
 

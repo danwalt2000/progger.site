@@ -1,6 +1,7 @@
 @extends('parts.base')
  
 @section('title', "Сайт салона штор 'Прованс'")
+@section('description', "Небольшой сайт сверстанный по макету и 'натянутый' на Wordpress")
 
 @section('main')
 <div class="headingIntro">

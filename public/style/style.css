@@ -973,7 +973,7 @@ img {
 }
 #mobileNavWrapper .social{
     display: grid;
-    grid-template-columns: repeat(3, 40px);
+    grid-template-columns: repeat(2, 40px);
     column-gap: 20px;
     justify-content: center;
     align-items: center;
@@ -2010,16 +2010,11 @@ input[type=textarea] {
     display: none
 }
 
-#logoImage img {
-    height: auto;
-    max-height: 100px;
-    max-width: 100%;
-    width: auto;
-    float: left;
-    padding-left: 20px;
-    padding-top: 10px
+.logo_link{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
-
 @keyframes fadein {
     from {
         opacity: 0
