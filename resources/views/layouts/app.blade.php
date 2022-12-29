@@ -6,7 +6,7 @@
 @section('main')
 <div class="headingIntro">
     <p>
-        <strong id="mainHeroTitle">Мои статьи</strong>
+        <strong id="mainHeroTitle">Блог web-разработчика</strong>
     </p>
 </header>
 </header>
