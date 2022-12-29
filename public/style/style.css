@@ -2138,6 +2138,7 @@ input[type=textarea] {
 
 .logoDiv {
     width: 20%;
+    min-width: 160px;
     float: left;
     height: 100px;
     text-align: center;
