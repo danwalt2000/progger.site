@@ -1976,7 +1976,7 @@ input[type=textarea] {
     box-sizing: border-box
 }
 .valuta_span{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .valuta_span a{
     text-decoration: underline;
@@ -4319,6 +4319,11 @@ img {
     }
 }
 
+@media (max-width:660px) {
+    .preFooterBlocks div.columnPrefooterMy{
+        height: 150px;
+    }
+}
 @media (max-width:580px) {
     .portfolio-grid{
         grid-template-columns: 1fr;
@@ -5134,9 +5139,6 @@ hr.menuHr {
 
     .wrapAbout img {
         max-width: 200px
-    }
-    .preFooterBlocks div.columnPrefooterMy{
-        height: 150px;
     }
     .socialContacts .soc{
         grid-template-columns: 1fr;
