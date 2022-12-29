@@ -1968,11 +1968,21 @@ input[type=textarea] {
 }
 
 .preFooterBlocks {
-    padding-top: 8em;
+    padding-top: 30px;
     padding-bottom: 5em;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box
+}
+.valuta_span{
+    margin-bottom: 20px;
+}
+.valuta_span a{
+    text-decoration: underline;
+}
+.valuta_span p{
+    margin-bottom: 10px;
+    text-align: center;
 }
 #swipebox-overlay #swipebox-close{
     right: 10%;
@@ -2535,7 +2545,7 @@ pre {
 }
 
 .skillSpan {
-    font-size: 12px;
+    font-size: 16px;
     font-family: Open Sans, sans-serif;
     width: 100%;
     float: left
