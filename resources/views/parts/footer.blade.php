@@ -2,7 +2,7 @@
   <div class="preFooterInner">
       <div class="preFooterBlocks">
           <div class="valuta_span">
-            <p>У меня новый проект - агрегатор объявлений о продеже валюты.</p>
+            <p>У меня новый проект - агрегатор объявлений о продаже валюты.</p>
             <p>Заходите на <a href="https://valuta-dn.ru">valuta-dn</a></p>
           </div>
           <div class="My-row">

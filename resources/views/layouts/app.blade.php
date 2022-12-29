@@ -1,7 +1,7 @@
 @extends('parts.base')
 
-@section('title', $title)
-@section('description', $description)
+@section('title', $title = "Портфолио web-разработчика")
+@section('description', $description = "Я - разработчик: создаю быстрые, функциональные и красивые сайты, ссуществляю поддержку приложения после разработки, помогаю с настройкой модулей, расширений, приложений. Сделаю для вас продающий сайт, который гарантированно принесет прибыль!")
 
 @section('main')
 <div class="headingIntro">

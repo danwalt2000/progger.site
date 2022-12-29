@@ -28,7 +28,6 @@
                 <p>Don-drive - это многостраничный сайт транспортной компании, разработанный без использования CMS. </p>
             </div>
             <p>Для улучшения пользовательского опыта дизайн сайта составлен в красно-сиреневых тонах, на ресурсе активно используются широкие подложки и эффект размытия, а на странице контактов добавлен скрипт Яндекс-карты.</p>
-            <p>  </p>
 
         </div>
         <div class="project-details-secondary">
@@ -52,6 +51,7 @@
                 </div>
 
                 <a id="gallery" class="buttonBlockElement" href="#">Посмотреть скриншоты</a>
+                <a href="https://danwalt2000.000webhostapp.com" rel="nofollow noopener noreferrer" class="buttonBlockElement">Перейти на сайт</a>
             </div>
         </div>
     </div>

@@ -1884,7 +1884,8 @@ body:not(.force-mobile-nav) .nav-wrapper {
     padding: 13px 26px;
     display: inline-block;
     width: auto;
-    white-space: nowrap
+    white-space: nowrap;
+    margin: 5px 0;
 }
 
 .hireMeBlock,
