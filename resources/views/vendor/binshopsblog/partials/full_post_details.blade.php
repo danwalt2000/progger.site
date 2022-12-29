@@ -12,9 +12,7 @@
 {{-- <h5 class='blog_subtitle'>{{$post->subtitle}}</h5> --}}
 
 <div class="blogPostImage">
-    <div class="aboutPillar"><div class="paddingMy"></div></div>
-
-    <div class="wrapAbout">
+        <div class="wrapAbout">
         <?=$post->image_tag("thumbnail", false, 'd-block mx-auto'); ?>
     </div>
     <div class="aboutPillar"><div class="paddingMy"></div></div>

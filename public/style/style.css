@@ -2860,7 +2860,10 @@ article {
 .postSingle {
     margin-bottom: 60px
 }
-
+.postSingle a{
+    color: rgba(26, 26, 26, .6);
+    text-decoration: underline;
+}
 .wrap {
     margin: 0 auto;
     width: auto !important;
@@ -4159,7 +4162,12 @@ a.button svg {
 }
 .wrapAbout img{
     border-radius: 50%;
-    object-fit: contain;
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+}
+.page-blog .wrapAbout{
+    text-align: center;
 }
 .textIntroMy {
     display: block;
