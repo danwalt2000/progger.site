@@ -22,22 +22,17 @@ Route::view('/about', 'pages.about');
 Route::view('/experience', 'pages.experience');
 Route::view('/about', 'pages.about');
 
-Route::get('/projects/novozarievka', [ProjectsController::class, 'single']);
 Route::get('/projects/{project}', [ProjectsController::class, 'single']
    )->where('project', 'novozarievka|sheeps|bustravel|15|infotech|mebel|drive-don|my-port|provence');
 
-Route::permanentRedirect('/index', '/');
-Route::permanentRedirect('/portfolio', '/projects');
 Route::get('/misc/{any}', function() {
    return redirect('/');
 })->where('any', '.*');
 
-// Route::get('/en/blog', function() {
-//    return redirect('/blog');
-// });
-
-// Route::permanentRedirect('/en/blog', '/blog' );
-// Route::permanentRedirect('/en/blog/{post}', '/blog/{post}' );
+Route::permanentRedirect('/index', '/');
+Route::permanentRedirect('/portfolio', '/projects');
+Route::permanentRedirect('/{post}', '/blog/{post}'
+   )->where('post', 'react-js|15-article|interact|vue');
 Route::permanentRedirect('/{project}', '/projects/{project}'
    )->where('project', 'novozarievka|sheeps|bustravel|15|infotech|mebel|drive-don|my-port|provence');
 
