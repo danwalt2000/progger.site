@@ -77,7 +77,7 @@
                                 </div>
                             </div>
 
-                            <a class="buttonBlockElement" href="15-article">Статья о создании игр</a>
+                            <a class="buttonBlockElement" href="/blog/15-article">Статья о создании игр</a>
                         </div>
                     </div>
                 </div>

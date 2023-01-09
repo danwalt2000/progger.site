@@ -70,7 +70,7 @@
         <a href="/blog/react-js">
             <img class="attachment-post-thumbnail" width="260" height="260" alt="Почему React.js – это отличный выбор для
                             производительного веб-приложения"
-                    src="content/react-js-logo.jpg">
+                    src="/content/react-js-logo.jpg">
         </a>
         <header class="entry-header">
             <p class="entry-meta">
