@@ -3,7 +3,7 @@
       <div class="preFooterBlocks">
           <div class="valuta_span">
             <p>У меня новый проект - агрегатор объявлений о продаже валюты.</p>
-            <p>Заходите на <a href="https://valuta-dn.ru">valuta-dn</a></p>
+            <p><a href="https://valuta-dn.ru">Обмен валют в Донецке</a>.</p>
           </div>
           <div class="My-row">
               <div class="My-large-trio big columnPrefooterMy fade-in-selector fade-in-delay-400ms">
