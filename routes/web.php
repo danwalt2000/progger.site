@@ -31,6 +31,7 @@ Route::get('/misc/{any}', function() {
 
 Route::permanentRedirect('/index', '/');
 Route::permanentRedirect('/portfolio', '/projects');
+Route::permanentRedirect('/blog.php', '/blog');
 Route::permanentRedirect('/{post}', '/blog/{post}'
    )->where('post', 'react-js|15-article|interact|vue');
 Route::permanentRedirect('/{project}', '/projects/{project}'
