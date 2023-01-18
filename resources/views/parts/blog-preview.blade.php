@@ -1,4 +1,4 @@
-<h2 class="introBlockHeading" style="padding-bottom:0;">Последние статьи</h2>
+<h2 class="introBlockHeading" style="padding-bottom:0;">Популярные статьи</h2>
 <div class="blog-posts clearfix">
 
     <article class="published post home">
