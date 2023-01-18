@@ -8,8 +8,8 @@
         </a>
         <header class="entry-header">
             <p class="entry-meta">
-                <small>Опубликовано</small>
-                <time itemprop="datePublished">19.04.2020 в 18:36</time>
+                {{-- <small>Опубликовано</small> --}}
+                {{-- <time itemprop="datePublished">19.04.2020 в 18:36</time> --}}
 
                 <span class="entry-comments-link"> </span>
             </p>
@@ -23,44 +23,40 @@
     </article>
 
     <article class="published post home">
-        <a href="/blog/vue">
-            <img class="attachment-post-thumbnail" width="260" height="260" alt="Преимущества Vue JS"
-                    src="content/vue.jpg">
+        <a href="/blog/free-server-hosting">
+            <img class="attachment-post-thumbnail" width="260" height="260" alt="Бесплатные VPS/VDS (выделенные серверы) и хостинги в 2023 году"
+                    src="blog_images/free-server-hosting-600x400.png">
         </a>
         <header class="entry-header">
             <p class="entry-meta">
-                <small>Опубликовано</small>
-                <time itemprop="datePublished">20.04.2020 в 10:25</time>
+                {{-- <small>Опубликовано</small> --}}
+                {{-- <time itemprop="datePublished">20.04.2020 в 10:25</time> --}}
 
-                <span class="entry-comments-link">
-
-</span>
+                <span class="entry-comments-link"></span>
             </p>
-            <h2 class="entry-title" itemprop="headline"><a rel="bookmark" href="blog/vue">Пара слов о
-                    преимуществах Vue JS</a></h2>
-            <a class="more-link go-right" href="blog/vue">Продолжить чтение?</a>
+            <h2 class="entry-title" itemprop="headline"><a rel="bookmark" href="blog/free-server-hosting">Бесплатные VPS/VDS (выделенные серверы) и хостинги в 2023 году</a></h2>
+            <a class="more-link go-right" href="blog/free-server-hosting">Продолжить чтение?</a>
         </header>
         <div class="entry-content" itemprop="text"></div>
         <footer class="entry-footer"></footer>
     </article>
 
     <article class="published post home">
-        <a href="/blog/interact">
-            <img class="attachment-post-thumbnail" width="260" height="260" alt="Интерактивный дизайн"
-                    src="content/inter-design.jpg">
+        <a href="/blog/remove-ad-000webhost">
+            <img class="attachment-post-thumbnail" width="260" height="260" alt="Как убрать рекламную запись на хостинге 000webhost"
+                    src="/blog_images/remove-ad-000webhost-600x400.png">
         </a>
         <header class="entry-header">
             <p class="entry-meta">
-                <small>Опубликовано</small>
-                <time itemprop="datePublished">21.04.2020 в 15:08</time>
+                {{-- <small>Опубликовано</small> --}}
+                {{-- <time itemprop="datePublished">21.04.2020 в 15:08</time> --}}
 
                 <span class="entry-comments-link">
 
 </span>
             </p>
-            <h2 class="entry-title" itemprop="headline"><a rel="bookmark" href="blog/interact">Интерактивный
-                    дизайн</a></h2>
-            <a class="more-link go-right" href="/blog/interact">Продолжить чтение?</a>
+            <h2 class="entry-title" itemprop="headline"><a rel="bookmark" href="blog/remove-ad-000webhost">Как убрать рекламную запись на хостинге 000webhost</a></h2>
+            <a class="more-link go-right" href="/blog/remove-ad-000webhost">Продолжить чтение?</a>
         </header>
         <div class="entry-content" itemprop="text"></div>
         <footer class="entry-footer"></footer>
@@ -74,8 +70,8 @@
         </a>
         <header class="entry-header">
             <p class="entry-meta">
-                <small>Опубликовано</small>
-                <time itemprop="datePublished">08.10.2020 в 10:25</time>
+                {{-- <small>Опубликовано</small> --}}
+                {{-- <time itemprop="datePublished">08.10.2020 в 10:25</time> --}}
 
                 <span class="entry-comments-link">
 
