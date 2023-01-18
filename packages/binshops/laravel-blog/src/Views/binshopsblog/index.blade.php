@@ -1,7 +1,4 @@
-@extends("layouts.app",[
-    'title'=>"Мой блог",
-    'description'=>"Статьи о том, как верстать, оформлять и продвигать сайт, чтобы выйти в топ запросов, секреты и хитрости, которые помогут вам опередить конкурентов"
-])
+@extends("layouts.app",['title'=>$title])
 
 @section('blog-custom-css')
     <link type="text/css" href="{{ asset('binshops-blog.css') }}" rel="stylesheet">
@@ -21,15 +18,10 @@
                 </p>
             </div>
         @endif
-        
-        <div class="page-content feed">
-            <div class="">
-                <div class="blog_header">
-                    <h1>Последние посты</h1>
-                    @if (config('binshopsblog.search.search_enabled') )
-                        @include('binshopsblog::sitewide.search_form')
-                    @endif
-                </div>
+
+        <div class="row">
+            <div class="col-md-9">
+
                 @if($category_chain)
                     <div class="container">
                         <div class="row">
@@ -54,18 +46,18 @@
                 @endif
 
                 <div class="container">
-                    <div class="blog-posts">
+                    <div class="row">
                         @forelse($posts as $post)
                             @include("binshopsblog::partials.index_loop")
                         @empty
                             <div class="col-md-12">
-                                <div class='alert alert-danger'>Статей нет.</div>
+                                <div class='alert alert-danger'>No posts!</div>
                             </div>
                         @endforelse
                     </div>
                 </div>
             </div>
-            {{-- <div class="col-md-3">
+            <div class="col-md-3">
                 <h6>Blog Categories</h6>
                 <ul class="binshops-cat-hierarchy">
                     @if($categories)
@@ -77,11 +69,13 @@
                         <span>No Categories</span>
                     @endif
                 </ul>
-            </div> --}}
+            </div>
         </div>
 
-
-        {{-- <div class="row">
+        @if (config('binshopsblog.search.search_enabled') )
+            @include('binshopsblog::sitewide.search_form')
+        @endif
+        <div class="row">
             <div class="col-md-12 text-center">
                 @foreach($lang_list as $lang)
                     <a href="{{route("binshopsblog.index" , $lang->locale)}}">
@@ -89,8 +83,7 @@
                     </a>
                 @endforeach
             </div>
-        </div> --}}
-        {{dd(get_defined_vars())}}
+        </div>
     </div>
 
 @endsection
