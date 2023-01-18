@@ -90,7 +90,6 @@
                 @endforeach
             </div>
         </div> --}}
-        {{dd(get_defined_vars())}}
     </div>
 
 @endsection

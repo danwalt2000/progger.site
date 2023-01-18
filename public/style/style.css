@@ -3037,13 +3037,59 @@ ul.pagination li a:hover:not(.active) {
 .blog-posts .post:nth-of-type(2n+2) {
     border-right: medium none
 }
-
+.swiper a{
+    color: rgba(26, 26, 26, .6);
+}
+.swiper-navigation{
+    position: relative;
+    bottom: 132px;
+}
+.swiper-navigation .swiper-button-prev, 
+.swiper-navigation .swiper-button-next{
+    width: 48px;
+    height: 48px;
+    background-color: #fff;
+    top: -100px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 4px rgb(0 0 0 / 16%);
+}
+.swiper-navigation .swiper-button-next:after, 
+.swiper-navigation .swiper-button-prev:after{
+    font-family: swiper-icons;
+    text-transform: none!important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+    color: black;
+    font-size: 18px;
+}
+.wpp-date,
+.wpp-more{
+    font-size: 16px;
+}
+.wpp-desc{
+    margin: 15px 0;
+}
+.wpp-post-title{
+    font-size: 24px;
+}
+.swiper-slide img{
+    border-radius: 6px;
+}
+.swiper-navigation .swiper-button-next{
+    right: 0;
+}
+.swiper-navigation .swiper-button-prev{
+    left: 0;
+}
 .blog-posts .post .entry-meta {
     margin: 0;
     transform: translateY(0);
     transition: all .3s ease-in-out 0s
 }
-
+.swiper-container{
+    margin-bottom: 50px;
+}
 .entry-header .entry-meta {
     font-size: 14px;
     text-align: center
