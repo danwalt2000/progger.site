@@ -44,14 +44,15 @@
                     <div class="textwidget"><h2>Читайте также</h2>
                     <div class="swiper">
                         <ul class="swiper-wrapper">
-                            @foreach($posts as $post)
+                            @foreach($posts as $related_post)
+                                @if($post->id == $related_post->id) @continue @endif
                                 <li class="swiper-slide">
-                                    <a href="{{$post->url("en")}}" title="$post->title" target="_self" rel="noopener">
-                                        <?=$post->image_tag("medium", true, ''); ?>
+                                    <a href="{{$related_post->url("en")}}" title="{{$related_post->title}}">
+                                        <?=$related_post->image_tag("medium", true, ''); ?>
                                     </a>
-                                    <div class="wpp-date">Опубликовано {{date('d.m.Y ', strtotime($post->post->posted_at))}}</div>
-                                    <div class="wpp-desc"><a href="{{$post->url("en")}}" class="wpp-post-title" target="_self" rel="noopener">{{$post->title}}</a></div>
-                                    <div class="wpp-more"><a href="{{$post->url("en")}}">Подробнее ➜</a></div>
+                                    <div class="wpp-date">Опубликовано {{date('d.m.Y ', strtotime($related_post->post->posted_at))}}</div>
+                                    <div class="wpp-desc"><a href="{{$related_post->url("en")}}" class="wpp-post-title">{{$related_post->title}}</a></div>
+                                    <div class="wpp-more"><a href="{{$related_post->url("en")}}">Подробнее ➜</a></div>
                                 </li>
                             @endforeach
                         </ul>
