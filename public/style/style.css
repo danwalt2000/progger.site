@@ -141,11 +141,12 @@ body {
     font-size: 16px
 }
 
-.menuList,
-li {
+.menuList {
     list-style-type: none
 }
-
+.postSingle li{
+    margin-left: 20px;
+}
 .HomeHeaderButtons,
 a {
     text-decoration: none
@@ -2869,7 +2870,7 @@ article {
     margin-bottom: 60px
 }
 .postSingle a{
-    color: rgba(26, 26, 26, .6);
+    color: rgba(26, 26, 26, 1);
     text-decoration: underline;
 }
 .wrap {
@@ -3089,6 +3090,9 @@ ul.pagination li a:hover:not(.active) {
 }
 .swiper-container{
     margin-bottom: 50px;
+}
+.swiper-container li{
+    list-style-type: none;
 }
 .entry-header .entry-meta {
     font-size: 14px;
