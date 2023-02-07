@@ -30,7 +30,7 @@ Route::get('/misc/{any}', function() {
 })->where('any', '.*');
 
 Route::permanentRedirect('/index', '/');
-Route::permanentRedirect('/portfolio', '/projects');
+Route::permanentRedirect('/{portfolio}', '/projects')->where('portfolio', 'portfolio|portfolio.php');
 Route::permanentRedirect('/blog.php', '/blog');
 Route::permanentRedirect('/{post}', '/blog/{post}'
    )->where('post', 'react-js|15-article|interact|vue');
