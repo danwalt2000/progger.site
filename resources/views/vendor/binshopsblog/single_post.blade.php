@@ -1,7 +1,7 @@
-@extends("layouts.app",[
-    'title'=>$post->gen_seo_title(),
-    'description'=>$post->meta_desc
-])
+@extends("layouts.app")
+
+@section('title', $post->gen_seo_title())
+@section('description', $post->meta_desc)
 
 {{-- {{dd($post->meta_desc)}} --}}
 @section('blog-custom-css')

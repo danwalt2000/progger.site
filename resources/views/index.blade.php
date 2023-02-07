@@ -1,7 +1,5 @@
 @extends('parts.base')
  
-@section('title', "Портфолио разработчика")
-
 @section('main')
 
 
