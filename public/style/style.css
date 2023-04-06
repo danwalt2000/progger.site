@@ -1230,8 +1230,8 @@ img {
 
     .footer-inner,
     .preFooterBlocks {
-        padding-top: 6em;
-        padding-bottom: 6em
+        padding-top: 1em;
+        padding-bottom: 1em
     }
 
     .MyColSide {
@@ -1985,10 +1985,7 @@ input[type=textarea] {
     box-sizing: border-box
 }
 .valuta_span{
-    margin-bottom: 30px;
-}
-.valuta_span a{
-    text-decoration: underline;
+    margin-top: 30px;
 }
 .valuta_span p{
     margin-bottom: 10px;

@@ -1,10 +1,6 @@
 <div id="preFooter">
   <div class="preFooterInner">
       <div class="preFooterBlocks">
-          <div class="valuta_span">
-            <p>У меня новый проект - агрегатор объявлений о продаже валюты.</p>
-            <p><a href="https://valuta-dn.ru">Обмен валют в Донецке</a>.</p>
-          </div>
           <div class="My-row">
               <div class="My-large-trio big columnPrefooterMy fade-in-selector fade-in-delay-400ms">
                   <p class="label small-lab">Аккаунт в GitHub</p>
@@ -99,5 +95,8 @@
           </div>
         <!--конец блока 3 футера -->
         
-    </div>  <!-- конец footer-inner -->               
+    </div>  <!-- конец footer-inner -->      
+    <div class="valuta_span">
+      <p><a href="https://valuta-dn.ru">Агрегатор объявлений о продаже валюты</a>.</p>
+    </div>         
 </footer>
