@@ -257,6 +257,10 @@ body {
     font-weight: 200;
     padding: 0;
 }
+.page-experience .introBlockHeading,
+.page-experience .page-content{
+    margin-top: 50px;
+}
 .page-index .site-header{
     background-image: url(/content/digital-field.jpg);
     height: 100vh;

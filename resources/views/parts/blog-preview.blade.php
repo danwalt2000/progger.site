@@ -1,4 +1,4 @@
-<h2 class="introBlockHeading" style="padding-bottom:0;">Популярные статьи</h2>
+<h2 class="introBlockHeading" style="padding-bottom:0;">{{ __('strings.blog_title') }}</h2>
 <div class="blog-posts clearfix">
 
     <article class="published post home">
@@ -15,7 +15,7 @@
             </p>
             <h2 class="entry-title" itemprop="headline"><a rel="bookmark" href="blog/15-article">Пишем игру
                     на чистом Javascript</a></h2>
-            <a class="more-link go-right" href="/blog/15-article">Продолжить чтение?</a>
+            <a class="more-link go-right" href="/blog/15-article">{{ __('strings.blog_more') }}</a>
         </header>
         <div class="entry-content" itemprop="text"></div>
 
@@ -35,7 +35,7 @@
                 <span class="entry-comments-link"></span>
             </p>
             <h2 class="entry-title" itemprop="headline"><a rel="bookmark" href="blog/free-server-hosting">Бесплатные VPS/VDS (выделенные серверы) и хостинги в 2023 году</a></h2>
-            <a class="more-link go-right" href="blog/free-server-hosting">Продолжить чтение?</a>
+            <a class="more-link go-right" href="blog/free-server-hosting">{{ __('strings.blog_more') }}</a>
         </header>
         <div class="entry-content" itemprop="text"></div>
         <footer class="entry-footer"></footer>
@@ -56,7 +56,7 @@
 </span>
             </p>
             <h2 class="entry-title" itemprop="headline"><a rel="bookmark" href="blog/remove-ad-000webhost">Как убрать рекламную запись на хостинге 000webhost</a></h2>
-            <a class="more-link go-right" href="/blog/remove-ad-000webhost">Продолжить чтение?</a>
+            <a class="more-link go-right" href="/blog/remove-ad-000webhost">{{ __('strings.blog_more') }}</a>
         </header>
         <div class="entry-content" itemprop="text"></div>
         <footer class="entry-footer"></footer>
@@ -78,7 +78,7 @@
 </span>
             </p>
             <h2 class="entry-title" itemprop="headline"><a rel="bookmark" href="blog/react-js">React.js – это отличный выбор</a></h2>
-            <a class="more-link go-right" href="/blog/react-js">Продолжить чтение?</a>
+            <a class="more-link go-right" href="/blog/react-js">{{ __('strings.blog_more') }}</a>
         </header>
 
     </article>
@@ -87,7 +87,7 @@
 <div class="buttonBlock">
     <div>
         <div style="text-align:center">
-            <a href="/blog" class="buttonBlockElement">Больше статей</a>
+            <a href="/blog" class="buttonBlockElement">{{ __('strings.blog_to_articles') }}</a>
         </div>
     </div>
 </div>

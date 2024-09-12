@@ -38,10 +38,20 @@
         <div class="page-content">
             @include("parts.about")
             
+            <div class="hrContainer">
+                <hr class="hrHomePage2">
+            </div>
+
             @include('parts.skills')
             
             <div class="hrContainer">
                 <hr class="hrHomePage3">
+            </div>
+
+            @include('parts.certs')
+
+            <div class="hrContainer">
+                <hr class="hrHomePage4">
             </div>
 
             @include("parts.myworks")

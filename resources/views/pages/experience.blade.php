@@ -14,6 +14,12 @@
 </header>
 @include("parts.skills")
 
+<div class="hrContainer">
+    <hr class="hrHomePage4">
+</div>
+
+@include('parts.certs')
+
 <div class="MyFullWidth" style="background-color:#f1f1f2;margin-top:0;margin-bottom:0">
     <div class="page-content">
         <div class="workExpJobContainer">

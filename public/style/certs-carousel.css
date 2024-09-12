@@ -1,0 +1,157 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+html {
+    height: 100vh;
+}
+body {
+    height: 100vh;
+}
+.carousel {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    align-items: center;
+    font-family: Arial;
+}
+.carousel__list {
+    display: flex;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    perspective: 500px;
+}
+.carousel__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 0px;
+    width: 600px;
+    height: 465px;
+    border-radius: 12px;
+    /* box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5); */
+    position: absolute;
+    transition: all 0.2s ease-in;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    visibility: hidden
+}
+/* .carousel__item:nth-child(1) {
+    background: linear-gradient(45deg, #2d35eb 0%, #904ed4 100%);
+}
+.carousel__item:nth-child(2) {
+    background: linear-gradient(45deg, #2d35eb 0%, #fdbb2d 100%);
+}
+.carousel__item:nth-child(3) {
+    background: linear-gradient(45deg, #2d35eb 0%, #22c1c3 100%);
+}
+.carousel__item:nth-child(4) {
+    background: linear-gradient(45deg, #fdbb2d 0%, #904ed4 100%);
+}
+.carousel__item:nth-child(5) {
+    background: linear-gradient(45deg, #22c1c3 0%, #904ed4 100%);
+} */
+.carousel__item[data-pos="0"] {
+    z-index: 5;
+    visibility: visible;
+}
+.carousel__item[data-pos="-1"], .carousel__item[data-pos="1"] {
+   visibility: visible;
+    opacity: 0.85;
+    filter: blur(1px) grayscale(10%);
+    
+}
+.carousel__item[data-pos="-1"]::after, .carousel__item[data-pos="1"]::after{
+   counter: '';
+   background-color: #fff;
+   widows: 100%;
+   height: 100%;
+   position: absolute;
+   display: block;
+}
+.carousel__item[data-pos="-1"] {
+    transform: translateX(-40%) scale(0.9);
+    z-index: 4;
+}
+.carousel__item[data-pos="1"] {
+    transform: translateX(40%) scale(0.9);
+    z-index: 4;
+}
+.carousel__item[data-pos="-2"], .carousel__item[data-pos="2"] {
+   visibility: visible;
+    opacity: 0.4;
+    filter: blur(3px) grayscale(20%);
+}
+.carousel__item[data-pos="-2"] {
+    transform: translateX(-70%) scale(0.8);
+    z-index: 3;
+}
+.carousel__item[data-pos="2"] {
+    transform: translateX(70%) scale(0.8);
+    z-index: 3;
+}
+.carousel__item_php{
+   background-image: url('/content/certs/PHP.png');
+}
+.carousel__item_html{
+   background-image: url('/content/certs/HTML.png');
+}
+.carousel__item_css{
+   background-image: url('/content/certs/CSS.png');
+}
+.carousel__item_jquery{
+   background-image: url('/content/certs/jQuery.png');
+}
+.carousel__item_sql{
+   background-image: url('/content/certs/SQL.png');
+}
+.carousel__item_typescript{
+   background-image: url('/content/certs/typescript.png');
+}
+.carousel__item_sql{
+   background-image: url('/content/certs/SQL.png');
+}
+.carousel__item_responsive-design{
+   background-image: url('/content/certs/responsive-design.png');
+}
+.carousel__item_deploy-site{
+   background-image: url('/content/certs/deploy-site.png');
+}
+.carousel__item_bug-fixing-on-js{
+   background-image: url('/content/certs/bug-fixing-on-js.png');
+}
+.carousel__item_express{
+   background-image: url('/content/certs/express.png');
+}
+.carousel__item_Git{
+   background-image: url('/content/certs/Git.png');
+}
+.carousel__item_js-DOM{
+   background-image: url('/content/certs/js-DOM.png');
+}
+.carousel__item_node-js{
+   background-image: url('/content/certs/node-js.png');
+}
+.carousel__item_node-sqlite{
+   background-image: url('/content/certs/node-sqlite.png');
+}
+.carousel__item_SASS{
+   background-image: url('/content/certs/SASS.png');
+}
+.carousel__item_bash-entry{
+   background-image: url('/content/certs/bash-entry.png');
+}
+.carousel__item_bash-scripting{
+   background-image: url('/content/certs/bash-scripting.png');
+}
+.carousel__item_bootstrap{
+   background-image: url('/content/certs/bootstrap.png');
+}
+.carousel__item_bash{
+   background-image: url('/content/certs/bash.png');
+}

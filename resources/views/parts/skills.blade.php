@@ -1,7 +1,3 @@
-<div class="hrContainer">
-    <hr class="hrHomePage2">
-</div>
-
 <h2 class="introBlockHeading">{{ __('strings.skills_level') }}</h2>
 <div id="circleContainer">
 
