@@ -1,10 +1,10 @@
 <div class="layout">
 
-    <h2 class="introBlockHeading">Привет, меня зовут Виталий</h2>
+    <h2 class="introBlockHeading">{{ __('strings.about_promo') }}</h2>
     <div class="briefBackgroundBlock">
         <div class="MyCol2">
             <div class="paddingMy">
-                <p class="homepageDescription">Я - веб-разработчик широкого профиля. Создаю быстрые, функциональные и красивые приложения, специализируюсь на CMS и фреймворках на языке PHP. Сопровождаю разработку приложения начиная с концепии, заканчивая развертыванием на продакшн.</p>
+                <p class="homepageDescription">{{ __('strings.about_desc') }}</p>
             </div>
         </div>
     </div>
@@ -13,7 +13,7 @@
         <hr class="hrHomePage1">
     </div>
 
-    <h2 class="introBlockHeading">Что я могу Вам предложить</h2>
+    <h2 class="introBlockHeading">{{ __('strings.about_suggest') }}</h2>
     <div class="myServices">
 
         <div class="wrap cf text-c">
@@ -27,8 +27,7 @@
                 </svg>
 
                 <h2>Back-end</h2>
-                <p class="servicesParagraph">Благодаря многолетнему опыту создания функциональных приложений, я могу гарантировать высокое качество и самоочевидность своего кода, а также модульность и высокую скорость работы сайта в целом.</p>
-                {{-- <p class="servicesParagraph"> Благодаря внедрению современных технологий, мои приложения достигают 90-100% по шкале производительности LightHouse.</p> --}}
+                <p class="servicesParagraph">{{ __('strings.about_backend') }}</p>
             </div>
             <div class="splitColumnsMy">
 
@@ -38,8 +37,7 @@
 
                 <h2>Front-end</h2>
                 <p class="servicesParagraph">
-                    {{-- Создав десятки сайтов и приложений,  --}}
-                     Оптимизация клиентской стороны вашего приложения позволит не только повысить производительность сайта, но и гарантирует стабильное исполнение кода на разных устройствах.</p>
+                    {{ __('strings.about_frontend') }}</p>
             </div>
         </div>
 

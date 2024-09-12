@@ -788,10 +788,15 @@ h2, .h2 {
 }
 
 #footerBlocks h3 {
-    font-size: 13px !important;
+    font-size: 13px;
     line-height: 1.65;
     font-style: normal;
-    font-weight: 600
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
 }
 
 #footerBlocks a {
@@ -1978,8 +1983,7 @@ input[type=textarea] {
 }
 
 .preFooterBlocks {
-    padding-top: 30px;
-    padding-bottom: 5em;
+    padding: 30px 0;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box
@@ -2118,7 +2122,7 @@ input[type=textarea] {
     grid-template-columns: repeat(2,  minmax(50px, max-content));
     font-size: 0;
     list-style: none;
-    margin: 0;
+    margin: 20px 0;
     padding: 0;
     text-align: center;
     column-gap: 40px;
@@ -5090,7 +5094,7 @@ hr.menuHr {
 
 .portfolio__description {
     margin: auto;
-    width: 80%
+    max-width: 700px
 }
 
 @media screen and (max-width:1200px) {
@@ -5204,7 +5208,10 @@ hr.menuHr {
         max-width: 200px
     }
     .socialContacts .soc{
-        grid-template-columns: 1fr;
+        padding: 0 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 100px;
     }
 }
 
@@ -5229,6 +5236,6 @@ hr.menuHr {
         max-width: 200px
     }
     #footerBlock2{
-        padding: 17px 17px 60px;
+        padding: 0 20px 0;
     }
 }

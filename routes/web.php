@@ -14,6 +14,9 @@ use App\Http\Controllers\ProjectsController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// App::currentLocale()
+$locale = str_contains(Request::getHost(), 'progger') ? 'en' : 'ru';
+App::setLocale($locale);
 
 Route::get('/', [ProjectsController::class, 'index']);
 Route::get('/projects', [ProjectsController::class, 'projects']);

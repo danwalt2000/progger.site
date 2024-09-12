@@ -1,13 +1,13 @@
 @extends('parts.base')
  
-@section('title', "Мои проекты")
-@section('description', "Здесь собраны проекты, над которыми я работал с описанием выполненных задач и ссылкой на сайт")
+@section('title', __('strings.projects_title'))
+@section('description', __('strings.projects_meta_desc'))
 
 @section('main')
 <div class="headingIntro">
     <h1>
-        <em>Обзор моих работ</em>
-        <strong id="mainHeroTitle">Проекты</strong>
+        <em>{{ __('strings.projects_review') }}</em>
+        <strong id="mainHeroTitle">{{ __('strings.projects_title') }}</strong>
     </h1>
 </header>
 </header>
@@ -16,13 +16,11 @@
         <div class="page-content portfolio">
             <div class="layout">
 
-                <h2 class="introBlockHeading">Портфолио</h2>
+                <h2 class="introBlockHeading">{{ __('strings.dev_port') }}</h2>
                 <div class="briefBackgroundBlock biggerMaxWidth" style="padding:0">
                     <div class="owenCol2">
                         <div class="paddingMy">
-                            <p class="portfolio__description">Здесь вы найдете проекты, над которыми я
-                                работал. В каждом проекте я добавил краткое описание его содержания и
-                                примененных технологий. </p>
+                            <p class="portfolio__description">{{ __('strings.projects_desc') }} </p>
                         </div>
                     </div>
                 </div>
@@ -31,7 +29,7 @@
                     <div id="content">
                         <div class="page-content">
                             <div class="layout">
-                                <h2 class="introBlockHeading">Мои работы</h2>
+                                <h2 class="introBlockHeading">{{ __('strings.nav_my_works') }}</h2>
 
                                 <div class="portfolio-grid">
                                     @foreach ($projects as $project)
@@ -52,7 +50,7 @@
                                                             {{ $project["second_title"] }}</div>
                                                         <a class="portfolio-content-block__link"
                                                             title="{{ $project["title"] }}"
-                                                            href="{{ $project["link"] }}">Подробнее</a>
+                                                            href="{{ $project["link"] }}">{{ __('strings.dev_more') }}</a>
                                                     </div>
                                                 </div>
                                             </div>

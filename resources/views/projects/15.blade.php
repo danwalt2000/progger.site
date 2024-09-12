@@ -1,8 +1,8 @@
 @extends('parts.base')
  
 
-@section('title', "Игра пятнашки на чистом JS")
-@section('description', "Простой и понятный скрипт игры пятнашки, написанный без использования сторонних библиотек")
+@section('title',  __('strings.proj_fift_title') )
+@section('description', __('strings.proj_fift_desc'))
 @section('addition')
     <link href="/style/15.css" rel="stylesheet" type="text/css">
 @endsection
@@ -10,8 +10,8 @@
 @section('main')
 <div class="headingIntro">
     <h1>
-        <em>Игра</em>
-        <strong id="mainHeroTitle">Пятнашки</strong>
+        <em>{{ __('strings.proj_game') }}</em>
+        <strong id="mainHeroTitle">{{ __('strings.proj_fift') }}</strong>
     </h1>
 </header>
 </header>
@@ -76,7 +76,7 @@
                      <div class="refresh">
                         <div class="count"><p>Счетчик ходов:&nbsp; <div id="counter">0</div>
                             </p></div>
-                         <a onclick="window.location.reload();" id="asBut" data-title="Сброс"></a>
+                         <a onclick="window.location.reload();" id="asBut" data-title="{{ __('strings.proj_reset') }}"></a>
                      </div>
                     
                      <form id="myModal" class="modal" method="post">
@@ -85,7 +85,7 @@
                          <div class="modal-content">
                              <div class="modal-header">
                                  <span class="close">&times;</span>
-                                 <h2>Поздравляю!</h2>
+                                 <h2>{{ __('strings.proj_congrats') }}</h2>
                              </div>
                              <div class="modal-body">
                                  <input type="text" name='winName' id='winName' placeholder="Введите имя" minlength="3" maxlength="20" required>

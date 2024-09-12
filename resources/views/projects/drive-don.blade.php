@@ -51,7 +51,7 @@
                 </div>
 
                 <a id="gallery" class="buttonBlockElement" href="#">Посмотреть скриншоты</a>
-                <a href="https://danwalt2000.000webhostapp.com" rel="nofollow noopener noreferrer" class="buttonBlockElement">Перейти на сайт</a>
+                {{-- <a href="https://danwalt2000.000webhostapp.com" rel="nofollow noopener noreferrer" class="buttonBlockElement">Перейти на сайт</a> --}}
             </div>
         </div>
     </div>

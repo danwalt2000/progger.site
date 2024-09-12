@@ -12,11 +12,11 @@
 
 <div class="headingIntro homeFV">
     <h1>
-        <strong id="mainHeroTitle">Портфолио</strong>
-        <em>web-разработчика </em> 
+        <strong id="mainHeroTitle">{{ __('strings.parts_port') }}</strong>
+        <em>{{ __('strings.parts_web_dev') }} </em> 
     </h1>
     <p>
-        <a href="#footer" class='HomeHeaderButtons'>Связаться со мной</a>
+        <a href="#footer" class='HomeHeaderButtons'>{{ __('strings.nav_connect') }}</a>
     </p>
 </div>
 

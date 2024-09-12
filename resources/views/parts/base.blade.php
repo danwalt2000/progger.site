@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <!--
-Очень мило, что вы заглянули "под капот" моего сайта. Приятного просмотра! ;) 
-- Виталий.
+{{ __('strings.dev_thanks') }} ;) 
+- {{ __('strings.dev_me') }}
 -->
 
 <html lang="ru">
 
 <head>
-    <meta property="og:url" content="//sharpdesign.ru" />
+    <meta property="og:url" content="//{{ Request::getHost() }}" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="@yield('title')" />
     <meta property="og:description" content="@yield('description')" />
@@ -23,7 +23,7 @@
         @hasSection('title')
             @yield('title')
         @else
-            Портфолио разработчика
+            {{ __('strings.dev_port') }}
         @endif
     </title>
     <meta charset="UTF-8">
@@ -31,10 +31,10 @@
         @hasSection('description')
             content="@yield('description')"
         @else
-            content="Я - web-разработчик: создаю быстрые, функциональные и красивые сайты, осуществляю поддержку приложения после разработки, помогаю с настройкой модулей, расширений и плагинов. Сделаю для вас продающий сайт, который гарантированно принесет прибыль!"
+            content="{{ __('strings.dev_desc') }}"
         @endif    
     >
-    <meta name="keywords" content="Профессиональная разработка приложений, создание сайтов, заказать сайт, разработка сайтов, создать приложение, изготавливать сайт, веб профессионал, программист, разработчик, портфолио, PHP, Javascript, jQuery, сайты где можно заказать, верстка, web-development, responsive web-development, frontend, backend, coding, sharp design" />
+    <meta name="keywords" content="{{ __('strings.dev_keywords') }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="document-state" content="Static" />
 
@@ -69,8 +69,8 @@
         @section('main')
         @show
         @include('parts.footer')
-    </section> <!-- end of site wrapper -->
-
+    </section> 
+    
     @production
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41622656-4"></script>
@@ -95,7 +95,7 @@
                     accurateTrackBounce:true
                 });
             </script>
-            <noscript><div><img src="https://mc.yandex.ru/watch/91894049" style="position:absolute; left:-9999px;" alt="Включите JavaScript, пожалуйста" /></div></noscript>
+            <noscript><div><img src="https://mc.yandex.ru/watch/91894049" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
             <!-- /Yandex.Metrika counter -->
     @endproduction
 </body>

@@ -2,7 +2,7 @@
     <hr class="hrHomePage2">
 </div>
 
-<h2 class="introBlockHeading">Уровень моих навыков</h2>
+<h2 class="introBlockHeading">{{ __('strings.skills_level') }}</h2>
 <div id="circleContainer">
 
     <div class="circleRow">
@@ -240,7 +240,7 @@
 <div class="buttonBlock" id="moreSkillsButton">
     <div>
         <div style="text-align:center">
-            <a class="buttonBlockElement">Посмотреть больше навыков</a>
+            <a class="buttonBlockElement">{{ __('strings.skills_more') }}</a>
         </div>
     </div>
 </div>

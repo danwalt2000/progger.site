@@ -14,63 +14,67 @@ class ProjectsController extends Controller
 
      public $prev;
      public $next;
+     public $projects;
 
-     public $projects = [
-        [
-            "title" => "Сайт агрофирмы",
-            "link" => "novozarievka",
-            "second_title" => "Новозариевка",
-            "img" => "/content/novozar.png"
-        ],
-        [
-            "title" => "Сайт транспортной компании",
-            "second_title" => 'Drive-don',
-            "link" => "drive-don",
-            "img" => "/content/drive-don.jpg"
-        ],
-        [
-            "title" => "Интернет-магазин",
-            "second_title" => 'ЧП "ИНФОТЕХ"',
-            "link" => "infotech",
-            "img" => "/content/infotech.jpg"
-        ],
-        [
-            "title" => "Интернет-магазин",
-            "second_title" => 'Мебель-Донецк',
-            "link" => "mebel",
-            "img" => "/content/mebel.jpg"
-        ],
-        [
-            "title" => "Вебсайт",
-            "second_title" => 'Портфолио',
-            "link" => "my-port",
-            "img" => "/content/portfolio.jpg"
-        ],
-        [
-            "title" => "Транспортная компания",
-            "second_title" => 'Bustravel',
-            "link" => "bustravel",
-            "img" => "/content/bustravel.jpg"
-        ],
-        [
-            "title" => "Игра",
-            "second_title" => 'Пятнашки',
-            "link" => "15",
-            "img" => "/content/15-preview.jpg"
-        ],
-        [
-            "title" => "Игра",
-            "second_title" => 'Волк и овцы',
-            "link" => "sheeps",
-            "img" => "/content/sheeps.jpg"
-        ],
-        [
-            "title" => "Сайт салона штор",
-            "second_title" => 'Прованс',
-            "link" => "provence",
-            "img" => "/content/provence1.jpg"
-        ]
-    ];
+     public function __construct()
+    {
+        $this->projects = [
+            [
+                "title" =>  __('strings.proj_novozar_desc'),
+                "second_title" => __('strings.proj_novozar'),
+                "link" => "novozarievka",
+                "img" => "/content/novozar.png"
+            ],
+            [
+                "title" => __('strings.proj_drive_desc'),
+                "second_title" => 'Drive-don',
+                "link" => "drive-don",
+                "img" => "/content/drive-don.jpg"
+            ],
+            [
+                "title" => __('strings.proj_store'),
+                "second_title" => __('strings.proj_infoteh'),
+                "link" => "infotech",
+                "img" => "/content/infotech.jpg"
+            ],
+            [
+                "title" => __('strings.proj_store'),
+                "second_title" => __('strings.proj_mebel'),
+                "link" => "mebel",
+                "img" => "/content/mebel.jpg"
+            ],
+            [
+                "title" => __('strings.proj_website'),
+                "second_title" => __('strings.dev_port'),
+                "link" => "my-port",
+                "img" => "/content/portfolio.jpg"
+            ],
+            [
+                "title" => __('strings.proj_bus_desc'),
+                "second_title" => 'Bustravel',
+                "link" => "bustravel",
+                "img" => "/content/bustravel.jpg"
+            ],
+            [
+                "title" => __('strings.proj_game'),
+                "second_title" => __('strings.proj_fift'),
+                "link" => "15",
+                "img" => "/content/15-preview.jpg"
+            ],
+            [
+                "title" => __('strings.proj_game'),
+                "second_title" => __('strings.proj_sheeps'),
+                "link" => "sheeps",
+                "img" => "/content/sheeps.jpg"
+            ],
+            [
+                "title" => __('strings.proj_provance_desc'),
+                "second_title" => __('strings.proj_provance'),
+                "link" => "provence",
+                "img" => "/content/provence1.jpg"
+            ]
+        ];
+    }
 
     public function index()
     {

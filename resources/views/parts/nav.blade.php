@@ -6,11 +6,11 @@
 
 <!-- Начало header -->
   <div class="logoDiv">
-      <a class="logo_link" href='/' title="На главную">
+      <a class="logo_link" href='/' title="{{ __('strings.nav_to_home') }}">
         <div id="logoImage">
-            <img width="80" height="80" src="/content/sharp-logo.svg" alt="Logo" />
+            <img width="80" height="80" src="/content/logo-{{ App::currentLocale() }}.svg" alt="Logo" />
         </div>
-        <span>SharpDesign</span>
+        <span>{{ __('strings.site_name') }}</span>
       </a>
 
   </div>
@@ -21,21 +21,21 @@
       <div id="mobileNavWrapper" class="nav-wrapper">
           <nav id="mobileNavigation">
               <div class="index home active">
-                  <a href="/"> Главная </a>
+                  <a href="/"> {{ __('strings.nav_home') }} </a>
               </div>
 
               <div class="index home">
-                  <a href="/about"> Обо мне </a>
+                  <a href="/about"> {{ __('strings.nav_about_me') }} </a>
               </div>
 
               <div class="index home">
-                  <a href="/projects"> Портфолио </a>
+                  <a href="/projects"> {{ __('strings.nav_portfolio') }} </a>
               </div>
               <div class="index home">
-                  <a href="/experience"> Опыт  </a>
+                  <a href="/experience"> {{ __('strings.nav_experience') }}  </a>
               </div>
               <div class="index home">
-                  <a href="/blog"> Блог </a>
+                  <a href="/blog"> {{ __('strings.nav_blog') }} </a>
               </div>
               <div class="index home social">
                   <a class="iconMobileNav twitter" title="GitHub" href="//www.github.com/danwalt2000">
@@ -50,7 +50,7 @@
                     </svg>
                   </a> --}}
                   
-                  <a class="iconMobileNav twitter" title="Мой профиль ЛинкедИн" href="//www.linkedin.com/in/vitalii-pozdniakov-aa3b791b3/">
+                  <a class="iconMobileNav twitter" title="{{ __('strings.nav_in') }}" href="//www.linkedin.com/in/vitalii-pozdniakov-aa3b791b3/">
                     <svg style="width:40px;" viewBox="0 0 512 512">
                         <path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"></path>
                     </svg>
@@ -74,8 +74,8 @@
               <a class="menuBlockLink" href="/">
                   <div id="menuBlockSelected" class="menuBlock menuBlockFirst">
                       <div class="linkSummary"><span class="counterSpan">01.</span>
-                          <header class="MenuHeader">Главная</header>
-                          <p>Краткая информация.</p>
+                          <header class="MenuHeader">{{ __('strings.nav_home') }}</header>
+                          <p>{{ __('strings.nav_home_desc') }}</p>
                       </div>
                       <hr class="menuHr">
                   </div>
@@ -86,8 +86,8 @@
               <a class="menuBlockLink" href="/about">
                   <div class="menuBlock">
                       <div class="linkSummary"><span class="counterSpan">02.</span>
-                          <header class="MenuHeader">Обо мне</header>
-                          <p>Немного информации обо мне.</p>
+                          <header class="MenuHeader">{{ __('strings.nav_about_me') }}</header>
+                          <p>{{ __('strings.nav_about_desc') }}</p>
                       </div>
                       <hr class="menuHr">
                   </div>
@@ -98,8 +98,8 @@
               <a class="menuBlockLink" href="/projects">
                   <div class="menuBlock">
                       <div class="linkSummary"><span class="counterSpan">03.</span>
-                          <header class="MenuHeader">Портфолио</header>
-                          <p>Некоторые проекты, над которыми я работал.</p>
+                          <header class="MenuHeader">{{ __('strings.nav_portfolio') }}</header>
+                          <p>{{ __('strings.nav_port_desc') }}</p>
                       </div>
                       <hr class="menuHr">
                   </div>
@@ -110,8 +110,8 @@
               <a class="menuBlockLink" href="/experience">
                   <div class="menuBlock">
                       <div class="linkSummary"><span class="counterSpan">04.</span>
-                          <header class="MenuHeader">Опыт</header>
-                          <p>Мои навыки и способности.</p>
+                          <header class="MenuHeader">{{ __('strings.nav_experience') }}</header>
+                          <p>{{ __('strings.nav_exp_desc') }}</p>
                       </div>
                       <hr class="menuHr">
                   </div>
@@ -122,8 +122,8 @@
               <a class="menuBlockLink" href="/blog">
                   <div class="menuBlock">
                       <div class="linkSummary"><span class="counterSpan">05.</span>
-                          <header class="MenuHeader">Блог</p></header>
-                          <p>Мои статьи о разработке и дизайне.</p>
+                          <header class="MenuHeader">{{ __('strings.nav_blog') }}</p></header>
+                          <p>{{ __('strings.nav_blog_desc') }}</p>
                       </div>
                       <hr class="menuHr">
                   </div>
