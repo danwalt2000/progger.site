@@ -62,7 +62,7 @@ body {
 }
 .carousel__item[data-pos="-1"], .carousel__item[data-pos="1"] {
    visibility: visible;
-    opacity: 0.85;
+    opacity: 0.92;
     filter: blur(1px) grayscale(10%);
     
 }
@@ -154,4 +154,38 @@ body {
 }
 .carousel__item_bash{
    background-image: url('/content/certs/bash.png');
+}
+
+.certs-grid{
+   list-style: none;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+}
+.certs-cert{
+   cursor: pointer;
+}
+
+.certs-grid__closed .certs-cert{
+   display: none;
+}
+.certs-grid .certs-cert:nth-child(1),
+.certs-grid .certs-cert:nth-child(2),
+.certs-grid .certs-cert:nth-child(3),
+.certs-grid .certs-cert:nth-child(4),
+.certs-grid .certs-cert:nth-child(5),
+.certs-grid .certs-cert:nth-child(6),
+.certs-grid .certs-cert:nth-child(7),
+.certs-grid .certs-cert:nth-child(8),
+.certs-grid .certs-cert:nth-child(9){
+   display: block;
+}
+@media (max-width: 920px){
+   .certs-grid{
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+@media (max-width: 720px){
+   .certs-grid{
+      grid-template-columns: 1fr;
+   }
 }

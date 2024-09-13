@@ -1,13 +1,13 @@
 @extends('parts.base')
  
-@section('title', "Сайт салона штор 'Прованс'")
-@section('description', "Небольшой сайт сверстанный по макету и 'натянутый' на Wordpress")
+@section('title', __('strings.proj_provance_meta'))
+@section('description', __('strings.proj_prov_meta_desc'))
 
 @section('main')
 <div class="headingIntro">
     <h1>
-        <em>Сайт салона штор</em>
-        <strong id="mainHeroTitle">'Прованс'</strong>
+        <em>{{ __('strings.proj_provance_intro') }}</em>
+        <strong id="mainHeroTitle">{{ __('strings.proj_provance') }}</strong>
     </h1>
 </header>
 </header>
@@ -21,41 +21,38 @@
             </div>
 
             
-    <!-- Описание проекта -->
-
-
     <div class="project-details" style="box-sizing:border-box;">
         <div class="project-details-primary">
-            <h2>Описание проекта</h2>
+            <h2> {{ __('strings.proj_desc') }}</h2>
             <div class="project-details-intro">
-                <p>Изначально сайт планировался как одностраничный лендинг. Дизайн был написан и интегрирован помощью софта компании Figma. Позже проект эволюционировал в полноценный интернет-магазин. </p>
+                <p>{{ __('strings.proj_provance_1') }}</p>
             </div>
-            <p>Для удобства поддержки сайта я подключил его к популярной CMS Wordpress. </p>
-            <p> На сайте реализованы десятки мощных скриптов, как на JS, так и на PHP. Они позволяют быстро и эффективно управлять сайтом, публиковать новые записи, обрабатывать заказы и работать с формой обратной связи, а также почтовой рассылкой. </p>
+            <p>{{ __('strings.proj_provance_2') }}</p>
+            <p>{{ __('strings.proj_provance_3') }}</p>
         </div>
         <div class="project-details-secondary">
             <div class="project-details-block project-details-sector">
-                <h2>Тип проекта</h2>
-                Интернет-магазин
+                <h2>{{ __('strings.proj_type') }}</h2>
+                {{ __('strings.proj_store') }}
             </div>
             <div class="project-details-block">
-                <h2>Что я написал</h2>
+                <h2> {{ __('strings.proj_i_wrote') }}</h2>
                 <ul>
-                    <li>Верстка сайта</li>
-                    <li>Подключение CMS Wordpress</li>
-                    <li>Система авторизации</li>
-                    <li>Переработка с лендинга на интернет-магшазин</li>
-                    <li>Администрирование backend</li>
+                    <li>{{ __('strings.proj_markup') }}</li>
+                    <li>{{ __('strings.proj_connect_cms') }}</li>
+                    <li>{{ __('strings.proj_auth') }}</li>
+                    <li>{{ __('strings.proj_land_to_store') }}</li>
+                    <li>{{ __('strings.proj_support_back') }}</li>
                 </ul>
 
                 <div class="textParagraph" style='text-align:left;padding-left:0; padding-right:0;padding-top:0'>
                     <div style="outline: medium none;cursor:auto">
-                        <h2>Использованные технологии</h2>
+                        <h2>{{ __('strings.proj_tech') }}</h2>
                         <ul><li>HTML5, CSS3/SASS, JQuery, Ajax, PHP, Figma</li></ul>
                     </div>
                 </div>
 
-                <a id="gallery" class="buttonBlockElement" href="#">Посмотреть скриншот</a>
+                <a id="gallery" class="buttonBlockElement" href="#">{{ __('strings.proj_screen') }}</a>
             </div>
         </div>
     </div>

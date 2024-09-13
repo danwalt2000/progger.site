@@ -22,39 +22,37 @@
 
         <div class="project-details" style="box-sizing:border-box;">
             <div class="project-details-primary">
-                <h2>Описание проекта</h2>
+                <h2> {{ __('strings.proj_desc') }}</h2>
                 <div class="project-details-intro">
-                    <p>Написанный под CMS Wordpress сайт с индивидуальным адаптивным дизайном и поддержкой WooCommerce позволяет комфортно вести небольшой магазин до 1000 товаров. </p>
+                    <p>{{ __('strings.proj_infoteh_1') }}</p>
                 </div>
-                <p>Поскольку сильной стороной Wordpress является администрирование блога, написание статей для сайта превращается в легкую и непринужденную работу.
-                    Одним нажатием мышки адмимистратор может добавлять в свой блог сложные графические элементы: карусели, джамботроны, баннеры, контактные формы.</p>
-                <p>И не только.</p>
-                <p> В тело статьи всегда можно вставить HTML-код, стилизоровав статью под индивидуальные нужды.
-                    Последние версии Wordpress поддерживают CSS и JS прямо внутри HTML-блока в редакторе статьи, что позволяет верстать страницу из админки, не переходя к другим файлам сайта (хотя с точки зрения программирования - это плохая практика).  </p>
+                <p>{{ __('strings.proj_infoteh_2') }}</p>
+                <p>{{ __('strings.proj_infoteh_3') }}</p>
+                <p>{{ __('strings.proj_infoteh_4') }}</p>
 
             </div>
             <div class="project-details-secondary">
                 <div class="project-details-block project-details-sector">
-                    <h2>Тип проекта</h2>
-                    Интернет-магазин
+                    <h2>{{ __('strings.proj_type') }}</h2>
+                    {{ __('strings.proj_store') }}
                 </div>
                 <div class="project-details-block">
-                    <h2>Что я написал</h2>
+                    <h2> {{ __('strings.proj_i_wrote') }}</h2>
                     <ul>
-                        <li>Верстка сайта</li>
-                        <li>Подключение CMS Wordpress</li>
-                        <li>Подключение WooCommerce</li>
-                        <li>Индивидуальные скрипты и плагины</li>
-                        <li>Администрирование backend</li>
+                        <li>{{ __('strings.proj_markup') }}</li>
+                        <li>{{ __('strings.proj_connect_cms') }}</li>
+                        <li>{{ __('strings.proj_woo') }}</li>
+                        <li>{{ __('strings.proj_plugins') }}</li>
+                        <li>{{ __('strings.proj_support_back') }}</li>
                     </ul>
 
                     <div class="textParagraph" style='text-align:left;padding-left:0; padding-right:0;padding-top:0'>
                         <div style="outline: medium none;cursor:auto">
-                            <h2>Использованные технологии</h2>
+                            <h2>{{ __('strings.proj_tech') }}</h2>
                             <ul><li>HTML5, JQuery, Ajax, PHP, Wordpress</li></ul>
                         </div>
                     </div>
-                    <a id="gallery" class="buttonBlockElement" href="#">Посмотреть скриншот</a>
+                    <a id="gallery" class="buttonBlockElement" href="#">{{ __('strings.proj_screen') }}</a>
                 </div>
             </div>
         </div>

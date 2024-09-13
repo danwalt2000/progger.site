@@ -1,12 +1,12 @@
 @extends('parts.base')
  
-@section('title', "Сайт транспортной компании")
-@section('description', "Я создал сайт транспортной компании, который вышел в топ по региону даже без продвижения")
+@section('title', __('strings.proj_drive_desc'))
+@section('description', __('strings.proj_drive_meta'))
 
 @section('main')
 <div class="headingIntro">
     <h1>
-        <em>Многостраничный сайт</em>
+        <em>{{ __('strings.proj_multipage') }}</em>
         <strong id="mainHeroTitle">Drive-don</strong>
     </h1>
 </header>
@@ -20,37 +20,36 @@
                 <img src="/content/drive-don-wall.jpg" alt="Drive-don на разных устройствах"/>
             </div>
 
-    <!-- Описание проекта -->
     <div class="project-details" style="box-sizing:border-box;">
         <div class="project-details-primary">
-            <h2>Описание проекта</h2>
+            <h2> {{ __('strings.proj_desc') }}</h2>
             <div class="project-details-intro">
-                <p>Don-drive - это многостраничный сайт транспортной компании, разработанный без использования CMS. </p>
+                <p>{{ __('strings.proj_drive_1') }}</p>
             </div>
-            <p>Для улучшения пользовательского опыта дизайн сайта составлен в красно-сиреневых тонах, на ресурсе активно используются широкие подложки и эффект размытия, а на странице контактов добавлен скрипт Яндекс-карты.</p>
+            <p>{{ __('strings.proj_drive_2') }}</p>
 
         </div>
         <div class="project-details-secondary">
             <div class="project-details-block project-details-sector">
-                <h2>Тип проекта</h2>
-                Многостраничный сайт
+                <h2>{{ __('strings.proj_type') }}</h2>
+                {{ __('strings.proj_multipage') }} 
             </div>
             <div class="project-details-block">
-                <h2>Что я написал</h2>
+                <h2> {{ __('strings.proj_i_wrote') }}</h2>
                 <ul>
-                    <li>Верстка сайта</li>
-                    <li>Скрипты и сложные анимации</li>
-                    <li>Адаптивный дизайн</li>
+                    <li>{{ __('strings.proj_markup') }}</li>
+                    <li>{{ __('strings.proj_scripts') }}</li>
+                    <li>{{ __('strings.proj_adaptive') }}</li>
                 </ul>
 
                 <div class="textParagraph" style='text-align:left;padding-left:0; padding-right:0;padding-top:0'>
                     <div style="outline: medium none;cursor:auto">
-                        <h2>Использованные технологии</h2>
+                        <h2>{{ __('strings.proj_tech') }}</h2>
                         <ul><li>HTML, CSS, JS, JQuery, Ajax, Photoshop</li></ul>
                     </div>
                 </div>
 
-                <a id="gallery" class="buttonBlockElement" href="#">Посмотреть скриншоты</a>
+                <a id="gallery" class="buttonBlockElement" href="#">{{ __('strings.proj_screens') }}</a>
                 {{-- <a href="https://danwalt2000.000webhostapp.com" rel="nofollow noopener noreferrer" class="buttonBlockElement">Перейти на сайт</a> --}}
             </div>
         </div>

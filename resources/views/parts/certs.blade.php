@@ -1,5 +1,6 @@
+<link href="{{ asset('style/certs.css') }}" rel="stylesheet" type="text/css" />
 
-<h2 class="introBlockHeading">{{ __('strings.about_certs') }}</h2>
+<h2 class="introBlockHeading" id="certs">{{ __('strings.about_certs') }}</h2>
 <div class="carousel">
     <ul class="carousel__list">
         <li class="carousel__item carousel__item_color-design" data-pos="-10">1</li>
@@ -26,10 +27,12 @@
     </ul>
 </div>
 
-<div class="buttonBlock" id="moreSkillsButton">
+<div class="buttonBlock">
     <div>
         <div style="text-align:center">
-            <a class="buttonBlockElement">{{ __('strings.about_cert_all') }}</a>
+            <a class="buttonBlockElement" href="/about#certs">{{ __('strings.about_cert_all') }}</a>
         </div>
     </div>
 </div>
+
+<script src="{{ asset('scripts/certs.js') }}" type="text/javascript" defer></script>

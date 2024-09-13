@@ -1,14 +1,14 @@
 
 @extends('parts.base')
  
-@section('title', "Сайт агрофирмы")
-@section('description', "Небольшой сайт сверстанный по макету и 'натянутый' на Wordpress")
+@section('title',  __('strings.proj_novozar_desc'))
+@section('description', __('strings.proj_novozar_meta'))
 
 @section('main')
 <div class="headingIntro">
     <h1>
-        <em>Агросервис</em>
-        <strong id="mainHeroTitle">"Новозариевка"</strong>
+        <em>{{ __('strings.proj_novozar_agro') }}</em>
+        <strong id="mainHeroTitle">"{{ __('strings.proj_novozar') }}"</strong>
     </h1>
 </header>
 </header>
@@ -18,38 +18,38 @@
             @include('parts.projects-nav', ['prev' => $prev, 'next' => $next])
 
             <div class="MyMultiDeviceImages">
-                <img src="/content/novozar-wall.jpg" alt="Сайт агрофирмы"/>
+                <img src="/content/novozar-wall.jpg" alt="{{ __('strings.proj_novozar_desc') }}"/>
             </div>
 
             <div class="project-details" style="box-sizing:border-box;">
                 <div class="project-details-primary">
-                    <h2>Описание проекта</h2>
+                    <h2> {{ __('strings.proj_desc') }}</h2>
                     <div class="project-details-intro">
-                        <p>Легкий и симпатичный сайт на Вордпрессе оснащен функцианалом интернет-витрины, и дает заказчику широкие возможности, как в публикации статей, так и в администрировании бизнеса. Благодаря плагину WP Bakery веб-мастер может легко изменять контент и дизайн лендингов сайта без необходимости открывать исходный код приложения.</p>
+                        <p>{{ __('strings.proj_novozar_1') }}</p>
                     </div>
-                    <p>Развитая модульная система сайта позволяет использовать ключевые блоки и "фичи" на многих страницах без ручного каждого переписывания лендинга. Удобная CMS и плагин для интерасктивной верстки - отличная комбинация для красивого и доступного сайта.</p>
+                    <p>{{ __('strings.proj_novozar_2') }}</p>
                 </div>
                 <div class="project-details-secondary">
                     <div class="project-details-block project-details-sector">
-                        <h2>Тип проекта</h2>
-                        Интернет-витрина
+                        <h2>{{ __('strings.proj_type') }}</h2>
+                        {{ __('strings.proj_showcase') }}
                     </div>
                     <div class="project-details-block">
-                        <h2>Что я написал</h2>
+                        <h2> {{ __('strings.proj_i_wrote') }}</h2>
                         <ul>
-                            <li>Верстка сайта</li>
-                            <li>Подключение CMS Wordpress</li>
-                            <li>Переработка с блога в интернет-витрину</li>
-                            <li>Администрирование backend</li>
+                            <li>{{ __('strings.proj_markup') }}</li>
+                            <li>{{ __('strings.proj_connect_cms') }}</li>
+                            <li>{{ __('strings.proj_rebuild_blog') }}</li>
+                            <li>{{ __('strings.proj_support_back') }}</li>
                         </ul>
 
                         <div class="textParagraph" style='text-align:left;padding-left:0; padding-right:0;padding-top:0'>
                             <div style="outline: medium none;cursor:auto">
-                                <h2>Использованные технологии</h2>
+                                <h2>{{ __('strings.proj_tech') }}</h2>
                                 <ul><li>HTML5, CSS3, JS, PHP</li></ul>
                             </div>
                         </div>
-                        <a id="gallery" class="buttonBlockElement" href="#">Посмотреть скриншоты</a>
+                        <a id="gallery" class="buttonBlockElement" href="#">{{ __('strings.proj_screens') }}</a>
                     </div>
                 </div>
             </div>

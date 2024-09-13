@@ -17,7 +17,6 @@
     
     <link rel="icon" href="/content/logo-sharp.svg" />
     <link href="{{ asset('style/style.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('style/certs-carousel.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('style/swipebox.css') }}" rel="stylesheet" type="text/css" />
     
     <title>
@@ -43,7 +42,7 @@
     <script src="{{ asset('scripts/swipebox.js') }}" defer></script>
     <script src="{{ asset('scripts/home.js') }}" type="text/javascript" defer></script>
     <script src="{{ asset('scripts/main.js') }}" type="text/javascript" defer></script>
-    <script src="{{ asset('scripts/certs.js') }}" type="text/javascript" defer></script>
+    <script src="{{ asset('scripts/fslightbox.js') }}" type="text/javascript" defer></script>
     <script src="{{ asset('scripts/notificationsignup.js') }}" type="text/javascript" defer></script>
     @hasSection('addition')
         @section('addition')

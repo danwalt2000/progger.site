@@ -111,41 +111,37 @@
 
                 </div>
 
-                <!-- Описание проекта -->
-
-
                 <div class="project-details" style="box-sizing:border-box;">
                     <div class="project-details-primary">
-                        <h2>Описание проекта</h2>
+                        <h2>{{ __('strings.proj_desc') }}</h2>
                         <div class="project-details-intro">
-                            <p>Популярная головоломка, придуманная в 1878 году Ноем Чепмэном. Представляет собой набор одинаковых квадратных костяшек с нанесёнными числами, заключённых в квадратную коробку. Длина стороны коробки в четыре раза больше длины стороны костяшек для набора из 15 элементов, соответственно в коробке остаётся незаполненным одно квадратное поле. Цель игры — перемещая костяшки по коробке, добиться упорядочивания их по номерам, желательно сделав как можно меньше перемещений. </p>
+                            <p>{{ __('strings.proj_fift_1') }}</p>
                         </div>
-                        <p>Я написал эту игру без использования сторонних библиотек с помьщью одного лишь DOM API. Я считаю, что понимание работы чистого DOM API - это основа,
-                            без которой переключаться на фреймворки нельзя. </p>
+                        <p>{{ __('strings.proj_fift_2') }}</p>
 
                     </div>
                     <div class="project-details-secondary">
                         <div class="project-details-block project-details-sector">
-                            <h2>Тип проекта</h2>
-                            Браузерная игра
+                            <h2>{{ __('strings.proj_type') }}</h2>
+                            {{ __('strings.proj_game') }}
                         </div>
                         <div class="project-details-block">
-                            <h2>Что я написал</h2>
+                            <h2> {{ __('strings.proj_i_wrote') }}</h2>
                             <ul>
-                                <li>Внешний вид</li>
-                                <li>Движок игры</li>
-                                <li>Система подсчета ходов</li>
-                                <li>Интеграция с базой данных для публикации рекордсменов</li>
+                                <li>{{ __('strings.proj_lookup') }}</li>
+                                <li>{{ __('strings.proj_engine') }}</li>
+                                <li>{{ __('strings.proj_steps_system') }}</li>
+                                <li>{{ __('strings.proj_integrat') }}</li>
                             </ul>
 
                             <div class="textParagraph" style='text-align:left;padding-left:0; padding-right:0;padding-top:0'>
                                 <div style="outline: medium none;cursor:auto">
-                                    <h2>Примененные технологии</h2>
+                                    <h2>{{ __('strings.proj_tech') }}</h2>
                                     <ul><li>HTML5, CSS3, Javascript</li></ul>
                                 </div>
                             </div>
 
-                            <a class="buttonBlockElement" href="/blog/15-article">Подробнее</a>
+                            <a class="buttonBlockElement" href="/blog/15-article">{{ __('strings.dev_more') }}</a>
                         </div>
                     </div>
                 </div>

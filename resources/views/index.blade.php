@@ -36,7 +36,7 @@
 <main id="page">
     <div id="content">
         <div class="page-content">
-            @include("parts.about")
+            @include("parts.intro")
             
             <div class="hrContainer">
                 <hr class="hrHomePage2">
@@ -56,12 +56,13 @@
 
             @include("parts.myworks")
 
-            <div class="hrContainer">
-                <hr class="hrHomePage5">
-            </div>
+            @if (App::currentLocale() == "ru")
+                <div class="hrContainer">
+                    <hr class="hrHomePage5">
+                </div>
 
-            @include('parts.blog-preview')
-
+                @include('parts.blog-preview')
+            @endif
         </div>
     </div>
 </main>

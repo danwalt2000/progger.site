@@ -1,13 +1,13 @@
 @extends('parts.base')
  
-@section('title', "Сайт транспортной компани")
+@section('title', __('strings.proj_drive_desc'))
 @section('description', "Я создал сайт транспортной компании, который вышел в топ по региону даже без продвижения")
 
 @section('main')
 <div class="headingIntro">
     <h1>
-        <em>Сайт</em>
-        <strong id="mainHeroTitle">Транспортной компании</strong>
+        <em>{{ __('strings.dev_site') }}</em>
+        <strong id="mainHeroTitle">{{ __('strings.proj_drive_transp') }}</strong>
     </h1>
 </header>
 </header>
@@ -21,35 +21,33 @@
     <img src="/content/bustravel-wall.jpg" alt="Bustravel"/>
 </div>
 
-<!-- Описание проекта -->
-
 
 <div class="project-details" style="box-sizing:border-box;">
     <div class="project-details-primary">
-        <h2>Описание проекта</h2>
+        <h2> {{ __('strings.proj_desc') }}</h2>
         <div class="project-details-intro">
-            <p>Проект был написан под CMS Modx, но заказчику понадобилось перенести его на другой домен без административной части.  </p>
+            <p>{{ __('strings.proj_bus_1') }}</p>
         </div>
-        <p>В данном проекте пришлось не просто выполнить работу по копированию и переносу сайта, но и по восстановлению бизнес-логики, присутствовавшей в оригинальном проекте: возможность редактирования информации, отправка писем администратору, подключение чата JivoSite.</p>
-        <p>Но несколько простых скриптов решили проблему отправки писем, подключение TextoLite позволило заказчику править сайт прямо в браузере, а работа с чатом JivoSite - не приносит проблем даже начинающим программистам.</p>
+        <p>{{ __('strings.proj_bus_2') }}</p>
+        <p>{{ __('strings.proj_bus_3') }}</p>
 
     </div>
     <div class="project-details-secondary">
         <div class="project-details-block project-details-sector">
-            <h2>Тип проекта</h2>
-            Лэндинг
+            <h2>{{ __('strings.proj_type') }}</h2>
+            {{ __('strings.proj_landing') }}
         </div>
         <div class="project-details-block">
-            <h2>Что я написал</h2>
+            <h2> {{ __('strings.proj_i_wrote') }}</h2>
             <ul>
-                <li>Копирование и перенос сайта</li>
-                <li>Восстановление бизнес-логики</li>
-                <li>Подключение CMS и JivoSite</li>
+                <li>{{ __('strings.proj_copy_site') }}</li>
+                <li>{{ __('strings.proj_logic') }}</li>
+                <li>{{ __('strings.proj_jivo') }}</li>
             </ul>
 
             <div class="textParagraph" style='text-align:left;padding-left:0; padding-right:0;padding-top:0'>
                 <div style="outline: medium none;cursor:auto">
-                    <h2>Использованные технологии</h2>
+                    <h2>{{ __('strings.proj_tech') }}</h2>
                     <ul><li>HTML5, CSS, JavaScript, PHP</li></ul>
                 </div>
             </div>

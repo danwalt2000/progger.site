@@ -3,16 +3,18 @@ const carouselList = document.querySelector('.carousel__list');
 const carouselItems = document.querySelectorAll('.carousel__item');
 const elems = Array.from(carouselItems);
 
-carouselList.addEventListener('click', function (event) {
-    var newActive = event.target;
-    var isItem = newActive.closest('.carousel__item');
-
-    if (!isItem || newActive.classList.contains('carousel__item_active')) {
-        return;
-    };
-
-        update(newActive);
-});
+if(carouselList){
+    carouselList.addEventListener('click', function (event) {
+        var newActive = event.target;
+        var isItem = newActive.closest('.carousel__item');
+    
+        if (!isItem || newActive.classList.contains('carousel__item_active')) {
+            return;
+        };
+    
+            update(newActive);
+    });
+}
 
 const update = function(newActive) {
     const newActivePos = newActive.dataset.pos;

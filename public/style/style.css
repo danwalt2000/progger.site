@@ -309,6 +309,7 @@ body {
 }
 .page-index .overlay{
     height: 100%;
+    position: relative;
 }
 .login-nav{
     display: none;
@@ -380,10 +381,15 @@ a {
 .menuList {
     margin: 0;
     padding: 0;
-    display: block;
-    width: 100%
+    display: grid;
+    grid-template-columns: repeat(5, 18%);
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
 }
-
+.menuList_no_blog{
+    grid-template-columns: repeat(4, 18%);
+}
 .layoutPreFooter,
 .myServices {
     display: table;
@@ -409,15 +415,14 @@ a {
 .menuBlock:hover > .menuHr{
     background-color: #333;
 }
-
+.menuBlockLink{
+    display: block;
+    height: 100%;
+}
 .menuBlock {
-    width: 14%;
-    margin-left: 1%;
-    margin-right: 1%;
-    height: 125px;
+    height: 120px;
     transition: background .2s ease-in-out 0s;
-    float: left;
-    padding: 11% 2% 1%;
+    padding: 120px 10px 10px;
     font: 600 1.6em/140% "Open sans";
     letter-spacing: 2px
 }
@@ -1987,7 +1992,7 @@ input[type=textarea] {
 }
 
 .preFooterBlocks {
-    padding: 30px 0;
+    padding: 70px 0;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box
@@ -5060,7 +5065,10 @@ hr.menuHr {
 }
 
 .scollerContainer {
-    position: relative;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
     height: 100px
 }
 

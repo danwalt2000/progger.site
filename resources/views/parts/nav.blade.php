@@ -70,7 +70,7 @@
   </label>
 
   <nav class="navGrid">
-      <ul class="menuList">
+      <ul class="menuList @if (App::currentLocale() == "en") menuList_no_blog @endif">
           <li class="a-nav-item link-index">
               <a class="menuBlockLink" href="/">
                   <div id="menuBlockSelected" class="menuBlock menuBlockFirst">
@@ -118,18 +118,19 @@
                   </div>
               </a>
           </li>
-
-          <li class="a-nav-item link-blog">
-              <a class="menuBlockLink" href="/blog">
-                  <div class="menuBlock">
-                      <div class="linkSummary"><span class="counterSpan">05.</span>
-                          <header class="MenuHeader">{{ __('strings.nav_blog') }}</p></header>
-                          <p>{{ __('strings.nav_blog_desc') }}</p>
-                      </div>
-                      <hr class="menuHr">
-                  </div>
-              </a>
-          </li>
+          @if (App::currentLocale() == "ru")
+            <li class="a-nav-item link-blog">
+                <a class="menuBlockLink" href="/blog">
+                    <div class="menuBlock">
+                        <div class="linkSummary"><span class="counterSpan">05.</span>
+                            <header class="MenuHeader">{{ __('strings.nav_blog') }}</p></header>
+                            <p>{{ __('strings.nav_blog_desc') }}</p>
+                        </div>
+                        <hr class="menuHr">
+                    </div>
+                </a>
+            </li>
+          @endif
       </ul>
 
   </nav>

@@ -23,40 +23,36 @@
 
             <div class="project-details" style="box-sizing:border-box;">
                 <div class="project-details-primary">
-                    <h2>Описание проекта</h2>
+                    <h2>{{ __('strings.proj_desc') }}</h2>
                     <div class="project-details-intro">
-                        <p>Я написал этот сайт, чтобы продемонстрировать свои способности и получить работу в качестве веб-дизайнера и разработчика. Я решил выбрать простой и эффектный дизайн для реализации этого проекта. </p>
+                        <p>{{ __('strings.proj_port_1') }}</p>
                     </div>
-                    <p>Отличительной особенностью сайта являются большие картинки-подложки и SVG-графика.
-                        Я выбираю иконки и картинки, созданные по технологии SVG, потому что они не требуют загрузки со сторонних ресурсов или подключения каких-либо библиотек.
-                    Плюс: они удобны в обслуживании и эффективны в быстродействии. </p>
-                    <p>
-                        Я считаю, что написал классный сайт, и надеюсь, что вам он тоже понравился.
-                    </p>
+                    <p>{{ __('strings.proj_port_2') }}</p>
+                    <p>{{ __('strings.proj_port_3') }}</p>
 
                 </div>
                 <div class="project-details-secondary">
                     <div class="project-details-block project-details-sector">
-                        <h2>Тип проекта</h2>
-                        Персональное веб-портфолио
+                        <h2>{{ __('strings.proj_type') }}</h2>
+                        {{ __('strings.proj_port_pers') }}
                     </div>
                     <div class="project-details-block">
-                        <h2>Что я написал</h2>
+                        <h2> {{ __('strings.proj_i_wrote') }}</h2>
                         <ul>
-                            <li>Дизайн сайта</li>
-                            <li>Движок блога</li>
-                            <li>Адаптивная верстка</li>
-                            <li>Администрирование backend-части</li>
+                            <li>{{ __('strings.proj_design') }} </li>
+                            <li>{{ __('strings.proj_blog_engine') }}</li>
+                            <li>{{ __('strings.proj_adapt_markup') }}</li>
+                            <li>{{ __('strings.proj_support_back') }}</li>
                         </ul>
 
                         <div class="textParagraph" style='text-align:left;padding-left:0; padding-right:0;padding-top:0'>
                             <div style="outline: medium none;cursor:auto">
-                                <h2>Использованные технологии</h2>
+                                <h2>{{ __('strings.proj_tech') }}</h2>
                                 <ul><li>HTML5, CSS3, JS, JQuery, PHP, Photoshop</li></ul>
                             </div>
                         </div>
 
-                        <a class="buttonBlockElement" href="/">Перейти на главную</a>
+                        <a class="buttonBlockElement" href="/">{{ __('strings.dev_go_home') }}</a>
                     </div>
                 </div>
             </div>

@@ -51,4 +51,8 @@ $(document).ready(function () {
 	      $("#circleRow2").removeClass("hidden");
 	      $("#moreSkillsButton").hide();
 	});
+	$("#moreCertsButton").click(function(){
+	      $(".certs-grid").removeClass("certs-grid__closed");
+	      $("#moreCertsButton").hide();
+	});
 });

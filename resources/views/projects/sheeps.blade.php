@@ -44,7 +44,7 @@
 
                 <div class="project-details" style="box-sizing:border-box;">
                     <div class="project-details-primary">
-                        <h2>Описание проекта</h2>
+                        <h2> {{ __('strings.proj_desc') }}</h2>
                         <div class="project-details-intro">
                             <p>"Волк и овцы" (в некоторых источниках игра называется "Овца и волки") - традиционная настольная шашечная игра для двух игроков. </p>
                         </div>
@@ -58,7 +58,7 @@
                     </div>
                     <div class="project-details-secondary">
                         <div class="project-details-block project-details-sector">
-                            <h2>Тип проекта</h2>
+                            <h2> {{ __('strings.proj_type') }}</h2>
                             Браузерная игра
                         </div>
                         <div class="project-details-block">

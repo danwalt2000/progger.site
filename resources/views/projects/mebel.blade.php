@@ -21,7 +21,7 @@
         
         <div class="project-details" style="box-sizing:border-box;">
             <div class="project-details-primary">
-                <h2>Описание проекта</h2>
+                <h2> {{ __('strings.proj_desc') }}</h2>
                 <div class="project-details-intro">
                     <p>Мебель Донецк - это мощный и быстрый интернет-магазин на Opencart с приятным и простым дизайном.  </p>
                 </div>
@@ -35,11 +35,11 @@
             </div>
             <div class="project-details-secondary">
                 <div class="project-details-block project-details-sector">
-                    <h2>Тип проекта</h2>
+                    <h2>{{ __('strings.proj_type') }}</h2>
                     Интернет-магазин
                 </div>
                 <div class="project-details-block">
-                    <h2>Что я написал</h2>
+                    <h2> {{ __('strings.proj_i_wrote') }}</h2>
                     <ul>
                         <li>Верстка дизайна сайта</li>
                         <li>Поиск, доработка расширений</li>
@@ -50,7 +50,7 @@
 
                     <div class="textParagraph" style='text-align:left;padding-left:0; padding-right:0;padding-top:0'>
                         <div style="outline: medium none;cursor:auto">
-                            <h2>Использованные технологии</h2>
+                            <h2>{{ __('strings.proj_tech') }}</h2>
                             <ul><li>HTML5, JQuery, Ajax, PHP, Twig, Opencart</li></ul>
                         </div>
                     </div>
