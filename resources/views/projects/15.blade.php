@@ -74,7 +74,7 @@
                     </div>
                 
                      <div class="refresh">
-                        <div class="count"><p>Счетчик ходов:&nbsp; <div id="counter">0</div>
+                        <div class="count"><p>{{ __('strings.proj_counter') }}:&nbsp; <div id="counter">0</div>
                             </p></div>
                          <a onclick="window.location.reload();" id="asBut" data-title="{{ __('strings.proj_reset') }}"></a>
                      </div>
@@ -92,10 +92,10 @@
                              </div>
                              <div class="but_wrap">
                                  <div class="red__but__wrap">
-                                     <button id="closeModalWin" type="reset">Отмена</button>
+                                     <button id="closeModalWin" type="reset">{{ __('strings.dev_cancel') }}</button>
                                  </div>
                                  <div class="green__but__wrap">
-                                     <button id="winSub" type="submit" name="score">Подтвердить</button>
+                                     <button id="winSub" type="submit" name="score">{{ __('strings.dev_confirm') }}</button>
                                  </div>
                              </div>
                          </div>

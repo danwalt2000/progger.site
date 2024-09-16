@@ -59,6 +59,7 @@ body {
 .carousel__item[data-pos="0"] {
     z-index: 5;
     visibility: visible;
+    cursor: auto;
 }
 .carousel__item[data-pos="-1"], .carousel__item[data-pos="1"] {
    visibility: visible;
@@ -178,6 +179,9 @@ body {
 .certs-grid .certs-cert:nth-child(8),
 .certs-grid .certs-cert:nth-child(9){
    display: block;
+}
+.capitalize{
+   text-transform: capitalize;
 }
 @media (max-width: 920px){
    .certs-grid{

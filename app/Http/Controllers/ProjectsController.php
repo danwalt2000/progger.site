@@ -65,7 +65,8 @@ class ProjectsController extends Controller
                 "title" => __('strings.proj_game'),
                 "second_title" => __('strings.proj_sheeps'),
                 "link" => "sheeps",
-                "img" => "/content/sheeps.jpg"
+                "img" => "/content/sheeps.jpg",
+                "locale" => "ru"
             ],
             [
                 "title" => __('strings.proj_provance_desc'),

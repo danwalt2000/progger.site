@@ -1,13 +1,13 @@
 @extends('parts.base')
  
-@section('title', "Интернет-магазин на Вордпрессе")
-@section('description', "Небольшой интернет-магазин торгового и кассового оборудования на Wordpress")
+@section('title', __('strings.proj_infoteh_title'))
+@section('description', __('strings.proj_infoteh_meta'))
 
 @section('main')
 <div class="headingIntro">
     <h1>
-        <em>Интернет-магазин</em>
-        <strong id="mainHeroTitle">ЧП "Инфотех"</strong>
+        <em>{{ __('strings.proj_store') }}</em>
+        <strong id="mainHeroTitle">{{ __('strings.proj_infoteh') }}</strong>
     </h1>
 </header>
 </header>
@@ -17,7 +17,7 @@
             @include('parts.projects-nav', ['prev' => $prev, 'next' => $next])
 
             <div class="MyMultiDeviceImages">
-                <img src="/content/infotech-wall.jpg" alt="ЧП 'Инфотех'"/>
+                <img src="/content/infotech-wall.jpg" alt="{{ __('strings.proj_infoteh') }}"/>
             </div>
 
         <div class="project-details" style="box-sizing:border-box;">
@@ -65,7 +65,7 @@
         e.preventDefault();
         $.swipebox( [
             // { href:'/content/screenshots/infotech.jpg', title:'My Caption' }, 
-            { href:'/content/screenshots/infotech.png', title:'Интернет-магазин Инфотех' }
+            { href:'/content/screenshots/infotech.png', title:"{{ __('strings.proj_infoteh') }}" }
         ] );
     } );
 </script>

@@ -7,7 +7,7 @@
 <div class="headingIntro">
     <h1>
         {{-- <em>Этот сайт</em> --}}
-        <strong id="mainHeroTitle">Этот сайт</strong>
+        <strong id="mainHeroTitle">{{ __('strings.exp_this_site') }}</strong>
     </h1>
 </header>
 </header>

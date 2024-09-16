@@ -33,6 +33,7 @@
 
                                 <div class="portfolio-grid">
                                     @foreach ($projects as $project)
+                                        @if (!empty($project["locale"]) && $project["locale"] != App::currentLocale()) @continue @endif
                                         <section class="portfolio-block">
                                             <div class="portfolio-image-block">
                                                 <a class="portfolio-image-block__link" href="{{ $project["link"] }}">

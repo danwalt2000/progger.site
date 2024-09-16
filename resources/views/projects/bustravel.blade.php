@@ -1,7 +1,7 @@
 @extends('parts.base')
  
 @section('title', __('strings.proj_drive_desc'))
-@section('description', "Я создал сайт транспортной компании, который вышел в топ по региону даже без продвижения")
+@section('description', __('strings.proj_drive_meta'))
 
 @section('main')
 <div class="headingIntro">

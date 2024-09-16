@@ -12,6 +12,12 @@
     <li class="certs-cert"><a data-fslightbox="gallery" href="/content/certs/js-DOM.png"><img src="/content/certs/js-DOM.png"></a></li>
     <li class="certs-cert"><a data-fslightbox="gallery" href="/content/certs/bootstrap.png"><img src="/content/certs/bootstrap.png"></a></li>
     <li class="certs-cert"><a data-fslightbox="gallery" href="/content/certs/bash.png"><img src="/content/certs/bash.png"></a></li>
+    <li class="certs-cert"><a data-fslightbox="gallery" href="/content/certs/linux.png"><img src="/content/certs/linux.png"></a></li>
+    <li class="certs-cert"><a data-fslightbox="gallery" href="/content/certs/python3.png"><img src="/content/certs/python3.png"></a></li>
+    <li class="certs-cert"><a data-fslightbox="gallery" href="/content/certs/parsing.png"><img src="/content/certs/parsing.png"></a></li>
+    <li class="certs-cert"><a data-fslightbox="gallery" href="/content/certs/text-preprocassing.png"><img src="/content/certs/text-preprocassing.png"></a></li>
+    <li class="certs-cert"><a data-fslightbox="gallery" href="/content/certs/beautiful-soap.png"><img src="/content/certs/beautiful-soap.png"></a></li>
+    <li class="certs-cert"><a data-fslightbox="gallery" href="/content/certs/data-clean.png"><img src="/content/certs/data-clean.png"></a></li>
     <li class="certs-cert"><a data-fslightbox="gallery" href="/content/certs/SASS.png"><img src="/content/certs/SASS.png"></a></li>
     <li class="certs-cert"><a data-fslightbox="gallery" href="/content/certs/node-js.png"><img src="/content/certs/node-js.png"></a></li>
     <li class="certs-cert"><a data-fslightbox="gallery" href="/content/certs/typescript.png"><img src="/content/certs/typescript.png"></a></li>
@@ -29,7 +35,7 @@
 <div class="buttonBlock" id="moreCertsButton">
     <div>
         <div style="text-align:center">
-            <a class="buttonBlockElement">{{ __('strings.about_cert_all') }}</a>
+            <a class="buttonBlockElement">{{ __('strings.about_expand') }}</a>
         </div>
     </div>
 </div>
