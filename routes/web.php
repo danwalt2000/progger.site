@@ -26,7 +26,7 @@ Route::view('/experience', 'pages.experience');
 Route::view('/about', 'pages.about');
 
 Route::get('/projects/{project}', [ProjectsController::class, 'single']
-   )->where('project', 'novozarievka|sheeps|bustravel|15|infotech|mebel|drive-don|my-port|provence');
+   )->where('project', 'novozarievka|sheeps|bustravel|15|infotech|mebel|drive-don|my-port|provence|kursivalut|trueconf|unit|clevermic');
 
 Route::get('/misc/{any}', function() {
    return redirect('/');

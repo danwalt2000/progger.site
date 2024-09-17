@@ -20,10 +20,46 @@ class ProjectsController extends Controller
     {
         $this->projects = [
             [
-                "title" =>  __('strings.proj_novozar_desc'),
+                "title" =>  __('strings.proj_kursi'),
+                "second_title" => "KursiValut",
+                "link" => "kursivalut",
+                "img" => "/content/kursivalut-mini.png"
+            ],
+            [
+                "title" =>  __('strings.proj_trueconf_desc'),
+                "second_title" => "TrueConf",
+                "link" => "trueconf",
+                "img" => "/content/trueconf-mini.png"
+            ],
+            [
+                "title" =>  __('strings.proj_presta'),
+                "second_title" => "Unitsolutions",
+                "link" => "unit",
+                "img" => "/content/unit-mini.png"
+            ],
+            [
+                "title" =>  __('strings.proj_oc'),
+                "second_title" => "CleverMic",
+                "link" => "clevermic",
+                "img" => "/content/clevermic-mini.png"
+            ],
+            [
+                "title" => __('strings.proj_website'),
+                "second_title" => __('strings.dev_port'),
+                "link" => "my-port",
+                "img" => "/content/myport-mini.png"
+            ],
+            [
+                "title" =>  __('strings.proj_store'),
                 "second_title" => __('strings.proj_novozar'),
                 "link" => "novozarievka",
-                "img" => "/content/novozar.png"
+                "img" => "/content/novozar-mini.jpg"
+            ],
+            [
+                "title" => __('strings.proj_store'),
+                "second_title" => __('strings.proj_infoteh'),
+                "link" => "infotech",
+                "img" => "/content/infoteh-mini.png"
             ],
             [
                 "title" => __('strings.proj_drive_desc'),
@@ -33,22 +69,11 @@ class ProjectsController extends Controller
             ],
             [
                 "title" => __('strings.proj_store'),
-                "second_title" => __('strings.proj_infoteh'),
-                "link" => "infotech",
-                "img" => "/content/infotech.jpg"
-            ],
-            [
-                "title" => __('strings.proj_store'),
                 "second_title" => __('strings.proj_mebel'),
                 "link" => "mebel",
-                "img" => "/content/mebel.jpg"
+                "img" => "/content/mebel-mini.png"
             ],
-            [
-                "title" => __('strings.proj_website'),
-                "second_title" => __('strings.dev_port'),
-                "link" => "my-port",
-                "img" => "/content/portfolio.jpg"
-            ],
+
             [
                 "title" => __('strings.proj_bus_desc'),
                 "second_title" => 'Bustravel',
@@ -62,18 +87,19 @@ class ProjectsController extends Controller
                 "img" => "/content/15-preview.jpg"
             ],
             [
-                "title" => __('strings.proj_game'),
-                "second_title" => __('strings.proj_sheeps'),
-                "link" => "sheeps",
-                "img" => "/content/sheeps.jpg",
-                "locale" => "ru"
-            ],
-            [
                 "title" => __('strings.proj_provance_desc'),
                 "second_title" => __('strings.proj_provance'),
                 "link" => "provence",
                 "img" => "/content/provence1.jpg"
-            ]
+            ],
+            // [
+            //     "title" => __('strings.proj_game'),
+            //     "second_title" => __('strings.proj_sheeps'),
+            //     "link" => "sheeps",
+            //     "img" => "/content/sheeps.jpg",
+            //     "locale" => "ru"
+            // ]
+            
         ];
     }
 

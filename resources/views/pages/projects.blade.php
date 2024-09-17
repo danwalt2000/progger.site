@@ -36,7 +36,7 @@
                                         @if (!empty($project["locale"]) && $project["locale"] != App::currentLocale()) @continue @endif
                                         <section class="portfolio-block">
                                             <div class="portfolio-image-block">
-                                                <a class="portfolio-image-block__link" href="{{ $project["link"] }}">
+                                                <a class="portfolio-image-block__link" href="/projects/{{ $project["link"] }}">
                                                     <img src="{{ $project["img"] }}" alt="{{ $project["title"] }}"
                                                         class="projectImage"
                                                         style="left:0;position: relative;top: 0;" />
@@ -51,7 +51,7 @@
                                                             {{ $project["second_title"] }}</div>
                                                         <a class="portfolio-content-block__link"
                                                             title="{{ $project["title"] }}"
-                                                            href="{{ $project["link"] }}">{{ __('strings.dev_more') }}</a>
+                                                            href="/projects/{{ $project["link"] }}">{{ __('strings.dev_more') }}</a>
                                                     </div>
                                                 </div>
                                             </div>

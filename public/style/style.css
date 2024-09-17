@@ -244,8 +244,8 @@ body {
 
 .site-header {
     background-image: url(/content/digital-field.jpg);
-    -webkit-animation: 1.5s ease-in-out 0s normal none 1 running bgImageAnim;
-    animation: 1.5s ease-in-out 0s normal none 1 running bgImageAnim;
+    -webkit-animation: 1s ease-in-out 0s normal none 1 running bgImageAnim;
+    animation: 1s ease-in-out 0s normal none 1 running bgImageAnim;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -288,6 +288,18 @@ body {
 }
 .page-novozarievka .site-header{
     background-image: url(/content/novozar-Bg.jpg);
+}
+.page-kursivalut .site-header{
+    background-image: url(/content/kursivalut-head.jpg);
+}
+.page-trueconf .site-header{
+    background-image: url(/content/trueconf-head.jpg);
+}
+.page-unit .site-header{
+    background-image: url(/content/unit-head.jpg);
+}
+.page-clevermic .site-header{
+    background-image: url(/content/clevermic-head.jpg);
 }
 .page-sheeps .site-header{
     background: url(/content/woodBack.jpg) repeat;
@@ -2015,18 +2027,22 @@ input[type=textarea] {
     display: none;
 }
 .page-index .link-index .menuHr,
-.page-about  .link-about .menuHr,
-.page-projects  .link-projects .menuHr,
-.page-blog   .link-blog .menuHr,
-.page-novozarievka  .link-projects .menuHr,
+.page-about .link-about .menuHr,
+.page-projects .link-projects .menuHr,
+.page-blog .link-blog .menuHr,
+.page-novozarievka .link-projects .menuHr,
 .page-bustravel .link-projects .menuHr,
-.page-mebel  .link-projects .menuHr,
-.page-infotech  .link-projects .menuHr,
-.page-drive-don  .link-projects .menuHr,
-.page-my-port  .link-projects .menuHr,
-.page-15  .link-projects .menuHr,
-.page-sheeps  .link-projects .menuHr,
-.page-provence  .link-projects .menuHr,
+.page-mebel .link-projects .menuHr,
+.page-infotech .link-projects .menuHr,
+.page-drive-don .link-projects .menuHr,
+.page-my-port .link-projects .menuHr,
+.page-15 .link-projects .menuHr,
+.page-kursivalut .link-projects .menuHr,
+.page-trueconf .link-projects .menuHr,
+.page-unit .link-projects .menuHr,
+.page-clevermic .link-projects .menuHr,
+.page-sheeps .link-projects .menuHr,
+.page-provence .link-projects .menuHr,
 .page-experience .link-experience .menuHr,
 .page-blog .link-blog .menuHr{
     display: block;
