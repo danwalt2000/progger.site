@@ -18,7 +18,7 @@
             @include('parts.projects-nav', ['prev' => $prev, 'next' => $next])
 
             <div class="MyMultiDeviceImages">
-                <img src="/content/novozar-wall.jpg" alt="{{ __('strings.proj_novozar_desc') }}"/>
+                <img src="/content/novozar-wall.jpg" alt="{{ __('strings.proj_novozar_desc') }}" loading="lazy"/>
             </div>
 
             <div class="project-details" style="box-sizing:border-box;">

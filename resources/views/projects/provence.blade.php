@@ -17,7 +17,7 @@
             @include('parts.projects-nav', ['prev' => $prev, 'next' => $next])
 
             <div class="MyMultiDeviceImages">
-                <img src="/content/provence.jpg" alt="{{ __('strings.proj_provance_meta') }}"/>
+                <img src="/content/provence.jpg" alt="{{ __('strings.proj_provance_meta') }}" loading="lazy"/>
             </div>
 
             

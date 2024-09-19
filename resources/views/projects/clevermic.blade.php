@@ -18,16 +18,17 @@
             @include('parts.projects-nav', ['prev' => $prev, 'next' => $next])
 
             <div class="MyMultiDeviceImages">
-                <img class="mockup-new" src="/content/mockup-clevermic.jpg" alt="{{ __('strings.proj_novozar_desc') }}"/>
+                <img class="mockup-new" src="/content/mockup-clevermic.jpg" alt="{{ __('strings.proj_novozar_desc') }}" loading="lazy" />
             </div>
 
             <div class="project-details" style="box-sizing:border-box;">
                 <div class="project-details-primary">
                     <h2> {{ __('strings.proj_desc') }}</h2>
                     <div class="project-details-intro">
-                        <p>{{ __('strings.proj_novozar_1') }}</p>
+                        <p>{{ __('strings.proj_clever_1') }}</p>
                     </div>
-                    <p>{{ __('strings.proj_novozar_2') }}</p>
+                    <p>{{ __('strings.proj_clever_2') }}</p>
+                    <p>{{ __('strings.proj_clever_3') }}</p>
                 </div>
                 <div class="project-details-secondary">
                     <div class="project-details-block project-details-sector">
@@ -49,7 +50,7 @@
                                 <ul><li>HTML5, CSS3, JS, PHP</li></ul>
                             </div>
                         </div>
-                        <a id="gallery" class="buttonBlockElement" href="#">{{ __('strings.proj_screens') }}</a>
+                        {{-- <a id="gallery" class="buttonBlockElement" href="#">{{ __('strings.proj_screens') }}</a> --}}
                     </div>
                 </div>
             </div>

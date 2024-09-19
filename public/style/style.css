@@ -4898,7 +4898,9 @@ textarea:focus {
     box-sizing: border-box;
     float: left
 }
-
+.project-details-secondary .textParagraph ul{
+    list-style: none;
+}
 .project-details-sector {
     margin-bottom: 35px
 }
@@ -5218,6 +5220,9 @@ hr.menuHr {
     .headingIntro h1,
     .headingIntro strong{
         font-size: 24px;
+    }
+    .workExpJobContainer{
+        display: block;
     }
 }
 

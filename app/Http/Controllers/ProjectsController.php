@@ -26,7 +26,7 @@ class ProjectsController extends Controller
                 "img" => "/content/kursivalut-mini.png"
             ],
             [
-                "title" =>  __('strings.proj_trueconf_desc'),
+                "title" =>  __('strings.proj_trueconf_comp'),
                 "second_title" => "TrueConf",
                 "link" => "trueconf",
                 "img" => "/content/trueconf-mini.png"
@@ -73,18 +73,17 @@ class ProjectsController extends Controller
                 "link" => "mebel",
                 "img" => "/content/mebel-mini.png"
             ],
-
-            [
-                "title" => __('strings.proj_bus_desc'),
-                "second_title" => 'Bustravel',
-                "link" => "bustravel",
-                "img" => "/content/bustravel.jpg"
-            ],
             [
                 "title" => __('strings.proj_game'),
                 "second_title" => __('strings.proj_fift'),
                 "link" => "15",
                 "img" => "/content/15-preview.jpg"
+            ],
+            [
+                "title" => __('strings.proj_bus_desc'),
+                "second_title" => 'Bustravel',
+                "link" => "bustravel",
+                "img" => "/content/bustravel.jpg"
             ],
             [
                 "title" => __('strings.proj_provance_desc'),

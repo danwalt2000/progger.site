@@ -79,28 +79,28 @@
                          <a onclick="window.location.reload();" id="asBut" data-title="{{ __('strings.proj_reset') }}"></a>
                      </div>
                     
-                     <form id="myModal" class="modal" method="post">
+                     {{-- <form id="myModal" class="modal" method="post"> --}}
 
                          <!-- Modal content -->
-                         <div class="modal-content">
+                         <div id="myModal" class="modal-content">
                              <div class="modal-header">
-                                 <span class="close">&times;</span>
+                                 {{-- <span class="close">&times;</span> --}}
                                  <h2>{{ __('strings.proj_congrats') }}</h2>
                              </div>
-                             <div class="modal-body">
+                             {{-- <div class="modal-body">
+                                 <button id="closeModalWin" type="reset">{{ __('strings.dev_cancel') }}</button>
                                  <input type="text" name='winName' id='winName' placeholder="Введите имя" minlength="3" maxlength="20" required>
                              </div>
                              <div class="but_wrap">
                                  <div class="red__but__wrap">
-                                     <button id="closeModalWin" type="reset">{{ __('strings.dev_cancel') }}</button>
                                  </div>
                                  <div class="green__but__wrap">
                                      <button id="winSub" type="submit" name="score">{{ __('strings.dev_confirm') }}</button>
                                  </div>
-                             </div>
+                             </div> --}}
                          </div>
 
-                     </form>
+                     {{-- </form> --}}
 
                  </div>
 
@@ -141,7 +141,9 @@
                                 </div>
                             </div>
 
-                            <a class="buttonBlockElement" href="/blog/15-article">{{ __('strings.dev_more') }}</a>
+                            @if(App::currentLocale() == 'ru')
+                                <a class="buttonBlockElement" href="/blog/15-article">{{ __('strings.dev_more') }}</a>
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -155,6 +157,8 @@
                 <!-- конец описания проекта -->
 
                 <script>
+                    window.won = "{{ __('strings.proj_won') }}";
+                    window.congrats = "{{ __('strings.proj_full_counts') }}";
                     const docStyle = document.documentElement.style;
                     const aElem = document.querySelector('#asBut');
                     const boundingClientRect = aElem.getBoundingClientRect();
@@ -199,7 +203,7 @@
                     var modal = document.getElementById("myModal");
                     var btn = document.getElementById("myBtn");
                     var span = document.getElementsByClassName("close")[0];
-                    var closeModalWin = document.getElementById('closeModalWin');
+                    // var closeModalWin = document.getElementById('closeModalWin');
                     var showModalWin = function() {
                         modal.style.display = "block";
                     }
@@ -207,9 +211,9 @@
                     span.onclick = function() {
                         modal.style.display = "none";
                     }
-                    closeModalWin.onclick = function() {
-                        modal.style.display = "none";
-                    }
+                    // closeModalWin.onclick = function() {
+                    //     modal.style.display = "none";
+                    // }
 
                     window.onclick = function(event) {
                         if (event.target == modal) {

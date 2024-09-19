@@ -17,7 +17,7 @@
             @include('parts.projects-nav', ['prev' => $prev, 'next' => $next])
 
             <div class="MyMultiDeviceImages">
-                <img src="/content/portfolio-site.jpg" alt=""/>
+                <img src="/content/portfolio-site.jpg" alt="" loading="lazy" />
             </div>
 
 

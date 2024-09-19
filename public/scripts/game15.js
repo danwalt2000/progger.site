@@ -6,7 +6,7 @@ function fift(){
     return result;
 }
 const fifteen = fift();
-var w = winName.value;
+// var w = winName.value;
 var c = Number(counter.innerHTML);
 function getC(){
     return c;
@@ -161,19 +161,19 @@ function changeItem(event){
     newFift.push('');
     if(shuf.toString() === newFift.toString()){
         const modal = document.getElementById("myModal");
-        const winSub = document.querySelector("#winSub");
-        const winName = document.querySelector("#winName");
+        // const winSub = document.querySelector("#winSub");
+        // const winName = document.querySelector("#winName");
         const newElement = document.createElement('div');
-        const modalBody = winName.parentElement;
+        // const modalBody = winName.parentElement;
         modal.style.display = "block";
-        newElement.innerHTML = `<h1>Вы выиграли!</h1><p>Общее количество ходов: ${c}</>`;
+        newElement.innerHTML = `<h1>${window.won}!</h1><p>${window.congrats}: ${c}</>`;
         newElement.id = "win";
         var ch = document.getElementById("win");
 
         if(!ch){
-            document.body.appendChild(newElement);
-            modalBody.insertBefore(newElement, winName);
-            winSub.value = c;
+            modal.appendChild(newElement);
+            // modal.insertBefore(newElement, winName);
+            // winSub.value = c;
         }
         document.onclick = null;
     }

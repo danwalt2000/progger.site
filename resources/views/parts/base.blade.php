@@ -4,7 +4,7 @@
 - {{ __('strings.dev_me') }}
 -->
 
-<html lang="ru">
+<html lang="{{ App::currentLocale() }}">
 
 <head>
     <meta property="og:url" content="//{{ Request::getHost() }}" />
@@ -15,9 +15,16 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     
-    <link rel="icon" href="/content/logo-sharp.svg" />
+    <link rel="icon" href="/content/icon-{{ App::currentLocale() }}.svg" />
     <link href="{{ asset('style/style.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('style/swipebox.css') }}" rel="stylesheet" type="text/css" />
+    @if (App::currentLocale() == 'en')
+        @if (Request::path() == '/')
+            <link rel="canonical" href="https://sharpdesign.ru" />
+        @else
+            <link rel="canonical" href="https://sharpdesign.ru/{{ Request::path() }}" />
+        @endif
+    @endif
     
     <title>
         @hasSection('title')

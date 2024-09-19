@@ -17,7 +17,7 @@
             @include('parts.projects-nav', ['prev' => $prev, 'next' => $next])
 
             <div class="MyMultiDeviceImages">
-                <img src="/content/drive-don-wall.jpg" alt="Drive-don на разных устройствах"/>
+                <img src="/content/drive-don-wall.jpg" alt="{{ __('strings.proj_drive_desc') }}" loading="lazy" />
             </div>
 
     <div class="project-details" style="box-sizing:border-box;">
