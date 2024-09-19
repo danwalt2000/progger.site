@@ -1,14 +1,14 @@
 
 @extends('parts.base')
  
-@section('title',  __('strings.proj_novozar_desc'))
-@section('description', __('strings.proj_novozar_meta'))
+@section('title',  __('strings.proj_presta'))
+@section('description', __('strings.proj_unit_1'))
 
 @section('main')
 <div class="headingIntro">
     <h1>
-        <em>{{ __('strings.proj_novozar_agro') }}</em>
-        <strong id="mainHeroTitle">"{{ __('strings.proj_novozar') }}"</strong>
+        <em>{{ __('strings.proj_presta') }}</em>
+        <strong id="mainHeroTitle">Unitsolutions</strong>
     </h1>
 </header>
 </header>
@@ -28,7 +28,6 @@
                         <p>{{ __('strings.proj_unit_1') }}</p>
                     </div>
                     <p>{{ __('strings.proj_unit_2') }}</p>
-                    <p>{{ __('strings.proj_unit_3') }}</p>
                 </div>
                 <div class="project-details-secondary">
                     <div class="project-details-block project-details-sector">
@@ -57,7 +56,7 @@
         </div>
     </div>
 </main>
-<script src="/scripts/jquery2.14.js"></script>
+{{-- <script src="/scripts/jquery2.14.js"></script>
 <script src="/scripts/swiperbox.js"></script>
 <script>
     $( '#gallery' ).click( function( e ) {
@@ -68,5 +67,5 @@
             { href:'/content/screenshots/novozarievka-product.png', title:'Магазин агрофирмы - карточка товара' }, 
         ] );
     } );
-</script>
+</script> --}}
 @stop

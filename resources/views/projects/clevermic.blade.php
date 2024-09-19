@@ -28,7 +28,6 @@
                         <p>{{ __('strings.proj_clever_1') }}</p>
                     </div>
                     <p>{{ __('strings.proj_clever_2') }}</p>
-                    <p>{{ __('strings.proj_clever_3') }}</p>
                 </div>
                 <div class="project-details-secondary">
                     <div class="project-details-block project-details-sector">
