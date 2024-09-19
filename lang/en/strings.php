@@ -121,6 +121,8 @@ return [
     'proj_trueconf_2'       => 'Thanks to multiple lendings with stylish and modern design, lightweight and scalable vector graphics, and the implementation of UX/UI best practices, the site increases the number of visitors and customers every year.',
     'proj_unit_1'           => 'Unitsolutions is a productive and fast multistore on PrestaShop engine, covering several languages and dozens of locales.',
     'proj_unit_2'           => 'A separate theme with unique solutions was created for the project: special checkout mechanics, advanced fuzzy search, parcel tracking algorithm, product comparison module and assembly of combined products from components. Together with advanced integration with 1c accounting via API and the addition of a blog on Wordpress, the Unitsolutions store has become a powerful regional player with a large audience.',
+    'proj_clever_1'         => 'Clevermic is a small and stylish multistore on the OpenCart engine with eye-catching lendings and modern design. Despite its apparent simplicity, the multistore combines eight locales and hundreds of product cards, garnering significant visitor traffic every month.',
+    'proj_clever_2'         => '',
     'proj_kursi'            => 'Web application',
     'proj_kursi_title'      => 'Currency Ads Aggregator',
     'proj_kursi_meta'       => 'An application that collects and analyzes posts in telegram and vk',
