@@ -11,7 +11,7 @@
             <img width="80" height="80" src="/content/logo-{{ App::currentLocale() }}.svg" alt="Logo" />
         </div>
         <span>{{ __('strings.site_name') }}</span>
-        <span>{{ __('strings.site_promo') }}</span>
+        <span class="logo-promo">{{ __('strings.site_promo') }}</span>
       </a>
 
   </div>

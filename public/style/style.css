@@ -370,11 +370,14 @@ svg .development3 {
     font-weight: 400;
     letter-spacing: 2px;
     line-height: 1em;
-    margin: 10% 0;
+    margin-top: 40px;
     padding: 1em 1.75em;
     transition: background-color .1s ease-in-out 0s, color .1s ease-in-out 0s
 }
-
+.logo-promo{
+    font-size: 14px;
+    font-style: italic;
+}
 .HomeHeaderButtons:hover {
     background: #fff;
     color: #181818
@@ -5128,6 +5131,15 @@ hr.menuHr {
     max-width: 700px
 }
 
+@media screen and (max-height:850px) {
+    .headingIntro.homeFV{
+        padding-top: calc((50vh - 250px) / 4);
+        padding-bottom: calc((50vh - 250px) / 4);
+    }
+    .HomeHeaderButtons{
+        margin-top: 20px;
+    }
+}
 @media screen and (max-width:1200px) {
     .navGrid {
         display: none
