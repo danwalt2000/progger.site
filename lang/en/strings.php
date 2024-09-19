@@ -18,7 +18,7 @@ return [
 
     'dev_thanks'    => 'Thank you for looking under the hood of my site!',
     'dev_me'        => 'Vitalii',
-    'dev_port'      => 'Developer Portfolio',
+    'dev_port'      => 'Web Developer\'s Portfolio',
     'dev_desc'      => 'I am a web-developer: I create fast, functional and beautiful websites, provide application support after development, help with customization of modules, extensions and plugins. I will make for you a selling website, which is guaranteed to bring profit!',
     'dev_keywords'  => 'Professional application development, website development, order a website, website development, create an application, make a website, web professional, programmer, developer, portfolio, PHP, Javascript, jQuery, sites where you can order, layout, web-development, responsive web-development, frontend, backend, coding, sharp design',
     'dev_go'        => 'Learn more',
