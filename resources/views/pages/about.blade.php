@@ -1,8 +1,8 @@
 
 @extends('parts.base')
  
-@section('title', "Краткая информация обо мне")
-@section('description', "Почему вам стоит заказать сайт у меня?")
+@section('title', __('strings.nav_about_desc'))
+@section('description', __('strings.nav_about_desc'))
 
 @section('main')
 <div class="headingIntro">

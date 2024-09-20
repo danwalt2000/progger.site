@@ -32,15 +32,15 @@
                 <div class="project-details-secondary">
                     <div class="project-details-block project-details-sector">
                         <h2>{{ __('strings.proj_type') }}</h2>
-                        {{ __('strings.proj_showcase') }}
+                        {{ __('strings.proj_multistore') }}
                     </div>
                     <div class="project-details-block">
                         <h2> {{ __('strings.proj_i_wrote') }}</h2>
                         <ul>
-                            <li>{{ __('strings.proj_markup') }}</li>
-                            <li>{{ __('strings.proj_connect_cms') }}</li>
-                            <li>{{ __('strings.proj_rebuild_blog') }}</li>
-                            <li>{{ __('strings.proj_support_back') }}</li>
+                            <li>{{ __('strings.proj_redesign') }}</li>
+                            <li>{{ __('strings.proj_connect_blog') }}</li>
+                            <li>{{ __('strings.proj_front_back') }}</li>
+                            <li>{{ __('strings.proj_var_modules') }}</li>
                         </ul>
 
                         <div class="textParagraph" style='text-align:left;padding-left:0; padding-right:0;padding-top:0'>

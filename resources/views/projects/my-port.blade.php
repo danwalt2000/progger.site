@@ -1,7 +1,7 @@
 @extends('parts.base')
  
-@section('title', "Мое портфолио")
-@section('description', "Этот сайт создан для того, чтобы продемонстрировать мои способности веб-программирования")
+@section('title', __('strings.parts_my_port'))
+@section('description', __('strings.proj_port_1'))
 
 @section('main')
 <div class="headingIntro">
@@ -48,7 +48,7 @@
                         <div class="textParagraph" style='text-align:left;padding-left:0; padding-right:0;padding-top:0'>
                             <div style="outline: medium none;cursor:auto">
                                 <h2>{{ __('strings.proj_tech') }}</h2>
-                                <ul><li>Laravel, Blade, PHP, HTML5, CSS3, JS</li></ul>
+                                <ul><li>Laravel, Blade, PHP, CSS3, JS</li></ul>
                             </div>
                         </div>
 
