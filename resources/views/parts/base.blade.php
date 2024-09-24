@@ -57,7 +57,7 @@
     @endif
 </head>
 
-<body class="
+<body class="locale-{{ App::currentLocale() }}
 @if( Request::segment(1) == "projects" )
     @empty( Request::segment(2) )
         page-{{ Request::segment(1) }}

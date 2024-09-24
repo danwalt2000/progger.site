@@ -49,7 +49,7 @@ return [
 
     'parts_port'    => 'portfolio',
     'parts_my_port' => 'My portfolio',
-    'parts_web_dev' => 'web developer',
+    'parts_web_dev' => 'web developer\'s',
     'parts_position'=> 'Web Developer',
     
     'about_promo'   => 'Hello, my name is Vitalii',
@@ -72,7 +72,7 @@ return [
 
     'proj_desc'             => 'Project Description',
     'proj_type'             => 'Project type',
-    'proj_i_wrote'          => 'What I wrote',
+    'proj_i_wrote'          => 'What I\'ve done',
     'proj_screen'           => 'View screenshot',
     'proj_source_code'      => 'View source code',
     'proj_work_ver'         => 'Go to website',

@@ -11,7 +11,7 @@
 
 
 <div class="headingIntro homeFV">
-    <h1>
+    <h1 class="homeFV_h1">
         <strong id="mainHeroTitle">{{ __('strings.parts_port') }}</strong>
         <em>{{ __('strings.parts_web_dev') }} </em> 
     </h1>
