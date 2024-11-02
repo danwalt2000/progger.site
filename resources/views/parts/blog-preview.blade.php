@@ -25,7 +25,7 @@
     <article class="published post home">
         <a href="/blog/free-server-hosting">
             <img class="attachment-post-thumbnail" width="260" height="260" alt="Бесплатные VPS/VDS (выделенные серверы) и хостинги в 2023 году"
-                    src="blog_images/free-server-hosting-600x400.png">
+                    src="/content/data-center.jpg">
         </a>
         <header class="entry-header">
             <p class="entry-meta">
